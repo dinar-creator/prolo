@@ -1,0 +1,147 @@
+{
+  "homepage": {
+    "title": "Prolo – Your Smart Logistics Partner in Saudi Arabia",
+    "description": "Fast delivery, refrigerated transport, storage and fulfillment services across the Kingdom.",
+    "image": "/seo/prolo.png"
+  },
+
+  "getAQuotePage": {
+    "title": "Get a Quote",
+    "description": "Looking for reliable logistics support? Provide your details now and we’ll give you a tailored offer.",
+    "image": "/seo/prolo.png"
+  },
+
+  "createShipmentPage": {
+    "title": "Create Shipment",
+    "description": "Quickly and easily create your shipment with Prolo – secure and fast order processing.",
+    "image": "/seo/prolo.png"
+  },
+
+  "trackingPage": {
+    "title": "Track Shipment",
+    "description": "Enter your tracking number to check the status and current location of your order anytime.",
+    "image": "/seo/prolo.png"
+  },
+
+  "contactPage": {
+    "title": "Talk to Us About Logistics",
+    "description": "Get in touch with the Prolo team for support, inquiries, or partnerships.",
+    "image": "/seo/prolo.png"
+  },
+
+  "appDownload": {
+    "title": "Download Prolo App",
+    "description": "Download the Prolo app on Android or iOS for fast and reliable delivery services.",
+    "image": "/seo/qr.png"
+  },
+
+  "industries": {
+    "e-commerce-sector": {
+      "title": "E-Commerce Sector | Integrated Logistics Services for Online Stores",
+      "description": "Comprehensive logistics solutions (storage, shipping, delivery, returns management).",
+      "image": "/seo/industries/e-commerce-sector.png"
+    },
+    "food-sector": {
+      "title": "Food Sector | Temperature-Controlled Logistics Solutions (Chilled, Frozen, Dry)",
+      "description": "Specialized logistics solutions for the food and beverage sector, including temperature-controlled storage and transport to ensure product safety and quality.",
+      "image": "/seo/industries/food-sector.png"
+    },
+    "factories-and-goods-suppliers-sector": {
+      "title": "Factories & Goods Suppliers Sector | Industrial Supply Chain & Logistics Solutions",
+      "description": "Integrated supply chain management for factories and suppliers, including industrial storage, transport, and operational leasing to support production.",
+      "image": "/seo/industries/factories-and-goods-suppliers-sector.png"
+    },
+    "hospitality-sector": {
+      "title": "Hospitality Sector | Specialized Logistics Services for Hospitality & Events",
+      "description": "Comprehensive logistics services for hospitality, including hotels and large events, with temperature-controlled warehouses plus chilled and dry shipping.",
+      "image": "/seo/industries/hospitality-sector.png"
+    }
+  },
+
+  "notFound": {
+    "title": "Page Not Found | Error 404",
+    "description": "Sorry, the page you’re looking for doesn’t exist. Return to the homepage for shipping quotes and logistics solutions for e-commerce.",
+    "image": "/seo/not-found.png"
+  },
+
+  "services": {
+    "individualServices": {
+      "bullet-delivery": {
+        "title": "Bullet Delivery Service | Ultra-Fast Delivery with Real-Time Tracking",
+        "description": "Super-fast and reliable delivery (Bullet Delivery) with real-time tracking and quick execution for individuals and businesses in the Kingdom.",
+        "image": "/seo/individualServices/bullet-delivery.png"
+      },
+      "refrigerated-shipping": {
+        "title": "Refrigerated Shipping Service for Individuals | Safe Delivery of Temperature-Sensitive Products",
+        "description": "Trusted refrigerated delivery that preserves the quality of temperature-sensitive products (food, medicine, flowers) within a fully monitored cold chain.",
+        "image": "/seo/individualServices/refrigerated-shipping.png"
+      },
+      "temporary-storage-solution": {
+        "title": "Temporary Storage Service | Secure, Flexible, Short-Term Storage Solutions",
+        "description": "Flexible short-term storage solution that keeps your products safe in a monitored environment (temperature-controlled) with easy integration into shipping services.",
+        "image": "/seo/individualServices/temporary-storage-solution.png"
+      }
+    },
+    "commercialSectorServices": {
+      "last-mile": {
+        "title": "Last Mile Service | Integrated Delivery Solutions for Online Stores",
+        "description": "Comprehensive solutions for delivering e-commerce orders quickly and reliably to the customer’s door, with professional order management and fewer returns.",
+        "image": "/seo/commercialSectorServices/last-mile.png"
+      },
+      "bullet-delivery": {
+        "title": "Bullet Delivery for Businesses | Ultra-Fast Delivery via Cloud Branches",
+        "description": "Lightning-fast delivery (within 30 minutes – 4 hours) supported by strategically distributed cloud branches across the Kingdom to accelerate your store’s growth.",
+        "image": "/seo/commercialSectorServices/bullet-delivery.png"
+      },
+      "b2b-shipping": {
+        "title": "B2B Shipping Service | Reliable Transport for All Business Sizes",
+        "description": "Trusted B2B shipping service with delivery schedules tailored to all sizes and types of goods (including chilled and dry) within the Kingdom.",
+        "image": "/seo/commercialSectorServices/b2b-shipping.png"
+      },
+      "storage-for-others": {
+        "title": "Third-Party Storage Service | Secure Warehousing & Precise Inventory Management",
+        "description": "Flexible and secure storage spaces for the commercial sector with full operation and precise inventory management (including frozen, chilled, and dry).",
+        "image": "/seo/commercialSectorServices/storage-for-others.png"
+      },
+      "fulfillment-service": {
+        "title": "Fulfillment Service | Integrated Solution for Storage, Order Management & Shipping",
+        "description": "Complete solution for product storage, inventory and order management, packing, and shipping for e-commerce stores in the Kingdom to reduce operational costs.",
+        "image": "/seo/commercialSectorServices/fulfillment-service.png"
+      },
+      "operational-leasing": {
+        "title": "Operational Leasing",
+        "description": "Logistics services including operational leasing with a full and diverse fleet, enabling flexible expansion without ownership.",
+        "image": "/seo/commercialSectorServices/operational-leasing.png"
+      },
+      "refrigerated-shipping": {
+        "title": "Refrigerated Shipping for Businesses | Temperature-Controlled Transport for the Commercial Sector",
+        "description": "Professional refrigerated transport solutions tailored for the commercial sector, ensuring top-level temperature control and product quality.",
+        "image": "/seo/commercialSectorServices/refrigerated-shipping.png"
+      }
+    }
+  },
+
+  "blogsPage": {
+    "title": "Prolo Blog | Latest Articles & Tips in Logistics and E-Commerce",
+    "description": "Discover the latest Prolo blog articles covering advanced logistics topics, including express delivery, supply chains, inventory management, and secrets of e-commerce growth in Saudi Arabia.",
+    "image": "/seo/prolo.png"
+  },
+
+  "blogs": {
+    "how-express-delivery-impacts-ecommerce-growth": {
+      "title": "How Express Delivery Impacts E-Commerce Growth | Prolo Logistics",
+      "description": "Learn how express delivery improves customer experience, increases conversion rates, and boosts competitiveness for your online store in the Saudi market.",
+      "image": "/seo/blogs/how-express-delivery-impacts-ecommerce-growth.png"
+    },
+    "the-most-important-challenges-in-express-delivery": {
+      "title": "The Most Important Challenges in Express Delivery & How Companies Overcome Them | Logistics Solutions",
+      "description": "Explore the key challenges in express delivery such as order congestion and last-mile issues, and how logistics companies provide solutions, including refrigerated shipping.",
+      "image": "/seo/blogs/the-most-important-challenges-in-express-delivery.png"
+    },
+    "the-importance-of-frozen-storage-in-preserving-products": {
+      "title": "The Importance of Frozen Storage in Preserving Sensitive Products | Cold Chain",
+      "description": "An in-depth look at the role of frozen storage in maintaining the safety of food and medicine, reducing waste, and building customer trust as a cornerstone of the cold supply chain.",
+      "image": "/seo/blogs/the-importance-of-frozen-storage-in-preserving-products.png"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "homepage": {
+    "title": "برولو – شريك الخدمات اللوجستية الذكية في السعودية",
+    "description": "توصيل سريع، نقل مبرد، خدمات تخزين وفُلْفِلمنت عبر المملكة.",
+    "image": "/seo/prolo.png"
+  },
+
+  "getAQuotePage": {
+    "title": "احصل على عرض سعر",
+    "description": "هل تبحث عن دعم لوجستي موثوق؟ قدم معلوماتك الآن وسنقدم لك عرضًا يناسب احتياجاتك.",
+    "image": "/seo/prolo.png"
+  },
+
+  "createShipmentPage": {
+    "title": "إنشاء شحنة",
+    "description": "أنشئ شحنتك بسرعة وسهولة مع برولو – خدمة آمنة وسريعة لمعالجة الطلبات.",
+    "image": "/seo/prolo.png"
+  },
+
+  "trackingPage": {
+    "title": "تتبع الشحنة",
+    "description": "أدخل رقم التتبع لمعرفة حالة طلبك وموقعه الحالي في أي وقت.",
+    "image": "/seo/prolo.png"
+  },
+
+  "contactPage": {
+    "title": "تحدث معنا حول الخدمات اللوجستية",
+    "description": "تواصل مع فريق برولو للدعم أو الاستفسارات أو الشراكات.",
+    "image": "/seo/prolo.png"
+  },
+
+  "appDownload": {
+    "title": "حمّل تطبيق برولو",
+    "description": "حمّل تطبيق برولو على أندرويد أو iOS للحصول على خدمات توصيل سريعة وموثوقة.",
+    "image": "/seo/qr.png"
+  },
+
+  "industries": {
+    "e-commerce-sector": {
+      "title": "قطاع التجارة الالكترونية | خدمات لوجستية متكاملة للمتاجر الإلكترونية",
+      "description": "حلول لوجستية متكاملة (تخزين، شحن،توصيل،إدارة مرتجعات)",
+      "image": "/seo/industries/e-commerce-sector.png"
+    },
+    "food-sector": {
+      "title": "قطاع الأغذية | حلول لوجستية مُتحكم بدرجة حرارتها (مبرد، مجمد، جاف)",
+      "description": "حلول لوجستية متخصصة لقطاع الأغذية والمشروبات، تشمل التخزين والنقل المُتحكم بدرجة الحرارة لضمان سلامة وجودة المنتجات.",
+      "image": "/seo/industries/food-sector.png"
+    },
+    "factories-and-goods-suppliers-sector": {
+      "title": "قطاع المصانع وموردين البضائع | سلاسل إمداد وحلول لوجستية صناعية",
+      "description": "إدارة متكاملة لسلاسل الإمداد لقطاع المصانع وموردي البضائع، تشمل التخزين الصناعي، النقل، والإيجار التشغيلي لدعم الإنتاج.",
+      "image": "/seo/industries/factories-and-goods-suppliers-sector.png"
+    },
+    "hospitality-sector": {
+      "title": "قطاع الضيافة | خدمات لوجستية متخصصة في قطاع الضيافة والمناسبات.",
+      "description": "خدمات لوجستية متكاملة متخصصة في قطاع الضيافة وتشمل ( الفنادق،المناسبات الكبيرة) مع إمكانية تخزين المنتجات من خلال مستودعات مزودة بأنظمة التحكم بدرجات الحرارة بالإضافة إلى الشحن المبرد والجاف.",
+      "image": "/seo/industries/hospitality-sector.png"
+    }
+  },
+
+  "notFound": {
+    "title": "الصفحة غير موجودة | خطأ 404",
+    "description": "عذرًا، الصفحة التي تبحث عنها غير موجودة. عد إلى الصفحة الرئيسية للحصول على عروض أسعار الشحن وحلول الخدمات اللوجستية والتجارة الإلكترونية.",
+    "image": "/seo/not-found.png"
+  },
+
+  "services": {
+    "individualServices": {
+      "bullet-delivery": {
+        "title": "خدمة البوليت ديليفري | توصيل سريع مع تتبع لحظي",
+        "description": "خدمة توصيل سريعة جداً وموثوقة (Bullet Delivery) مع تتبع لحظي وسرعة في تنفيذ الطلبات للأفراد والمنشآت في المملكة.",
+        "image": "/seo/individualServices/bullet-delivery.png"
+      },
+      "refrigerated-shipping": {
+        "title": "خدمة الشحن المبرد للأفراد | توصيل آمن للمنتجات الحساسة للحرارة",
+        "description": "توصيل مبرد موثوق يحافظ على جودة المنتجات الحساسة للحرارة (الأغذية، الأدوية، الزهور) ضمن سلسلة تبريد متكاملة ومراقبة.",
+        "image": "/seo/individualServices/refrigerated-shipping.png"
+      },
+      "temporary-storage-solution": {
+        "title": "خدمة التخزين المؤقت | حلول تخزين آمنة ومرنة وقصيرة المدى",
+        "description": "حل تخزين مرن وقصير المدى يحفظ منتجاتك في بيئة آمنة ومراقبة (بتحكم حراري) طوال الوقت، مع سهولة التكامل مع خدمات الشحن.",
+        "image": "/seo/individualServices/temporary-storage-solution.png"
+      }
+    },
+    "commercialSectorServices": {
+      "last-mile": {
+        "title": "خدمة الميل الأخير | حلول توصيل متكاملة للمتاجر الإلكترونية",
+        "description": "حلول متكاملة لتوصيل طلبات المتاجر الإلكترونية بسرعة وموثوقية حتى باب العميل، مع إدارة احترافية للطلبات ومرتجعات أقل.",
+        "image": "/seo/commercialSectorServices/last-mile.png"
+      },
+      "bullet-delivery": {
+        "title": "خدمة البوليت ديليفري للأعمال | توصيل فائق السرعة عبر الفروع السحابية",
+        "description": "خدمة توصيل الشحنات بسرعة فائقة (خلال 30 دقيقة - 4 ساعات) ومدعومة بفروع سحابية موزعة استراتيجيًا في المملكة لدعم سرعة نمو متجرك.",
+        "image": "/seo/commercialSectorServices/bullet-delivery.png"
+      },
+      "b2b-shipping": {
+        "title": "خدمة الشحن التجاري (B2B) | نقل موثوق لجميع أحجام الأعمال",
+        "description": "خدمة شحن تجارية موثوقة (B2B) بجدولة تسليم تناسب جميع أحجام وأنواع البضائع (بما في ذلك المبرد والجاف) داخل المملكة.",
+        "image": "/seo/commercialSectorServices/b2b-shipping.png"
+      },
+      "storage-for-others": {
+        "title": "خدمة التخزين للغير | مساحات تخزينية آمنة وإدارة دقيقة للمخزون",
+        "description": "مساحات تخزينية مرنة وآمنة للقطاع التجاري مع تشغيل كامل وإدارة دقيقة للمخزون (بما في ذلك المجمد والمبرد والجاف).",
+        "image": "/seo/commercialSectorServices/storage-for-others.png"
+      },
+      "fulfillment-service": {
+        "title": "خدمة الفولفلمنت | حل متكامل للتخزين وإدارة الطلبات والشحن",
+        "description": "حل متكامل لتخزين المنتجات، وإدارة المخزون والطلبات والتعبئة والشحن لمتاجر التجارة الإلكترونية داخل المملكة لتقليل التكاليف التشغيلية.",
+        "image": "/seo/commercialSectorServices/fulfillment-service.png"
+      },
+      "operational-leasing": {
+        "title": " التأجير التشغيلي",
+        "description": "خدمات لوجستية تشمل التأجير التشغيلي من خلال أسطول كامل ومتنوع مع إمكانية التوسع التشغيلي بكل مرونة، لتمكين الأعمال من التوسع دون الحاجة للتملك.",
+        "image": "/seo/commercialSectorServices/operational-leasing.png"
+      },
+      "refrigerated-shipping": {
+        "title": "خدمة الشحن المبرد للأعمال | نقل مُتحكم بدرجة الحرارة للقطاع التجاري",
+        "description": "حلول نقل مبرد احترافية مخصّصة للقطاع التجاري وتضمن أعلى مستويات التحكم الحراري والجودة للمنتجات الحساسة للحرارة.",
+        "image": "/seo/commercialSectorServices/refrigerated-shipping.png"
+      }
+    }
+  },
+
+  "blogsPage": {
+    "title": "مدونة برولو | أحدث المقالات والنصائح في قطاع اللوجستيات والتجارة الإلكترونية",
+    "description": "اكتشف أحدث مقالات مدونة برولو التي تغطي مواضيع متقدمة في الخدمات اللوجستية، بما في ذلك التوصيل السريع، سلاسل الإمداد، إدارة المخزون، وأسرار نمو التجارة الإلكترونية في السعودية.",
+    "image": "/seo/prolo.png"
+  },
+
+  "blogs": {
+    "how-express-delivery-impacts-ecommerce-growth": {
+      "title": "كيف يؤثر التوصيل السريع على نمو التجارة الإلكترونية | برولو للوجستيات",
+      "description": "اكتشف كيف يساهم التوصيل السريع في تحسين تجربة العملاء، زيادة معدلات التحويل، وتعزيز القدرة التنافسية لمتجرك الإلكتروني في السوق السعودي.",
+      "image": "/seo/blogs/how-express-delivery-impacts-ecommerce-growth.png"
+    },
+    "the-most-important-challenges-in-express-delivery": {
+      "title": "أهم التحديات في التوصيل السريع وكيف تتغلب عليها الشركات | حلول لوجستية",
+      "description": "تعرف على أبرز التحديات التي تواجه التوصيل السريع مثل ازدحام الطلبات وتحديات الميل الأخير، وكيف توفر الشركات اللوجستية حلولًا للتغلب عليها، بما في ذلك الشحن المبرد.",
+      "image": "/seo/blogs/the-most-important-challenges-in-express-delivery.png"
+    },
+    "the-importance-of-frozen-storage-in-preserving-products": {
+      "title": "أهمية التخزين المجمّد في الحفاظ على المنتجات الحساسة | سلسلة التبريد",
+      "description": "نظرة عميقة على دور التخزين المجمّد في الحفاظ على سلامة الأغذية والأدوية، تقليل الهدر، وبناء الثقة مع العملاء كركيزة أساسية في سلسلة الإمداد المبردة.",
+      "image": "/seo/blogs/the-importance-of-frozen-storage-in-preserving-products.png"
+    }
+  }
+}

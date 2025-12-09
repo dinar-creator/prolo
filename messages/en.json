@@ -1,0 +1,2538 @@
+{
+  "navItems": {
+    "trackAndShip": "Track & Ship",
+    "services": "Services",
+    "industries": "Industries",
+    "blogs": "Blogs"
+  },
+  "ctas": {
+    "createShipment": "Create Shipment",
+    "trackShipment": "Track Shipment",
+    "getAQuote": "Get A Quote",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "subscribe": "Subscribe",
+    "sendMessage": "Send Message",
+    "next": "Next",
+    "back": "Back",
+    "copy": "copy",
+    "subscribing": "Subscribing...",
+    "sending": "Sending..."
+  },
+  "forms": {
+    "placeholders": {
+      "tracking": "Enter tracking ID",
+      "email": "Enter Your Email",
+      "error": "Email is required"
+    },
+    "legends": {
+      "senderInformation": "Sender Details",
+      "receiverInformation": "Receiver Details",
+      "originAddress": "Pickup Address",
+      "destinationAddress": "Delivery Address"
+    },
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter Your Name",
+        "error": "Name is required"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter Your Email",
+        "error": "Email is required"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+966XXXXXXXXX",
+        "error": "Enter a valid Saudi Arabia phone number (+966XXXXXXXXX)",
+        "contactPageError": "Enter a valid phone number"
+      },
+      "service": {
+        "label": "Service",
+        "placeholder": "Select Service",
+        "error": "Please select Service"
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "Enter your complete address",
+        "error": "Address is required"
+      },
+      "details": {
+        "label": "Additional Details",
+        "placeholder": "Tell us more about your shipment needs, timeline, or any special requirements"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Enter Your Company Name",
+        "error": "Company Name Required"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter Your City Name",
+        "error": "City Name is required"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter Your Message",
+        "error": "Message is required"
+      },
+      "senderName": {
+        "label": "Sender Name",
+        "placeholder": "Enter sender's full name",
+        "error": "Sender name is required"
+      },
+      "businessSenderName": {
+        "label": "Business Name (Optional)",
+        "placeholder": "Enter business name (if applicable)",
+        "error": ""
+      },
+      "senderPhone": {
+        "label": "Sender Phone",
+        "placeholder": "Enter phone number",
+        "error": "Please enter a valid phone number"
+      },
+      "originRegionId": {
+        "label": "Region",
+        "placeholder": "Select region",
+        "error": "Region is required"
+      },
+      "originCityId": {
+        "label": "City",
+        "placeholder": "Select city",
+        "error": "City is required"
+      },
+      "originVillageId": {
+        "label": "District / Area",
+        "placeholder": "Select District/Area",
+        "error": "District/Area is required"
+      },
+      "originAddressLine1": {
+        "label": "Address",
+        "placeholder": "Enter complete address",
+        "error": "Address is required"
+      },
+
+      "receiverName": {
+        "label": "Receiver Name",
+        "placeholder": "Enter receiver's full name",
+        "error": "Receiver name is required"
+      },
+      "receiverPhone": {
+        "label": "Receiver Phone",
+        "placeholder": "Enter phone number",
+        "error": "Please enter a valid phone number"
+      },
+      "destinationRegionId": {
+        "label": "Region",
+        "placeholder": "Select region",
+        "error": "Region is required"
+      },
+      "destinationCityId": {
+        "label": "City",
+        "placeholder": "Select city",
+        "error": "City is required"
+      },
+      "destinationVillageId": {
+        "label": "District / Area",
+        "placeholder": "Select District/Area",
+        "error": "District/Area is required"
+      },
+      "destinationAddressLine1": {
+        "label": "Address",
+        "placeholder": "Enter complete address",
+        "error": "Address is required"
+      },
+
+      "cod": {
+        "label": "COD Amount",
+        "placeholder": "Enter COD amount",
+        "error": "COD amount is required"
+      },
+      "notes": {
+        "label": "Notes",
+        "placeholder": "Add any additional notes",
+        "error": ""
+      },
+      "shipmentType": {
+        "label": "Shipment Type",
+        "placeholder": "Select shipment type",
+        "error": "Shipment type is required",
+        "options": ["Parcel", "Document"]
+      },
+      "quantity": {
+        "label": "Quantity",
+        "placeholder": "Enter quantity",
+        "error": "Quantity is required"
+      },
+      "description": {
+        "label": "Package Description",
+        "placeholder": "Describe what's inside the package",
+        "error": "Description is required"
+      },
+
+      "tracking": {
+        "label": "Track Your Shipment",
+        "placeholder": "Enter your tracking number"
+      }
+    },
+    "messages": {
+      "subscription": "Thank you for subscribing!",
+      "contact": "Thank you for reaching out. We’ll get back to you shortly.",
+      "getAQuote": "We’ve received your request and will respond soon."
+    }
+  },
+  "popup": {
+    "title": "Ready to Move Your Business Forward?",
+    "description": "Get a customized logistics quote today — fast, reliable, and tailored to your needs across Saudi Arabia.",
+    "image": "/images/popup/get-a-quote.webp",
+    "link": {
+      "text": "Get a Quote Now",
+      "link": "/get-a-quote"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "title": {
+        "first": "Professional",
+        "mid": "Integrated",
+        "last": "Logistics Solutions"
+      },
+      "trustedBy": "Trusted by",
+      "100Plus": "+100",
+      "businesses": "Businesses"
+    },
+    "services": {
+      "pageTitle": {
+        "title": "Services & Solutions",
+        "heading": "Services We Provide",
+        "description": "From daily parcels to specialized deliveries, we offer flexible, reliable shipping services tailored to your needs with maximum efficiency and quality."
+      },
+
+      "servicesCategoryNames": {
+        "individualServices": "Individual Services",
+        "commercialSectorServices": "Enterprise Services"
+      }
+    },
+    "features": {
+      "lfs": { "l": "Lightning", "f": "Fast", "s": "Shipping" },
+      "cche": { "c": "Cold", "ch": "Chain", "e": "Expertise" },
+      "tbs": "Tailored Business Solutions",
+      "gr": "Global Reach",
+      "cfi": "Customer-Focused Innovation",
+      "title": "What Makes Us Different",
+      "flowDiagram": {
+        "flow": [
+          {
+            "text": "Lightning Fast Shipping",
+            "icon": "/images/features/flow/icon1.svg"
+          },
+          {
+            "text": "Cold Chain Expertise",
+            "icon": "/images/features/flow/icon2.svg"
+          },
+          {
+            "text": "Tailored Business Solutions",
+            "icon": "/images/features/flow/icon3.svg"
+          },
+          {
+            "text": "Global Reach",
+            "icon": "/images/features/flow/icon4.svg"
+          },
+          {
+            "text": "Customer-Focused Innovation",
+            "icon": "/images/features/flow/icon5.svg"
+          }
+        ]
+      }
+    },
+
+    "industries": {
+      "pageTitle": {
+        "title": "Industries",
+        "heading": "Logistics Tailored for Every Sector",
+        "description": "Because every industry has its own needs, we’ve crafted flexible logistics solutions to serve different sectors with efficiency and reliability."
+      }
+    },
+    "numbers": {
+      "title": "Prolo Numbers"
+    },
+    "testimonials": {
+      "pageTitle": {
+        "title": "Testimonials",
+        "heading": "What Our Clients Say"
+      },
+      "testimony": {
+        "person": {
+          "name": "Fahad Al-Mutairi",
+          "title": "Operations Manager at Al-Riyadh Trading Company"
+        },
+        "text": "Prolo transformed our supply chain operations. Their real-time tracking and reliable delivery network helped us cover all regions of the Kingdom without compromising speed or accuracy."
+      }
+    },
+    "logos": {
+      "title": "Brands That Trusted Us"
+    },
+    "blogs": {
+      "pageTitle": {
+        "title": "Latest News & Statistics",
+        "heading": "Latest Logistics News",
+        "description": "Explore the newest insights and tips about the future of delivery and supply chain in the Kingdom.",
+        "link": "/blogs",
+        "linkText": "All Blogs"
+      }
+    },
+    "faqs": {
+      "pageTitle": {
+        "title": "Have a Question?",
+        "heading": "Do You Have a Question?"
+      }
+    }
+  },
+  "getAQuotePage": {
+    "pageTitle": {
+      "heading": "Get A Quote",
+      "description": "Looking for reliable logistics support? Share your details, and our team will provide you with a tailored quote that fits your needs. Fast, transparent, and hassle-free.",
+      "icon": "icon-park-solid:view-grid-detail"
+    },
+    "helpPara": {
+      "first": "Need immediate assistance? Call us directly at",
+      "phone": "+966558996861",
+      "mid": "or chat with",
+      "ourSupport": "our support",
+      "last": "team for quick help."
+    }
+  },
+  "createShipmentPage": {
+    "pageTitle": {
+      "heading": "Create a Shipment",
+      "description": "Please enter your shipment details in the form below, and it will be received and processed according to the highest standards of speed and accuracy to ensure its safe and reliable arrival.",
+      "icon": "cil:truck"
+    },
+    "helpPara": {
+      "first": "Need immediate assistance? Call us directly at",
+      "phone": "8003044448",
+      "mid": "or chat with",
+      "ourSupport": "our support",
+      "last": "team for quick help."
+    },
+    "formSteps": ["Sender Details", "Receiver Details", "Shipment Details"],
+    "success": {
+      "title": "Your shipment has been successfully created 🎉",
+      "bookmarkNotice": "☆ Bookmark This Link",
+      "trackingId": "Tracking ID",
+      "referenceId": "Shipment Reference",
+      "actions": {
+        "track": "Track Shipment",
+        "print": "Print Label"
+      }
+    },
+    "failure": {
+      "title": "We couldn’t create your shipment ❌",
+      "bookmarkNotice": "⚠️ Shipment Creation Failed",
+      "trackingId": "Attempted Tracking ID",
+      "referenceId": "Reference ID",
+      "message": "Please check your details and try again. If the issue persists, contact support.",
+      "actions": {
+        "retry": "Retry Shipment",
+        "support": "Contact Support"
+      }
+    }
+  },
+  "contactPage": {
+    "pageTitle": {
+      "heading": "Let’s Talk Logistics",
+      "description": "Have a question, need support, or want to explore how Prolo can help your business? Our team is here to assist you.",
+      "image": "/icons/contact.png",
+      "icon": "famicons:call"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "mainBranch": {
+        "title": "Main Branch",
+        "location": "IBDAA Tower, King Fahd Branch Rd, Al Olaya, Riyadh 12487"
+      },
+      "phone": {
+        "title": "Calling & WhatsApp",
+        "number": "+966558996861",
+        "number2": "800304448"
+      },
+      "emails": {
+        "title": "Email",
+        "email1": "info@adwar.com.sa",
+        "email2": ""
+      },
+      "timing": {
+        "title": "Business Hours",
+        "line1": "Sun - Wed (9:00 AM – 4:30 PM)",
+        "line2": "Thr (9:00 AM – 4:00 PM)"
+      }
+    },
+    "contactForm": {
+      "title": "Send Us A Message",
+      "para": "Fill out the form below, and our team will get back to you within 24 hours."
+    },
+    "branches": {
+      "title": "Our Branches Across the Kingdom",
+      "branches": [
+        {
+          "name": "Central Region (Riyadh Branch)",
+          "location": "Riyadh, Saudi Arabia",
+          "phone": "+966558996861",
+          "email": "info@adwar.com.sa"
+        },
+        {
+          "name": "Eastern Province (Dammam City)",
+          "location": "Dammam, Saudi Arabia",
+          "phone": "+966558996861",
+          "email": "info@adwar.com.sa"
+        },
+        {
+          "name": "Western Region (Jeddah - Taif)",
+          "location": "Jeddah / Taif, Saudi Arabia",
+          "phone": "+966558996861",
+          "email": "info@adwar.com.sa"
+        },
+        {
+          "name": "Medina Region (Madinah)",
+          "location": "Madinah, Saudi Arabia",
+          "phone": "+966558996861",
+          "email": "info@adwar.com.sa"
+        },
+        {
+          "name": "Qassim Region (Buraydah)",
+          "location": "Buraydah, Saudi Arabia",
+          "phone": "+966558996861",
+          "email": "info@adwar.com.sa"
+        }
+      ]
+    }
+  },
+  "trackingPage": {
+    "notFound": "Package Not Found",
+    "orderStatus": "Order Status",
+    "expected": "Expected Delivery",
+    "sender": "Sender",
+    "receiver": "Receiver",
+    "cod": "Cash on Delivery",
+    "description": "Package Description",
+    "note": "Additional Notes",
+    "timeline": "Delivery Timeline",
+    "poweredBy": "Powered by",
+    "failure": {
+      "title": "Tracking Number Not Found",
+      "trackingId": "Attempted Tracking ID",
+      "message": "We couldn't find any shipment with this tracking number",
+      "reasons": {
+        "para": "This could happen for a few reasons:",
+        "reasons": [
+          "The tracking number may have been entered incorrectly",
+          "The shipment info hasn't been updated yet (24–48 hours",
+          "The tracking number might be from a different carrier"
+        ]
+      },
+      "formatHint": "Expected Format: 10–12 digits (e.g. 123456789012) or Format: ABC123456789",
+      "actions": {
+        "retry": "Try Again",
+        "support": "Contact Support",
+        "faq": "View FAQ"
+      }
+    }
+  },
+  "industries": [
+    {
+      "slug": "e-commerce-sector",
+      "pageTitle": {
+        "heading": "E-commerce Sector",
+        "description": "With the increasing growth of e-commerce, logistics services have become essential to completing the product selling process. They are a key partner in enhancing customer satisfaction and increasing repeat purchases from the store.",
+        "image": "/images/industries/e-commerce/hero-bg.png",
+        "icon": "pepicons-pop:cart"
+      },
+      "overview": {
+        "title": "Sector Overview",
+        "heading": "Logistics Services for the E-commerce Sector",
+        "description": [
+          "With the increasing growth of e-commerce, logistics services have become essential to completing the product selling process. They are a key partner in enhancing customer satisfaction and increasing repeat purchases from the store.",
+          "Prolo provides integrated logistics solutions that support online stores in managing storage, preparation, and delivery operations with high efficiency and outstanding responsiveness. Prolo dives deep into both the merchant’s and end customer’s interests, providing solutions that ensure both are satisfied with the delivered service."
+        ],
+        "features": {
+          "title": "Service Features",
+          "features": [
+            "Providing fulfillment services, which is inventory and order management for online stores in Riyadh.",
+            "Comprehensive management of storage and operations (WMS).",
+            "Comprehensive management of the transportation system (TMS).",
+            "Refrigerated and dry shipping service.",
+            "Determining delivery speed levels based on contract type.",
+            "24/7 account management and customer service."
+          ]
+        },
+        "image": "/images/industries/e-commerce/overview.png"
+      },
+      "sections": [
+        {
+          "title": "Storage",
+          "heading": "Storage and Order Management",
+          "image": "/images/industries/e-commerce/storage.png",
+          "content": [
+            "We provide modern warehouses equipped with integrated digital inventory management systems, enabling the receipt, sorting, storage, and preparation of products with accuracy and speed.",
+            "We apply standard operating procedures that ensure product safety and provide flexible storage spaces tailored to the nature of each business."
+          ],
+          "flowDiagram": {
+            "title": "Storage and Order Management",
+            "subtitle": "",
+            "flow": [
+              {
+                "text": "Receiving and Sorting",
+                "icon": "/images/industries/e-commerce/section1/icon1.svg"
+              },
+              {
+                "text": "Smart Inventory Storage",
+                "icon": "/images/industries/e-commerce/section1/icon3.svg"
+              },
+              {
+                "text": "Order Preparation",
+                "icon": "/images/industries/e-commerce/section1/icon4.svg"
+              },
+              {
+                "text": "Efficient Dispatch",
+                "icon": "/images/industries/e-commerce/section1/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Product Safety Protocols",
+                "icon": "/images/industries/e-commerce/section1/icon6.svg"
+              },
+              {
+                "text": "Flexible and Scalable Space",
+                "icon": "/images/industries/e-commerce/section1/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Shipping",
+          "heading": "Shipping and Delivery",
+          "image": "/images/industries/e-commerce/shipping.png",
+          "content": [
+            "We provide transport and distribution solutions designed specifically for e-commerce, including direct-to-customer delivery (B2C) and wholesale distribution (B2B).",
+            "Our fleet is equipped with refrigerated and dry vehicles to meet various product needs, with accurate tracking systems that enable real-time shipment monitoring and ensure fast delivery."
+          ],
+          "flowDiagram": {
+            "title": "Shipping and Delivery",
+            "subtitle": "Transport and Distribution Solutions",
+            "flow": [
+              {
+                "text": "B2C and B2B Delivery",
+                "icon": "/images/industries/e-commerce/section2/icon1.svg"
+              },
+              {
+                "text": "Temperature-controlled Fleet",
+                "icon": "/images/industries/e-commerce/section2/icon2.svg"
+              },
+              {
+                "text": "Real-time Tracking",
+                "icon": "/images/industries/e-commerce/section2/icon3.svg"
+              },
+              {
+                "text": "On-time Delivery",
+                "icon": "/images/industries/e-commerce/section2/icon4.svg"
+              },
+              {
+                "text": "Delivery Speed Levels",
+                "icon": "/images/industries/e-commerce/section2/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "24/7 Account Management",
+                "icon": "/images/industries/e-commerce/section2/icon6.svg"
+              },
+              {
+                "text": "Customized Logistics Solutions",
+                "icon": "/images/industries/e-commerce/section2/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Returns",
+          "heading": "Returns and Reverse Logistics",
+          "image": "/images/industries/e-commerce/return.png",
+          "content": [
+            "We manage returns and exchanges with high efficiency to ensure customer satisfaction and maintain brand reputation, through precise and fast operational procedures that allow products to be restocked or reshipped as needed."
+          ],
+          "flowDiagram": {
+            "title": "Returns and Reverse Logistics",
+            "subtitle": "Effortless Returns Management",
+            "flow": [
+              {
+                "text": "Return Initiation",
+                "icon": "/images/industries/e-commerce/section3/icon1.svg"
+              },
+              {
+                "text": "Quality Inspection",
+                "icon": "/images/industries/e-commerce/section3/icon2.svg"
+              },
+              {
+                "text": "Restocking Products",
+                "icon": "/images/industries/e-commerce/section3/icon3.svg"
+              },
+              {
+                "text": "Exchange / Refund",
+                "icon": "/images/industries/e-commerce/section3/icon4.svg"
+              },
+              {
+                "text": "Customer Satisfaction",
+                "icon": "/images/industries/e-commerce/section3/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Efficient Operating Procedures",
+                "icon": "/images/industries/e-commerce/section3/icon6.svg"
+              },
+              {
+                "text": "Maintaining Brand Reputation",
+                "icon": "/images/industries/e-commerce/section3/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Partner",
+          "heading": "Reliable Logistics Partner",
+          "image": "/images/industries/e-commerce/partner.png",
+          "content": [
+            "Prolo aims to be the trusted logistics partner for e-commerce stores in the Kingdom by combining operational flexibility, fast delivery, and accurate order management — enabling our clients to focus confidently on growing their business."
+          ],
+          "flowDiagram": {
+            "title": "Reliable Logistics Partner",
+            "subtitle": "Partnership for Growth and Stability",
+            "flow": [
+              {
+                "text": "Operational Flexibility",
+                "icon": "/images/industries/e-commerce/section4/icon1.svg"
+              },
+              {
+                "text": "Operational Flexibility",
+                "icon": "/images/industries/e-commerce/section4/icon2.svg"
+              },
+              {
+                "text": "Speed and Accuracy",
+                "icon": "/images/industries/e-commerce/section4/icon3.svg"
+              },
+              {
+                "text": "Focus on Business Growth",
+                "icon": "/images/industries/e-commerce/section4/icon4.svg"
+              },
+              {
+                "text": "Achieving Growth Levels",
+                "icon": "/images/industries/e-commerce/section4/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Trust and Stability",
+                "icon": "/images/industries/e-commerce/section4/icon6.svg"
+              },
+              {
+                "text": "Kingdom-wide Coverage",
+                "icon": "/images/industries/e-commerce/section4/icon7.svg"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "food-sector",
+      "pageTitle": {
+        "heading": "Food Sector",
+        "description": "Upon entering this field, you need a logistics partner capable of managing all on-ground operations—from product packaging and storage to shipping and distribution—under climate conditions suitable for product nature (frozen, chilled, and dry).",
+        "image": "/images/industries/food-sector/hero-bg.png",
+        "icon": "bxs:dish"
+      },
+      "overview": {
+        "title": "Food Sector",
+        "heading": "Food Sector",
+        "description": [
+          "Upon entering this field, you need a logistics partner capable of managing all operational activities on the ground, starting from packaging and storing products to shipping and distribution under climate conditions suitable for the nature of the products (frozen, chilled, and dry).",
+          "All of this is handled by Prolo, ensuring the safety of your products and customizing the type of service suitable for your business."
+        ],
+        "features": {
+          "title": "Service Features",
+          "features": [
+            "Storage in safe and suitable conditions for product type.",
+            "Packaging solutions based on customer request.",
+            "Shipping and distribution across all regions of the Kingdom.",
+            "A professional team for receiving and delivering goods.",
+            "Continuous monitoring of inventory movement.",
+            "Real-time shipment tracking service."
+          ]
+        },
+        "image": "/images/industries/food-sector/features.png"
+      },
+      "flowDiagram": {
+        "title": "Food Sector",
+        "subtitle": "Manufacturing, Storage, and Materials Management",
+        "flow": [
+          {
+            "text": "Storage and Packaging",
+            "icon": "/images/industries/food-sector/section1/icon1.svg"
+          },
+          {
+            "text": "Temperature-controlled Shipping",
+            "icon": "/images/industries/food-sector/section1/icon2.svg"
+          },
+          {
+            "text": "Accurate Tracking and Monitoring",
+            "icon": "/images/industries/food-sector/section1/icon3.svg"
+          },
+          {
+            "text": "Efficiency and Waste Reduction",
+            "icon": "/images/industries/food-sector/section1/icon4.svg"
+          },
+          {
+            "text": "Real-time Tracking",
+            "icon": "/images/industries/food-sector/section1/icon5.svg"
+          }
+        ],
+        "footer": [
+          {
+            "text": "Specialized Safety Solutions",
+            "icon": "/images/industries/food-sector/section1/icon6.svg"
+          },
+          {
+            "text": "Customized Services and Operational Management",
+            "icon": "/images/industries/food-sector/section1/icon7.svg"
+          },
+          {
+            "text": "Light Asset Operational Procedures",
+            "icon": "/images/industries/food-sector/section1/icon8.svg"
+          }
+        ]
+      },
+      "sections": []
+    },
+    {
+      "slug": "factories-and-goods-suppliers-sector",
+      "pageTitle": {
+        "heading": "Factories and Goods Suppliers Sector",
+        "description": "Prolo provides integrated logistics solutions that support the factories and suppliers sector in efficiently managing their operational and supply processes, with a focus on increasing productivity and improving the smooth flow of goods to and from production lines.",
+        "image": "/images/industries/factories-and-goods-suppliers-sector/hero-bg.png",
+        "icon": "hugeicons:factory"
+      },
+      "overview": {
+        "heading": "Factories and Goods Suppliers Sector",
+        "description": [
+          "Prolo provides integrated logistics solutions that support the factories and suppliers sector in efficiently managing their operational and supply processes, with a focus on increasing productivity and improving the smooth flow of goods to and from production lines."
+        ],
+        "image": "/images/industries/factories-and-goods-suppliers-sector/features.png"
+      },
+      "sections": [
+        {
+          "heading": "Industrial Warehousing and Material Management",
+          "image": "/images/industries/factories-and-goods-suppliers-sector/warehousing.png",
+          "content": [
+            "We provide specialized warehouses for storing raw materials and finished products, equipped with advanced security and temperature control systems to ensure material safety and quality.",
+            "We also offer smart inventory management solutions that enable precise tracking of quantities and monitoring of material movement, helping factories and suppliers achieve greater operational efficiency and reduce waste."
+          ],
+          "flowDiagram": {
+            "title": "Industrial Warehousing and Material Management",
+            "subtitle": "Smart storage solutions and inventory management",
+            "flow": [
+              {
+                "text": "Specialized warehouses",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon1.svg"
+              },
+              {
+                "text": "Controlled environment",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon3.svg"
+              },
+              {
+                "text": "Smart inventory tracking",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon4.svg"
+              },
+              {
+                "text": "Global material flow",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon5.svg"
+              },
+              {
+                "text": "Global compliance",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon6.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Efficiency and waste reduction",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon7.svg"
+              },
+              {
+                "text": "Material safety and quality",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section1/icon8.svg"
+              }
+            ]
+          }
+        },
+        {
+          "heading": "Transportation and Distribution",
+          "image": "/images/industries/factories-and-goods-suppliers-sector/transportation.png",
+          "content": [
+            "We own a modern fleet for transportation and distribution that meets the needs of the industrial sector, whether transporting raw materials to production lines or distributing finished products to points of sale or customers.",
+            "This includes refrigerated and dry transportation services according to the nature of the product and its operational requirements."
+          ],
+          "flowDiagram": {
+            "title": "Transportation and Distribution",
+            "subtitle": "Modern fleet and on-time delivery",
+            "flow": [
+              {
+                "text": "Diverse fleet",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon1.svg"
+              },
+              {
+                "text": "Refrigerated / Dry",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon2.svg"
+              },
+              {
+                "text": "Route optimization",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon3.svg"
+              },
+              {
+                "text": "On-time delivery",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon4.svg"
+              },
+              {
+                "text": "Kingdom-wide coverage",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Speed and efficiency",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon6.svg"
+              },
+              {
+                "text": "Product safety",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section2/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "heading": "Operational Leasing and Operational Services",
+          "image": "/images/industries/factories-and-goods-suppliers-sector/operations.png",
+          "content": [
+            "Prolo offers operational leasing solutions for vehicles and equipment tailored to the needs of factories and suppliers, facilitating internal and external transportation operations without the need for direct investment in operational assets.",
+            "We also provide comprehensive operational services including loading, unloading, distribution, and ground operations supervised by teams trained to the highest standards."
+          ],
+          "flowDiagram": {
+            "title": "Operational Leasing and Operational Services",
+            "subtitle": "Flexible asset solutions and managed operations",
+            "flow": [
+              {
+                "text": "Vehicle and equipment leasing",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon1.svg"
+              },
+              {
+                "text": "Customized terms",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon2.svg"
+              },
+              {
+                "text": "Loading / Unloading",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon3.svg"
+              },
+              {
+                "text": "Trained operational teams",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon4.svg"
+              },
+              {
+                "text": "Comprehensive support",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Reduced investment",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon6.svg"
+              },
+              {
+                "text": "Operational efficiency",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section3/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "heading": "Strategic Partner for Industry and Supply",
+          "image": "/images/industries/factories-and-goods-suppliers-sector/partnership.png",
+          "content": [
+            "With our expertise in managing logistics operations and supply chains, Prolo acts as a strategic partner for factories and suppliers, ensuring speed of execution, accuracy in delivery, and sustainability in performance to support production continuity and achieve the highest levels of operational efficiency."
+          ],
+          "flowDiagram": {
+            "title": "Strategic Partner for Industry and Supply",
+            "subtitle": "Reliable collaboration for growth and continuity",
+            "flow": [
+              {
+                "text": "Collaborative expertise",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon1.svg"
+              },
+              {
+                "text": "Speed and execution",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon2.svg"
+              },
+              {
+                "text": "Accuracy and delivery",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon3.svg"
+              },
+              {
+                "text": "Sustainable performance",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon4.svg"
+              },
+              {
+                "text": "Operational continuity",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Enhanced production",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon6.svg"
+              },
+              {
+                "text": "Achieving efficiency",
+                "icon": "/images/industries/factories-and-goods-suppliers-sector/section4/icon7.svg"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hospitality-sector",
+      "pageTitle": {
+        "heading": "Hospitality Sector",
+        "description": "Specialized logistics solutions for hotels, resorts, and catering companies with the highest standards of quality and precision.",
+        "image": "/images/industries/hospitality-sector/hero-bg.png",
+        "icon": "fa6-solid:hotel"
+      },
+      "overview": {
+        "title": "",
+        "heading": "",
+        "description": [
+          "Prolo offers specialized services to meet the needs of the hospitality sector, which requires the highest standards of quality and precision in managing food materials and operational supplies.",
+          "We support hotels, resorts, catering companies, and event venues through professional transportation and storage operations that ensure supply continuity and maintain service quality."
+        ],
+        "features": {
+          "title": "Food and Operational Storage",
+          "description": "We provide warehouses licensed by the Saudi Food and Drug Authority for storing food materials and operational supplies in environments with precise temperature control systems, including:",
+          "features": [
+            "Frozen storage: at temperatures reaching (-18°C) for frozen products",
+            "Chilled storage: at temperatures between (0°C to 8°C) for fresh items",
+            "Dry storage: at room temperature for non-temperature-sensitive materials"
+          ]
+        },
+        "image": "/images/industries/hospitality-sector/features.png"
+      },
+      "flowDiagram": {
+        "title": "Food and Operational Storage",
+        "subtitle": "Storage in temperature-controlled warehouses",
+        "flow": [
+          {
+            "text": "Frozen storage (-18°C)",
+            "icon": "/images/industries/hospitality-sector/section1/icon1.svg"
+          },
+          {
+            "text": "Frozen storage",
+            "icon": "/images/industries/hospitality-sector/section1/icon2.svg"
+          },
+          {
+            "text": "Chilled storage (0-8°C)",
+            "icon": "/images/industries/hospitality-sector/section1/icon3.svg"
+          },
+          {
+            "text": "Dry storage (room temperature)",
+            "icon": "/images/industries/hospitality-sector/section1/icon4.svg"
+          },
+          {
+            "text": "Delivery speed control",
+            "icon": "/images/industries/hospitality-sector/section1/icon5.svg"
+          }
+        ],
+        "footer": [
+          {
+            "text": "Facilities licensed by SFDA",
+            "icon": "/images/industries/hospitality-sector/section1/icon6.svg"
+          },
+          {
+            "text": "Strict quality logistics",
+            "icon": "/images/industries/hospitality-sector/section1/icon7.svg"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "heading": "Refrigerated Transportation and Distribution",
+          "image": "/images/industries/hospitality-sector/storage.png",
+          "content": [
+            "We own a modern fleet of refrigerated vehicles equipped with real-time tracking systems to transport food and beverages to hotels and hospitality facilities efficiently and quickly, while strictly adhering to food safety and quality standards."
+          ],
+          "flowDiagram": {
+            "title": "Refrigerated Transportation and Distribution",
+            "subtitle": "Modern fleet and real-time tracking",
+            "flow": [
+              {
+                "text": "Modern fleet",
+                "icon": "/images/industries/hospitality-sector/section2/icon1.svg"
+              },
+              {
+                "text": "Temperature and time tracking",
+                "icon": "/images/industries/hospitality-sector/section2/icon2.svg"
+              },
+              {
+                "text": "Delivery to hotels",
+                "icon": "/images/industries/hospitality-sector/section2/icon3.svg"
+              },
+              {
+                "text": "Efficient and fast",
+                "icon": "/images/industries/hospitality-sector/section2/icon4.svg"
+              },
+              {
+                "text": "Food safety and quality",
+                "icon": "/images/industries/hospitality-sector/section2/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Strict standards",
+                "icon": "/images/industries/hospitality-sector/section2/icon6.svg"
+              },
+              {
+                "text": "Reliable partner",
+                "icon": "/images/industries/hospitality-sector/section2/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "heading": "Operational Leasing and Support Services",
+          "image": "/images/industries/hospitality-sector/transport.png",
+          "content": [
+            "Prolo provides operational leasing services for vehicles and logistics equipment to support internal transportation and daily distribution within hotel facilities, in addition to offering on-site operational services including loading, unloading, sorting, and distribution according to precise and scheduled timetables."
+          ],
+          "flowDiagram": {
+            "title": "Operational Leasing and Support Services",
+            "subtitle": "On-site logistics and equipment leasing",
+            "flow": [
+              {
+                "text": "Vehicle leasing",
+                "icon": "/images/industries/hospitality-sector/section3/icon1.svg"
+              },
+              {
+                "text": "Equipment leasing",
+                "icon": "/images/industries/hospitality-sector/section3/icon2.svg"
+              },
+              {
+                "text": "Loading and unloading",
+                "icon": "/images/industries/hospitality-sector/section3/icon3.svg"
+              },
+              {
+                "text": "Sorting and distribution",
+                "icon": "/images/industries/hospitality-sector/section3/icon4.svg"
+              },
+              {
+                "text": "Precise scheduling",
+                "icon": "/images/industries/hospitality-sector/section3/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Support services",
+                "icon": "/images/industries/hospitality-sector/section3/icon6.svg"
+              },
+              {
+                "text": "Internal operations",
+                "icon": "/images/industries/hospitality-sector/section3/icon7.svg"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Trusted Hospitality Partner",
+          "heading": "Trusted Hospitality Partner",
+          "image": "/images/industries/hospitality-sector/leasing.png",
+          "content": [
+            "Thanks to its expertise in supply chain management and logistics services, Prolo serves as a trusted partner for the hospitality sector, ensuring through its operational solutions continuity of supply, product safety, and punctuality — all contributing to enhancing service quality and improving the guest experience."
+          ],
+          "flowDiagram": {
+            "title": "Your Trusted Partner in Hospitality",
+            "subtitle": "Integrated supply chain and exceptional hospitality experience",
+            "flow": [
+              {
+                "text": "Trusted partner",
+                "icon": "/images/industries/hospitality-sector/section4/icon1.svg"
+              },
+              {
+                "text": "Supply continuity",
+                "icon": "/images/industries/hospitality-sector/section4/icon2.svg"
+              },
+              {
+                "text": "Product safety",
+                "icon": "/images/industries/hospitality-sector/section4/icon3.svg"
+              },
+              {
+                "text": "Punctuality",
+                "icon": "/images/industries/hospitality-sector/section4/icon4.svg"
+              },
+              {
+                "text": "Enhanced guest experience",
+                "icon": "/images/industries/hospitality-sector/section4/icon5.svg"
+              }
+            ],
+            "footer": [
+              {
+                "text": "Collaborative expertise",
+                "icon": "/images/industries/hospitality-sector/section4/icon6.svg"
+              },
+              {
+                "text": "Premium operations",
+                "icon": "/images/industries/hospitality-sector/section4/icon7.svg"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "services": {
+    "individualServices": [
+      {
+        "slug": "bullet-delivery",
+        "uniqueSlug": "individual-bullet-delivery",
+        "pageTitle": {
+          "heading": "Bullet delivery",
+          "description": "Very fast delivery service with real-time tracking and speed in executing orders",
+          "image": "/images/services/individual-services/bullet-delivery/hero-bg.png"
+        },
+        "overview": {
+          "title": "Service overview",
+          "heading": "Fast and reliable same day delivery",
+          "description": "The Bullet Delivery service (fast shipping) provides you with delivering orders and shipments with high efficiency and a standard time of up to 30 minutes and a maximum within 4 hours, with the possibility of continuous tracking to ensure a reliable delivery experience that meets customer expectations.",
+          "features": {
+            "title": "Most important features",
+            "features": [
+              "Real-time tracking",
+              "Fast execution",
+              "High reliability",
+              "Wide local coverage"
+            ]
+          },
+          "image": "/images/services/individual-services/bullet-delivery/overview.png"
+        },
+        "mainFeatures": [
+          {
+            "text": "Delivery within 30 minutes ",
+            "image": "/images/services/individual-services/bullet-delivery/feature1.svg",
+            "icon": "lets-icons:time-progress-duotone-line"
+          },
+          {
+            "text": "Live tracking",
+            "image": "/images/services/individual-services/bullet-delivery/feature2.svg",
+            "icon": "material-symbols-light:eye-tracking-outline"
+          },
+          {
+            "text": "High accuracy",
+            "image": "/images/services/individual-services/bullet-delivery/feature3.svg",
+            "icon": "iconoir:precision-tool"
+          }
+        ],
+        "process": {
+          "sectionTitle": {
+            "title": "Mechanism of action",
+            "heading": "How does the Bullet Delivery service work?",
+            "description": "Simple, smooth steps designed for urgent shipments."
+          },
+          "steps": [
+            "Record shipment details",
+            "Appoint the nearest representative",
+            "Receiving the shipment from the sender",
+            "Start real-time tracking",
+            "Shipment delivery"
+          ]
+        },
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Who is this service for?",
+            "heading": "Categories benefiting from the Bullet Delivery service",
+            "description": "Ideal for businesses and individuals who need fast, time-sensitive deliveries."
+          },
+          "users": [
+            {
+              "icon": "hugeicons:store-01",
+              "text": "E-commerce stores"
+            },
+            {
+              "icon": "hugeicons:shopping-bag-02",
+              "text": "Retail sector"
+            },
+            {
+              "icon": "hugeicons:briefcase-01",
+              "text": "Offices and companies"
+            }
+          ]
+        },
+        "why": {
+          "sectionTitle": {
+            "title": "Why Brolo?",
+            "heading": "Why choose Bullet Delivery service from Prolo?",
+            "description": "Fast and reliable service supported by logistical expertise and a strong operating network within the Kingdom."
+          }
+        }
+      },
+      {
+        "slug": "refrigerated-shipping",
+        "uniqueSlug": "individual-refrigerated-shipping",
+        "pageTitle": {
+          "heading": "Refrigerated shipping",
+          "description": "Reliable refrigerated delivery maintains the quality of delicate products from the time of receipt to the moment of delivery.",
+          "image": "/images/services/individual-services/refrigerated-shipping/hero-bg.png"
+        },
+        "overview": {
+          "title": "Service overview",
+          "heading": "Safe delivery within an integrated cold chain",
+          "description": "We provide individuals with a refrigerated shipping service that ensures that they maintain the quality of their sensitive products within a variety of vehicles equipped with the latest refrigeration devices.",
+          "features": {
+            "title": "Most important features",
+            "features": [
+              "Accuracy in cooling",
+              "Protect sensitive products",
+              "Reliable cold chain",
+              "Wide local coverage"
+            ]
+          },
+          "image": "/images/services/individual-services/refrigerated-shipping/overview.png"
+        },
+        "mainFeatures": [
+          {
+            "text": "Constant cooling",
+            "image": "/images/services/individual-services/refrigerated-shipping/feature1.svg",
+            "icon": "ph:snowflake-thin"
+          },
+          {
+            "text": "Heat control",
+            "image": "/images/services/individual-services/refrigerated-shipping/feature2.svg",
+            "icon": "material-symbols:energy-savings-leaf-sharp"
+          },
+          {
+            "text": "24/7 monitoring",
+            "image": "/images/services/individual-services/refrigerated-shipping/feature3.svg",
+            "icon": "pepicons-pencil:monitor-eye-circle"
+          }
+        ],
+        "process": {
+          "sectionTitle": {
+            "title": "Mechanism of action",
+            "heading": "How does the refrigerated shipping service work?",
+            "description": "Precise, integrated steps designed for heat-sensitive products."
+          },
+          "steps": [
+            "Record product and shipment details",
+            "Designate a suitable refrigeration vehicle",
+            "Receive the shipment at an appropriate temperature",
+            "Monitor the shipment during transportation",
+            "Deliver the product securely"
+          ]
+        },
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Beneficiary categories",
+            "heading": "What types of shipments are suitable for refrigerated shipping?",
+            "description": "At Prolo, we have a professional cold chain and high-quality delivery, ensuring that you maintain the quality of your products throughout the transportation journey. They are ideal for sensitive products such as:"
+          },
+          "users": [
+            {
+              "icon": "hugeicons:fish-food",
+              "text": "Fresh food"
+            },
+            {
+              "icon": "famicons:flask-outline",
+              "text": "Laboratory samples"
+            },
+            {
+              "icon": "hugeicons:flower-pot",
+              "text": "Flowers and roses"
+            },
+            {
+              "icon": "hugeicons:medicine-bottle-01",
+              "text": "Medical supplies"
+            },
+            {
+              "icon": "hugeicons:perfume",
+              "text": "Care products, makeup, and perfumes"
+            }
+          ]
+        },
+        "why": {
+          "sectionTitle": {
+            "title": "Why Brolo?",
+            "heading": "Why choose the refrigerated shipping service from Prolo?",
+            "description": "Professional cold chain with high quality delivery, ensures that your products remain delicate throughout the journey."
+          }
+        }
+      },
+      {
+        "slug": "temporary-storage-solution",
+        "uniqueSlug": "temporary-storage-solution",
+        "pageTitle": {
+          "heading": "Temporary Storage",
+          "description": "A flexible short-term storage solution that keeps your products in a safe and monitored environment around the clock.",
+          "image": "/images/services/individual-services/temporary-storage-solution/hero-bg.png"
+        },
+
+        "overview": {
+          "title": "Service Overview",
+          "heading": "Secure and Flexible Short-Term Storage",
+          "description": "The temporary storage service is one of the essential logistics solutions that allows customers to store their products for a limited period in a safe and monitored environment. We provide warehouses equipped with the latest preservation and monitoring systems to ensure product safety and quality until shipping and distribution time.",
+          "features": {
+            "title": "Key Features",
+            "features": [
+              "High-precision monitoring",
+              "Temperature control",
+              "Flexible storage durations",
+              "Accurate inventory management",
+              "Integration with shipping services"
+            ]
+          },
+          "image": "/images/services/individual-services/temporary-storage-solution/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Smart Monitoring",
+            "image": "/images/services/individual-services/temporary-storage-solution/feature1.svg",
+            "icon": "lineicons:monitor-code"
+          },
+          {
+            "text": "Climate Control",
+            "image": "/images/services/individual-services/temporary-storage-solution/feature2.svg",
+            "icon": "carbon:temperature-min"
+          },
+          {
+            "text": "Secure Storage",
+            "image": "/images/services/individual-services/temporary-storage-solution/feature3.svg",
+            "icon": "temaki:storage-rental"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Process",
+            "heading": "How Does the Temporary Storage Service Work?",
+            "description": "Easy and clear steps that ensure product safety throughout their stay in the warehouse."
+          },
+          "steps": [
+            "Register product details and storage duration",
+            "Determine the most suitable storage area",
+            "Receive and inspect the products",
+            "Store them in a monitored and secure environment",
+            "Prepare them for shipping on demand"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Target Users",
+            "heading": "Who Is the Temporary Storage Service For?",
+            "description": "Designed for customers who need temporary storage for their products before distribution."
+          },
+          "users": [
+            { "icon": "mynaui:cart", "text": "E-commerce Stores" },
+            { "icon": "streamline-plump:factory-plant", "text": "Home-based Businesses" },
+            { "icon": "solar:tag-price-outline", "text": "Retail Sector" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why Choose Prolo's Temporary Storage Service?",
+            "description": "Licensed warehouses, precise monitoring systems, professional inventory management, and seamless integration with transport and shipping services."
+          }
+        }
+      }
+    ],
+    "commercialSectorServices": [
+      {
+        "slug": "last-mile",
+        "uniqueSlug": "last-mile",
+        "pageTitle": {
+          "heading": "Last Mile Delivery",
+          "description": "A comprehensive solution to deliver e-commerce orders quickly and reliably to the customer's doorstep.",
+          "image": "/images/services/commercial-sector-services/last-mile/hero-bg.png"
+        },
+        "slogan": "Don’t worry about delivery — just focus on growing your sales.",
+
+        "overview": {
+          "title": "Service Overview",
+          "heading": "Professional Excellence in Last Mile Delivery",
+          "description": [
+            "A specialized service to support online stores in delivering orders to the customer's door with high efficiency.",
+            "The process begins with linking the store electronically, then activating the account, through receiving and sorting shipments, and ending with assigning them to the delivery representative and delivering them to the customer."
+          ],
+          "features": {
+            "title": "Key Features",
+            "features": [
+              "Comprehensive order management from system receipt until delivery with high professionalism and fast execution.",
+              "A specialized team in Transportation Management System (TMS).",
+              "Cold-shipping service available across all coverage areas.",
+              "Integration with all e-commerce platforms.",
+              "A dedicated account manager to monitor your orders and improve performance.",
+              "A specialized return management system to reduce merchant burden.",
+              "Integrated tracking and monitoring system (GPS, Temperature sensors)."
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/last-mile/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Fast Delivery",
+            "image": "/images/services/commercial-sector-services/last-mile/feature1.svg",
+            "icon": "material-symbols-light:delivery-truck-bolt-outline-rounded"
+          },
+          {
+            "text": "Smart Tracking",
+            "image": "/images/services/commercial-sector-services/last-mile/feature2.svg",
+            "icon": "material-symbols:location-on-outline-rounded"
+          },
+          {
+            "text": "Fewer Returns",
+            "image": "/images/services/commercial-sector-services/last-mile/feature3.svg",
+            "icon": "hugeicons:delivery-return-01"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Process",
+            "heading": "How Does the Last Mile Service Work?",
+            "description": "Smooth, connected steps that ensure orders reach customers with the highest quality and speed."
+          },
+          "steps": [
+            "System integration and account activation",
+            "Receiving and sorting shipments",
+            "Planning the best delivery route",
+            "Assigning the order to the delivery courier",
+            "Real-time updates and proof of delivery"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Target Segments",
+            "heading": "Who Is the Last Mile Service For?",
+            "description": "An ideal solution for stores and sectors that rely on fast and direct delivery to customers."
+          },
+          "users": [
+            { "icon": "hugeicons:shopping-cart-01", "text": "E-commerce Stores" },
+            { "icon": "hugeicons:store-02", "text": "Retail Chains" },
+            { "icon": "hugeicons:leaf-02", "text": "Food Sectors" },
+            { "icon": "solar:heart-pulse-linear", "text": "Medical & Pharmaceutical Sector" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why Choose Prolo’s Last Mile Service?",
+            "description": "Speed, professionalism, accurate tracking, and a specialized team supporting your business growth in Saudi Arabia."
+          }
+        }
+      },
+
+      {
+        "slug": "bullet-delivery",
+        "uniqueSlug": "commercial-bullet-delivery",
+        "pageTitle": {
+          "heading": "Bullet Delivery Service",
+          "description": "Ultra-fast delivery supported by strategically distributed cloud branches across the Kingdom.",
+          "image": "/images/services/commercial-sector-services/bullet-delivery/hero-bg.png"
+        },
+        "slogan": "Don’t worry about competitors — you hold the advantage.",
+
+        "overview": {
+          "title": "Service Overview",
+          "heading": "Instant and Fast Order Fulfillment via Cloud Branches",
+          "description": [
+            "We empower your store to fulfill orders instantly thanks to our dedicated cloud branches, designed to expedite order delivery and expand your customer base.",
+            "Our cloud branches are strategically located throughout Riyadh, ensuring orders are delivered within 30 minutes to a maximum of 4 hours, providing you with faster and more efficient delivery services."
+          ],
+          "features": {
+            "title": "Key Features",
+            "features": [
+              "Product storage, order management, packaging solutions, and shipment delivery—all under one roof.",
+              "Integration with all sales platforms (Jahez, HungerStation, Ketta, The Chefs).",
+              "We take care of all your products (chilled, dry).",
+              "Faster customer reach through strategically distributed cloud branches covering all points within Riyadh.",
+              "24/7 customer support.",
+              "Dedicated account manager to handle your orders and improve performance.",
+              "Electronic integration with the latest tech systems."
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/bullet-delivery/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Ultra-Fast Delivery",
+            "image": "/images/services/commercial-sector-services/bullet-delivery/feature1.svg",
+            "icon": "mdi:truck-fast-outline"
+          },
+          {
+            "text": "E-Commerce Platform Integration",
+            "image": "/images/services/commercial-sector-services/bullet-delivery/feature2.svg",
+            "icon": "carbon:ibm-webmethods-integration"
+          },
+          {
+            "text": "Platform Synchronization",
+            "image": "/images/services/commercial-sector-services/bullet-delivery/feature3.svg",
+            "icon": "carbon:ibm-webmethods-hybrid-integration"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Process",
+            "heading": "Workflow from Order Receipt to Delivery",
+            "description": "Each step is designed to ensure speed and accuracy in order processing."
+          },
+          "steps": [
+            "Receiving the order through integrated systems",
+            "Preparing the order immediately inside the warehouse",
+            "Professional packing and packaging",
+            "Assigning the order to the nearest cloud branch",
+            "Live tracking until the order reaches the customer"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Target Segments",
+            "heading": "Best Suited For",
+            "description": "Activities that require speed and accuracy in delivery."
+          },
+          "users": [
+            {
+              "icon": "hugeicons:shopping-cart-01",
+              "text": "E-commerce Stores"
+            },
+            {
+              "icon": "hugeicons:laptop-cloud",
+              "text": "Cloud Kitchens"
+            },
+            {
+              "icon": "hugeicons:store-01",
+              "text": "Retail Chains"
+            },
+            {
+              "icon": "hugeicons:chef-hat",
+              "text": "Food Delivery Companies"
+            },
+            {
+              "icon": "mingcute:lipstick-line",
+              "text": "Cosmetics Shops"
+            }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "What makes Bullet Delivery at Prolo unique?",
+            "description": "Because we combine speed and accuracy with a high degree of scalability across cloud-based branches, helping to accelerate your business growth."
+          }
+        }
+      },
+
+      {
+        "slug": "b2b-shipping",
+        "uniqueSlug": "b2b-shipping",
+        "pageTitle": {
+          "heading": "B2B Shipping",
+          "description": "Reliable commercial shipping with scheduled delivery suited for all business sizes across the Kingdom.",
+          "image": "/images/services/commercial-sector-services/b2b-shipping/hero-bg.png"
+        },
+
+        "overview": {
+          "title": "Sector Overview",
+          "heading": "Commercial Shipping for All Businesses",
+          "description": "The B2B shipping service allows scheduling the shipment of goods of all types and sizes to any destination within the Kingdom with efficiency and reliability.",
+          "features": {
+            "title": "Features",
+            "features": [
+              "Multiple shipping options: pallet, carton, basket, full-truck load.",
+              "Different vehicle sizes to meet customer needs.",
+              "Cold and dry shipping with temperature tracking during transport.",
+              "Integrated electronic system for receiving and tracking orders.",
+              "Door-to-door shipping.",
+              "Dedicated account manager to track your orders and enhance performance.",
+              "24/7 customer service.",
+              "Speed, safety, and commitment to delivery timelines."
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/b2b-shipping/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Flexible Options",
+            "image": "/images/services/commercial-sector-services/b2b-shipping/feature1.svg",
+            "icon": "material-symbols-light:tv-options-edit-channels"
+          },
+          {
+            "text": "Cold & Dry Shipping",
+            "image": "/images/services/commercial-sector-services/b2b-shipping/feature2.svg",
+            "icon": "mdi:hot-cold"
+          },
+          {
+            "text": "Door-to-Door",
+            "image": "/images/services/commercial-sector-services/b2b-shipping/feature3.svg",
+            "icon": "emojione-monotone:package"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Process",
+            "heading": "How do we manage B2B shipments?",
+            "description": "Clear and precise operating steps ensure an organized and efficient shipping chain for the business sector."
+          },
+          "steps": [
+            "Receiving the order through the electronic system",
+            "Preparing and sorting the shipment based on type",
+            "Selecting the appropriate vehicle depending on shipment size",
+            "Activating temperature monitoring when needed",
+            "Transporting goods with real-time tracking",
+            "Delivering the shipment directly to the destination"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Target Segments",
+            "heading": "Suitable For"
+          },
+          "users": [
+            { "icon": "hugeicons:store-01", "text": "Wholesale Traders" },
+            { "icon": "hugeicons:factory-01", "text": "Manufacturing Companies" },
+            { "icon": "solar:box-linear", "text": "Distribution Centers" },
+            { "icon": "hugeicons:container-truck-01", "text": "Major Retail Chains" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why choose Prolo for B2B service?",
+            "description": "We manage your shipments with high professionalism, fast commitment, and operational quality that boosts your business efficiency and expands your customer reach."
+          }
+        }
+      },
+
+      {
+        "slug": "storage-for-others",
+        "uniqueSlug": "storage-for-others",
+        "pageTitle": {
+          "heading": "Storage for Others",
+          "description": "Flexible and secure storage spaces for the commercial sector with full operations and precise inventory management.",
+          "image": "/images/services/commercial-sector-services/storage-for-others/hero-bg.png"
+        },
+        "slogan": "We’ve got you covered… everything you need to manage your inventory and more under one roof",
+
+        "overview": {
+          "title": "Sector Overview",
+          "heading": "Flexible Storage Solutions for the Commercial Sector",
+          "description": "A storage service that enables commercial clients to acquire spaces inside our warehouses based on their needs, with full operational execution for inventory and customer order management.",
+          "features": {
+            "title": "Features",
+            "features": [
+              "Flexible and secure storage spaces",
+              "All types of storage with climate control",
+              "Frozen storage at -18°",
+              "Refrigerated storage at 18–24°",
+              "Dry storage at ambient temperature",
+              "Reduced operational and logistics costs",
+              "Improved inventory management efficiency",
+              "Integrated inventory management services"
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/storage-for-others/overview.png"
+        },
+        "mainFeatures": [
+          {
+            "text": "Temperature Control",
+            "image": "/images/services/commercial-sector-services/storage-for-others/feature1.svg",
+            "icon": "carbon:temperature-min"
+          },
+          {
+            "text": "Cost Reduction",
+            "image": "/images/services/commercial-sector-services/storage-for-others/feature2.svg",
+            "icon": "hugeicons:money-saving-jar"
+          },
+          {
+            "text": "Full Management",
+            "image": "/images/services/commercial-sector-services/storage-for-others/feature3.svg",
+            "icon": "pixel:management"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Work Process",
+            "heading": "How Do We Manage Your Product Storage?",
+            "description": "We implement precise operating procedures to ensure your product is stored safely, organized, and ready for distribution."
+          },
+          "steps": [
+            "Receiving goods and quality inspection",
+            "Sorting items and assigning storage zones",
+            "Activating climate control systems based on product type",
+            "Accurately registering inventory in the system",
+            "Processing customer orders and packaging",
+            "Shipping and distribution according to schedule"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Target Audience",
+            "heading": "Who is this service suitable for?"
+          },
+          "users": [
+            { "icon": "hugeicons:store-01", "text": "Retail Stores" },
+            { "icon": "hugeicons:factory-01", "text": "Manufacturing Companies" },
+            { "icon": "mynaui:cart", "text": "E-commerce Businesses" },
+            { "icon": "hugeicons:container-truck-01", "text": "Distribution Centers & Wholesalers" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why choose Prolo for your storage needs?",
+            "description": "We provide integrated storage infrastructure, expert operation, and high-quality, cost-effective refrigerated and dry storage environments."
+          }
+        }
+      },
+      {
+        "slug": "fulfillment-service",
+        "uniqueSlug": "fulfillment-service",
+
+        "pageTitle": {
+          "heading": "Fulfillment Service",
+          "description": "A complete solution for storing products, managing inventory and orders, packaging, and shipping for e-commerce stores inside the Kingdom.",
+          "image": "/images/services/commercial-sector-services/fulfillment-service/hero-bg.png"
+        },
+        "slogan": "From storage to delivery… we provide a complete logistics chain that helps your store grow and scale",
+
+        "overview": {
+          "title": "Sector Overview",
+          "heading": "Smart Fulfillment for Your Store’s Growth",
+          "description": "Fulfillment's service is designed for online stores, providing diverse storage spaces, inventory and order management, packaging solutions, and shipping operations within the Kingdom.",
+          "features": {
+            "title": "Features",
+            "features": [
+              "Comprehensive Inventory Management and Order Tracking (WMS)",
+              "Reduced operating costs for the client, including labor and warehouse rental costs",
+              "Accurate inventory tracking to prevent stockouts or overstocking",
+              "24/7 Customer Service",
+              "Dedicated Account Manager to manage your orders",
+              "Customized packaging solutions",
+              " Integration with shipping companies within the Kingdom",
+              "Electronic integration with approved platforms within the Kingdom"
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/fulfillment-service/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Smart Storage",
+            "image": "/images/services/commercial-sector-services/fulfillment-service/feature1.svg",
+            "icon": "vaadin:storage"
+          },
+          {
+            "text": "Order Management",
+            "image": "/images/services/commercial-sector-services/fulfillment-service/feature2.svg",
+            "icon": "lsicon:place-order-filled"
+          },
+          {
+            "text": "Smooth Shipping",
+            "image": "/images/services/commercial-sector-services/fulfillment-service/feature3.svg",
+            "icon": "qlementine-icons:chevron-smooth-right-16"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Work Process",
+            "heading": "How Does Fulfillment Work?",
+            "description": "An integrated workflow ensuring accuracy, speed, and operational efficiency."
+          },
+          "steps": [
+            "Receiving inventory and conducting quality and quantity checks",
+            "Registering products in the inventory management system",
+            "Storing items in designated zones based on type and demand",
+            "Processing orders via integration with sales platforms",
+            "Picking, preparing, and packaging products as per standards",
+            "Shipping orders through domestic and international partners"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Beneficiaries",
+            "heading": "Who Is This Service Suitable For?"
+          },
+          "users": [
+            { "icon": "hugeicons:shopping-cart-01", "text": "E-commerce Stores" },
+            { "icon": "bi:shop", "text": "Home-based Sellers" },
+            { "icon": "fluent:arrow-growth-20-filled", "text": "Growing Brands" },
+            { "icon": "hugeicons:share-08", "text": "Businesses Focused on Scaling" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why Choose Prolo Fulfillment?",
+            "description": "We offer flexible storage solutions, precise operation, advanced electronic systems, and reliable shipping that allow you to focus on expanding your business without any operational complications."
+          }
+        }
+      },
+      {
+        "slug": "operational-leasing",
+        "uniqueSlug": "operational-leasing",
+        "pageTitle": {
+          "heading": "Operational Leasing",
+          "description": "Commercial vehicle leasing with integrated fleet management suitable for all business sizes.",
+          "image": "/images/services/commercial-sector-services/operational-leasing/hero-bg.png"
+        },
+
+        "overview": {
+          "title": "Overview",
+          "heading": "Flexible Leasing for Managing Your Business Fleet",
+          "description": "Enhance your business with flexible operational leasing that lets you use vehicles without owning them, supported by Prolo’s integrated operational management including operations, maintenance, and daily monitoring—so you stay focused on growth comfortably.",
+          "features": {
+            "title": "Key Features",
+            "features": [
+              "Business continuity and growth through regular fleet operations and maintenance",
+              "Complete support and operations with direct supervision",
+              "Easy scalability without additional commitments",
+              "Commitment to safety and operational quality standards"
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/operational-leasing/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Fleet Variety",
+            "image": "/images/services/commercial-sector-services/operational-leasing/feature1.svg",
+            "icon": "mdi:fleet"
+          },
+          {
+            "text": "Full Support",
+            "image": "/images/services/commercial-sector-services/operational-leasing/feature2.svg",
+            "icon": "streamline-plump:customer-support-3"
+          },
+          {
+            "text": "Safety First",
+            "image": "/images/services/commercial-sector-services/operational-leasing/feature3.svg",
+            "icon": "material-symbols:health-and-safety-outline"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Work Process",
+            "heading": "How Does Operational Leasing Work?"
+          },
+          "steps": [
+            "Identifying the fleet size and types required for your business",
+            "Choosing vehicle types and leasing duration",
+            "Activating the fleet with full operational management",
+            "Ongoing maintenance and continuous operational monitoring",
+            "Ability to expand or adjust the fleet anytime as needed"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Suitable For",
+            "heading": "Who Benefits from Operational Leasing?"
+          },
+          "users": [
+            { "icon": "hugeicons:building-03", "text": "Companies & Organizations" },
+            { "icon": "solar:shop-outline", "text": "Retail Chains" },
+            { "icon": "hugeicons:container-truck-01", "text": "Logistics Companies" },
+            { "icon": "hugeicons:factory-02", "text": "Industrial Sectors" }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why Choose Prolo for Operational Leasing?",
+            "description": "Because we provide you with a fleet ready around the clock, a professional operating team, and flexible options that help you increase the efficiency of your operational processes."
+          }
+        }
+      },
+      {
+        "slug": "refrigerated-shipping",
+        "uniqueSlug": "commercial-refrigerated-shipping",
+        "pageTitle": {
+          "heading": "Refrigerated Shipping",
+          "description": "Professional refrigerated transport solutions designed for the commercial sector ensuring the highest levels of temperature control.",
+          "image": "/images/services/commercial-sector-services/refrigerated-shipping/hero-bg.png"
+        },
+
+        "overview": {
+          "title": "Overview",
+          "heading": "Advanced Refrigerated Transport Network for the Commercial Sector",
+          "description": "Prolo’s refrigerated shipping ensures the quality of sensitive products throughout the entire transport journey using a modern fleet equipped with advanced cooling and monitoring systems, providing a reliable cold chain across the Kingdom.",
+          "features": {
+            "title": "Key Features",
+            "features": [
+              "Precise temperature control with real-time tracking",
+              "Modern fleet fully equipped with advanced cooling systems",
+              "A specialized team experienced in transporting food, medical, and sensitive products"
+            ]
+          },
+          "image": "/images/services/commercial-sector-services/refrigerated-shipping/overview.png"
+        },
+
+        "mainFeatures": [
+          {
+            "text": "Temperature Control",
+            "image": "/images/services/commercial-sector-services/refrigerated-shipping/feature1.svg",
+            "icon": "fluent:temperature-degree-celsius-16-regular"
+          },
+          {
+            "text": "Modern Fleet",
+            "image": "/images/services/commercial-sector-services/refrigerated-shipping/feature2.svg",
+            "icon": "mdi:fleet"
+          },
+          {
+            "text": "Expert Handling",
+            "image": "/images/services/commercial-sector-services/refrigerated-shipping/feature3.svg",
+            "icon": "grommet-icons:user-expert"
+          }
+        ],
+
+        "process": {
+          "sectionTitle": {
+            "title": "Work Process",
+            "heading": "How Do We Manage Refrigerated Shipping?"
+          },
+          "steps": [
+            "Receiving shipment details and temperature requirements",
+            "Preparing the suitable vehicle with required cooling levels",
+            "Loading products following food and medical handling standards",
+            "Real-time monitoring of temperature and vehicle route",
+            "Delivering the shipment with a full quality report"
+          ]
+        },
+
+        "targetUsers": {
+          "sectionTitle": {
+            "title": "Suitable For",
+            "heading": "Who Needs Refrigerated Shipping?"
+          },
+          "users": [
+            { "icon": "hugeicons:stethoscope-02", "text": "Medical Product Suppliers" },
+            { "icon": "hugeicons:spoon-and-fork", "text": "Food & Beverage Companies" },
+            { "icon": "hugeicons:factory-02", "text": "Sensitive Industrial Sectors" },
+            {
+              "icon": "hugeicons:shopping-cart-01",
+              "text": "E-commerce Stores for Perishable Products"
+            }
+          ]
+        },
+
+        "why": {
+          "sectionTitle": {
+            "title": "Why Prolo?",
+            "heading": "Why Choose Prolo Refrigerated Shipping?",
+            "description": "Because we provide advanced cooling technology, specialized handling, and real-time monitoring to guarantee the highest quality in commercial cold chain operations."
+          }
+        }
+      }
+    ]
+  },
+  "footer": {
+    "cr": "C.R: 7010996598 — Part of Adwar Group",
+    "cta": { "title": "Ready to Ship Safely with Prolo?" },
+    "footerText": "© 2025 Prolo.sa – All Rights Reserved.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "text": "Track Shipment", "link": "/tracking" },
+        { "text": "Create Shipment", "link": "/create-shipment" },
+        { "text": "Blog & Insights", "link": "/blogs" },
+        { "text": "Contact Us", "link": "/contact" }
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "links": [
+        { "text": "FAQ", "link": "/#faqs" },
+        { "text": "Service Centers", "link": "/contact/#service-centers" },
+        { "text": "Customer Support", "link": "/contact" }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "links": [
+        {
+          "icon": "hugeicons:location-04",
+          "text": "IBDAA Tower, King Fahd Branch Rd, Al Olaya, Riyadh 12487",
+          "link": "https://maps.app.goo.gl/iGAvzR5hLBnKpUgX9"
+        },
+        {
+          "icon": "hugeicons:call-02",
+          "text": "+966558996861",
+          "link": "tel:+966558996861"
+        },
+        {
+          "icon": "hugeicons:mail-02",
+          "text": "info@adwar.com.sa",
+          "link": "mailto:info@adwar.com.sa"
+        }
+      ]
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "links": [
+        {
+          "icon": "mdi:instagram",
+          "title": "Instagram",
+          "link": "https://www.instagram.com/Prolologistics/?hl=en"
+        },
+        {
+          "icon": "mdi:facebook",
+          "title": "Facebook",
+          "link": "https://www.facebook.com/profile.php?id=61580488693761"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "LinkedIn",
+          "link": "https://www.linkedin.com/company/prolo-logistics/"
+        },
+        {
+          "icon": "fa7-brands:square-x-twitter",
+          "title": "X (Twitter)",
+          "link": "https://x.com/prolo_logistics"
+        }
+      ]
+    }
+  },
+  "faqs": {
+    "title": "Faqs",
+    "items": [
+      {
+        "question": "Do you protect customer data privacy?",
+        "answer": "Yes, we are fully committed to protecting the privacy of our customers' data, and it is never shared with any third party without their consent."
+      },
+      {
+        "question": "Can your services be integrated with e-commerce platforms?",
+        "answer": "Yes, our services can be connected with all e-commerce platforms within the Kingdom, and we also provide an API for direct integration."
+      },
+      {
+        "question": "What payment methods are available?",
+        "answer": "Payment upon delivery or via Mada / Visa cards."
+      }
+    ]
+  },
+  "cards": {
+    "services": {
+      "individualServices": {
+        "title": "Individual Services",
+        "cards": [
+          {
+            "name": "Bullet Delivery",
+            "description": "Express shipping with live tracking",
+            "link": "/services/individual-services/bullet-delivery",
+            "slug": "individual-bullet-delivery"
+          },
+          {
+            "name": "Refrigerated shipping",
+            "description": "Maintain quality of sensitive products",
+            "link": "/services/individual-services/refrigerated-shipping",
+            "slug": "individual-refrigerated-shipping"
+          },
+          {
+            "name": "Temporary Storage Solution",
+            "description": "Secure short-term product storage",
+            "link": "/services/individual-services/temporary-storage-solution",
+            "slug": "temporary-storage-solution"
+          }
+        ]
+      },
+      "commercialSectorServices": {
+        "title": "Enterprise Services",
+        "cards": [
+          {
+            "name": "Last Mile",
+            "description": "Deliver store orders efficiently",
+            "link": "/services/commercial-sector-services/last-mile",
+            "slug": "last-mile"
+          },
+          {
+            "name": "Bullet Delivery",
+            "description": "Ultra-fast instant order processing",
+            "link": "/services/commercial-sector-services/bullet-delivery",
+            "slug": "commercial-bullet-delivery"
+          },
+          {
+            "name": "B2B Shipping",
+            "description": "Schedule goods shipment nationwide",
+            "link": "/services/commercial-sector-services/b2b-shipping",
+            "slug": "b2b-shipping"
+          },
+          {
+            "name": "Storage for others",
+            "description": "Flexible and secure warehouse storage",
+            "link": "/services/commercial-sector-services/storage-for-others",
+            "slug": "storage-for-others"
+          },
+          {
+            "name": "Fulfillment service",
+            "description": "Store, track, and manage orders",
+            "link": "/services/commercial-sector-services/fulfillment-service",
+            "slug": "fulfillment-service"
+          },
+          {
+            "name": "Operational Leasing",
+            "description": "Providing vehicles with drivers, operational management, and vehicle rental services",
+            "link": "/services/commercial-sector-services/operational-leasing",
+            "slug": "operational-leasing"
+          },
+          {
+            "name": "Refrigerated shipping",
+            "description": "Refrigerated shipping for online stores and various sectors",
+            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "slug": "commercial-refrigerated-shipping"
+          }
+        ]
+      }
+    },
+    "industries": {
+      "title": "Industries",
+      "cards": [
+        {
+          "icon": "hugeicons:shopping-cart-01",
+          "name": "E-commerce sector",
+          "description": "Prolo provides comprehensive logistics solutions supporting e-commerce stores in storage, order preparation, and delivery efficiently.",
+          "link": "/industries/e-commerce-sector"
+        },
+        {
+          "icon": "hugeicons:spoon-and-fork",
+          "name": "Food sector",
+          "description": "Prolo manages all operational processes including packaging, storing products, and shipping in suitable climatic conditions.",
+          "link": "/industries/food-sector"
+        },
+        {
+          "icon": "hugeicons:factory-01",
+          "name": "Factories and goods suppliers sector",
+          "description": "Prolo offers integrated logistics for factories and suppliers, including warehousing, inventory tracking, and operational distribution services.",
+          "link": "/industries/factories-and-goods-suppliers-sector"
+        },
+        {
+          "icon": "hugeicons:star",
+          "name": "Hospitality sector",
+          "description": "Prolo provides specialized transportation and storage for hotels, resorts, catering companies, ensuring supply continuity and service quality.",
+          "link": "/industries/hospitality-sector"
+        }
+      ]
+    },
+    "blogs": {
+      "title": "Blogs",
+      "cards": [
+        {
+          "title": "How Express Delivery Impacts E-Commerce Growth",
+          "link": "/blogs/how-express-delivery-impacts-e-commerce-growth",
+          "image": "blog1.png"
+        },
+        {
+          "title": "The most important challenges in express delivery and how companies overcome them",
+          "link": "/blogs/the-most-important-challenges-in-express-delivery-and-how-companies-overcome-them",
+          "image": "blog2.png"
+        },
+        {
+          "title": "The importance of frozen storage in preserving products",
+          "link": "/blogs/the-importance-of-frozen-storage-in-preserving-products",
+          "image": "blog3.png"
+        }
+      ]
+    },
+    "numbers": {
+      "title": "Prolo By Numbers",
+      "cards": [
+        {
+          "icon": "streamline:shipment-check",
+          "title": "Shipments",
+          "prefix": "M+",
+          "num": 1
+        },
+        {
+          "icon": "hugeicons:ai-user",
+          "title": "Clients",
+          "prefix": "+",
+          "num": 500
+        },
+        {
+          "icon": "hugeicons:time-01",
+          "title": "Average Delivery Time",
+          "prefix": "hours",
+          "num": 10
+        }
+      ]
+    },
+
+    "testimonials": {
+      "title": "Our Clients' Experiences",
+      "cards": [
+        {
+          "person": {
+            "name": "Sejin Salahuddin",
+            "title": "Customer"
+          },
+          "text": "I highly recommend Prolo’s professional logistics service. They provide the best service I’ve ever experienced.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Ahmed Abu Eisha",
+            "title": "Customer"
+          },
+          "text": "Mashallah, the team is very cooperative, delivery is super fast, and customer service responds quickly with solutions to most delivery problems we face.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Salwa Abdul Rahman",
+            "title": "Customer"
+          },
+          "text": "Honestly, thank you. It was my first time receiving an order through them and it was a great experience. The express delivery was faster than expected — my order arrived within an hour and a half.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Jaber Abu Araf",
+            "title": "Customer"
+          },
+          "text": "The best transport company — fast service and high quality. Wishing them all success. One of the best logistics companies, with excellent service and quick delivery. A friendly team that takes care of your parcels.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Mais Hamouri",
+            "title": "Customer"
+          },
+          "text": "They are truly fast, with wonderful service. My shipment arrived chilled. Thank you — creative team, the best company I’ve dealt with.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Qutoof Al Riyadh",
+            "title": "Customer"
+          },
+          "text": "Mashallah, very classy dealings, punctuality, good packaging, and staff with refined manners. Highest level of respect and ethics, no shortcomings at all. I’m honored to deal with them — thank you, Prolo.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Malik Al Qadi",
+            "title": "Customer"
+          },
+          "text": "The best e-commerce service specializing in cold chain logistics with an expert team.",
+          "logo": ""
+        },
+        {
+          "person": {
+            "name": "Maram Fahd",
+            "title": "Customer"
+          },
+          "text": "They are fast, and my order arrived neatly and exactly as requested. The vehicle was refrigerated 👍",
+          "logo": ""
+        }
+      ]
+    }
+  },
+  "links": {
+    "home": {
+      "text": "Home",
+      "link": "/"
+    },
+    "trackAndShip": {
+      "title": "Track & Ship",
+      "track": {
+        "text": "Track Shipment",
+        "link": "/tracking"
+      },
+      "ship": {
+        "text": "Ship Now",
+        "link": "/create-shipment"
+      }
+    },
+    "blogs": {
+      "text": "Blogs",
+      "link": "/blogs"
+    },
+    "services": {
+      "title": "Services",
+      "individualServices": {
+        "title": "Individual Services",
+        "links": [
+          {
+            "text": "Bullet Delivery",
+            "link": "/services/individual-services/bullet-delivery",
+            "slug": "individual-bullet-delivery"
+          },
+          {
+            "text": "Refrigerated shipping",
+            "link": "/services/individual-services/refrigerated-shipping",
+            "slug": "individual-refrigerated-shipping"
+          },
+          {
+            "text": "Temporary Storage Solution",
+            "link": "/services/individual-services/temporary-storage-solution",
+            "slug": "temporary-storage-solution"
+          }
+        ]
+      },
+      "commercialSectorServices": {
+        "title": "Enterprise Services",
+        "links": [
+          {
+            "text": "Last Mile",
+            "link": "/services/commercial-sector-services/last-mile",
+            "slug": "last-mile"
+          },
+          {
+            "text": "Bullet Delivery",
+            "link": "/services/commercial-sector-services/bullet-delivery",
+            "slug": "commercial-bullet-delivery"
+          },
+          {
+            "text": "B2B Shipping",
+            "link": "/services/commercial-sector-services/b2b-shipping",
+            "slug": "b2b-shipping"
+          },
+          {
+            "text": "Storage for others",
+            "link": "/services/commercial-sector-services/storage-for-others",
+            "slug": "storage-for-others"
+          },
+          {
+            "text": "Fulfillment service",
+            "link": "/services/commercial-sector-services/fulfillment-service",
+            "slug": "fulfillment-service"
+          },
+          {
+            "text": "Operational Leasing",
+            "link": "/services/commercial-sector-services/operational-leasing",
+            "slug": "operational-leasing"
+          },
+          {
+            "text": "Refrigerated Shipping",
+            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "slug": "commercial-refrigerated-shipping"
+          }
+        ]
+      }
+    },
+    "industries": {
+      "title": "Industries",
+      "links": [
+        {
+          "text": "E-commerce sector",
+          "link": "/industries/e-commerce-sector"
+        },
+        {
+          "text": "Food sector",
+          "link": "/industries/food-sector"
+        },
+        {
+          "text": "Factories and goods suppliers sector",
+          "link": "/industries/factories-and-goods-suppliers-sector"
+        },
+        {
+          "text": "Hospitality sector",
+          "link": "/industries/hospitality-sector"
+        }
+      ]
+    }
+  },
+  "blogCards": [
+    {
+      "thumbnail": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/thumb.png",
+      "heading": "How Express Delivery Impacts E-Commerce Growth",
+      "slug": "how-express-delivery-impacts-ecommerce-growth",
+      "date": "September 10,"
+    },
+    {
+      "thumbnail": "/images/blogs/the-most-important-challenges-in-express-delivery/thumb.png",
+      "heading": "The most important challenges in express delivery and how companies overcome them",
+      "slug": "the-most-important-challenges-in-express-delivery",
+      "date": "September 12,"
+    },
+    {
+      "thumbnail": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/thumb.png",
+      "heading": "The importance of frozen storage in preserving products",
+      "slug": "the-importance-of-frozen-storage-in-preserving-products",
+      "date": "October 3,"
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "how-express-delivery-impacts-ecommerce-growth",
+      "title": "How Express Delivery Impacts E-Commerce Growth",
+      "image": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/featured.png",
+      "date": "September 10, 2025",
+      "description": "",
+
+      "sections": [
+        {
+          "heading": "1. Enhancing Customer Experience and Satisfaction",
+          "content": [
+            "Speedy delivery makes online shopping more attractive, reducing customer hesitation compared to purchasing from traditional stores."
+          ],
+          "image": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/section1.png"
+        },
+        {
+          "heading": "2. Increasing Sales and Conversion Rates",
+          "content": [
+            "Express delivery reduces cart abandonment, as many consumers back out if shipping takes too long.",
+            "Stores offering same-day or 24-hour delivery gain a competitive advantage, especially in fast-moving sectors like fashion, electronics, and groceries."
+          ],
+          "image": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/section2.png"
+        },
+        {
+          "heading": "3. Boosting Competitiveness",
+          "content": [
+            "Platforms that rely on fast delivery demonstrate a strong competitive edge over their rivals.",
+            "With major players entering e-commerce, small and medium businesses are forced to adopt flexible logistics solutions to remain competitive."
+          ],
+          "image": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/section3.png"
+        },
+        {
+          "heading": "4. Geographic Expansion and Market Opportunities",
+          "content": [
+            "Improving delivery networks opens opportunities for online stores to reach new markets, especially in areas where customers previously avoided shopping due to slow shipping. This, in turn, increases the overall volume of e-commerce."
+          ],
+          "image": "/images/blogs/how-express-delivery-impacts-ecommerce-growth/section4.png"
+        }
+      ]
+    },
+    {
+      "slug": "the-most-important-challenges-in-express-delivery",
+      "title": "Key Challenges in Express Delivery and How Companies Overcome Them",
+      "image": "/images/blogs/the-most-important-challenges-in-express-delivery/featured.png",
+      "date": "September 12, 2025",
+      "description": "",
+
+      "sections": [
+        {
+          "heading": "Order Congestion During Peak Seasons",
+          "content": [
+            "During sales seasons or national and religious occasions, e-commerce stores face tremendous order pressure. This congestion may lead to shipping delays, potentially causing loss of customer trust.",
+            "At Prolo, we strive to deliver e-commerce shipments on time and with high accuracy, contributing to enhanced customer loyalty and store growth."
+          ],
+          "image": "/images/blogs/the-most-important-challenges-in-express-delivery/section1.png"
+        },
+        {
+          "heading": "Last-Mile Challenges",
+          "content": [
+            "The last mile is one of the most critical stages in express delivery. Difficulty in reaching certain addresses or a surge in simultaneous orders can affect the customer experience."
+          ],
+          "image": "/images/blogs/the-most-important-challenges-in-express-delivery/section2.png"
+        },
+        {
+          "heading": "High Operational Costs",
+          "content": [
+            "Express delivery requires a fleet of vehicles, trained drivers, and robust infrastructure, which raises operational costs.",
+            "Prolo provides a large delivery fleet equipped with the latest refrigeration systems, regularly maintained to ensure consistent quality."
+          ],
+          "image": "/images/blogs/the-most-important-challenges-in-express-delivery/section3.png"
+        },
+        {
+          "heading": "Maintaining Product Quality",
+          "content": [
+            "For refrigerated shipments, maintaining product quality during express delivery is an additional challenge. Any temperature fluctuations may cause product damage.",
+            "At Prolo, we provide premium refrigerated shipping services with vehicles equipped with cooling and air conditioning systems, along with temperature tracking throughout transport. We also maintain advanced warehouses for frozen and refrigerated storage."
+          ],
+          "image": "/images/blogs/the-most-important-challenges-in-express-delivery/section4.png"
+        },
+        {
+          "heading": "Increasing Customer Expectations",
+          "content": [
+            "Customers today easily compare e-commerce stores and look for the best express delivery experience at the lowest cost, putting pressure on companies to provide excellent services.",
+            "We constantly strive to improve customer service by providing real-time shipment updates and adhering to precise delivery schedules."
+          ],
+          "image": "/images/blogs/the-most-important-challenges-in-express-delivery/section5.png"
+        }
+      ]
+    },
+    {
+      "slug": "the-importance-of-frozen-storage-in-preserving-products",
+      "title": "The Importance of Frozen Storage in Preserving Products",
+      "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/featured.png",
+      "date": "October 3, 2025",
+      "description": "",
+
+      "sections": [
+        {
+          "heading": "Maintaining Food and Medicine Safety",
+          "content": [
+            "Frozen storage helps protect food products such as meat, fish, dairy products, and vegetables, as well as medicines and medical samples. Precise temperature control in frozen warehouses prevents spoilage and preserves nutritional value and pharmaceutical efficacy."
+          ],
+          "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/section1.png"
+        },
+        {
+          "heading": "Reducing Waste and Costs",
+          "content": [
+            "Companies face significant challenges in reducing product loss. By relying on frozen and refrigerated storage services, the likelihood of spoilage is minimized, contributing to lower operational costs and increased profits."
+          ],
+          "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/section2.png"
+        },
+        {
+          "heading": "A Pillar in the Supply Chain",
+          "content": [
+            "Frozen storage is one of the most important elements of the modern supply chain. It ensures that products flow through the cold chain from storage to refrigerated transport and finally to the end customer without interruption in temperature control."
+          ],
+          "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/section3.png"
+        },
+        {
+          "heading": "Building Customer Trust",
+          "content": [
+            "When products arrive in excellent condition thanks to frozen storage, it positively impacts the company's reputation. Consumers recognize that the brand cares about quality and safety standards, which strengthens long-term loyalty."
+          ],
+          "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/section4.png"
+        },
+        {
+          "heading": "Flexibility and Market Expansion",
+          "content": [
+            "Refrigerated and frozen storage warehouses provide greater flexibility for companies to handle multiple types of products, enabling them to enter new sectors and meet the demands of diverse markets."
+          ],
+          "image": "/images/blogs/the-importance-of-frozen-storage-in-preserving-products/section5.png"
+        }
+      ]
+    }
+  ],
+  "appDownload": {
+    "title": "Download Prolo App",
+    "playstore": "https://play.google.com/store/apps/details?id=com.prolo.customerapp&hl=en-US&pli=1",
+    "appstore": "https://apps.apple.com/sa/app/prolo/id6747319697"
+  }
+}

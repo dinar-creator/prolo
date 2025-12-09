@@ -1,0 +1,315 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --text-tiny: 0.625rem;
+  --text-tiny--line-height: 1.5rem;
+  --color-theme-blue: #19199d;
+  --color-theme-white: #fefefe;
+  --color-theme-red: #e71039;
+  --color-base1: #efefef;
+  --color-base2: #eceaea;
+  --color-white-hover: #eceaea;
+  --color-blue-hover: #1a1351;
+  --color-red-hover: #7b1c22;
+}
+
+@layer components {
+  .glass {
+    @apply rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm;
+  }
+
+  .headerChild {
+    @apply relative flex min-h-[60px] w-fit items-center gap-4 rounded-full bg-white px-4 text-black shadow-md;
+  }
+
+  .enf {
+    @apply group-hover:translate-x-[3px] group-hover:-translate-y-[3px];
+  }
+
+  .enb {
+    @apply group-hover:-translate-x-[3px] group-hover:translate-y-[3px];
+  }
+
+  .arf {
+    @apply scale-x-[-1] group-hover:-translate-x-[3px] group-hover:-translate-y-[3px];
+  }
+
+  .arb {
+    @apply scale-x-[-1] group-hover:translate-x-[3px] group-hover:translate-y-[3px];
+  }
+
+  .section-spacing {
+    @apply my-3 py-3;
+  }
+
+  .form-grid {
+    @apply grid grid-cols-1 gap-4 md:grid-cols-2;
+  }
+
+  .section-heading {
+    @apply bg-theme-blue w-fit rounded-md px-3 py-2 text-xl font-medium text-white md:text-2xl;
+  }
+
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 200px;
+    max-height: auto;
+    width: 100%;
+  }
+
+  .prolo-container {
+    @apply container mx-auto max-w-[1026px] px-4;
+  }
+
+  .timeline-fade {
+    @apply text-sm/tight text-gray-400;
+  }
+
+  .timeline-black {
+    @apply text-lg;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 24px;
+  height: 10px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: var(--color-theme-blue);
+}
+
+.hero-slider-controls .hero-custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.hero-slider-controls .hero-custom-pagination .swiper-pagination-bullet:hover {
+  transform: scale(1.4);
+}
+
+.hero-slider-controls .hero-custom-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-theme-blue);
+}
+
+.industries-slider-controls .custom-pagination,
+.industries-slider-controls .test-custom-pagination {
+  width: fit-content !important;
+}
+
+.industries-slider-controls .swiper-pagination-bullet-active {
+  background: var(--color-theme-blue);
+}
+
+.industries-slider-controls .swiper-button {
+  background-color: var(--color-theme-blue);
+  border-color: var(--color-theme-blue);
+  color: white;
+}
+
+.industries-slider-controls .swiper-button:hover {
+  background-color: var(--color-blue-hover);
+}
+
+.industries-slider-controls .swiper-button-disabled {
+  background-color: transparent;
+  cursor: auto;
+  color: black;
+}
+
+.industries-slider-controls .swiper-button-disabled:hover {
+  background-color: transparent;
+}
+
+.industries-slider-controls .swiper-pagination-bullet {
+  width: 12px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.logo-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-carousel .logos {
+  animation: scrollLeft 10s infinite linear;
+}
+
+.logo-carousel:hover .logos {
+  animation-play-state: paused;
+}
+
+.logo-carousel .logos.logos-mid {
+  animation: scrollRight 10s infinite linear;
+}
+
+@keyframes scrollLeft {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    translate: -100%;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+/* styles/nprogress.css */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: yellow;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+.ul.timeline li:last-child {
+  border: none !important;
+  border-top: none;
+  border-left: none;
+  background-color: blue;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--color-theme-blue);
+  transform: translate(-50%, -50%);
+}
+
+/* Loader */
+
+.loader {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  --c: no-repeat linear-gradient(var(--color-theme-blue) 0 0);
+  background:
+    var(--c) center/100% 10px,
+    var(--c) center/10px 100%;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    var(--c) 0 0,
+    var(--c) 100% 0,
+    var(--c) 0 100%,
+    var(--c) 100% 100%;
+  background-size: 15.5px 15.5px;
+  animation: l16 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+@keyframes l16 {
+  33% {
+    inset: -10px;
+    transform: rotate(0deg);
+  }
+  66% {
+    inset: -10px;
+    transform: rotate(90deg);
+  }
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
+  }
+}
+
+/* Timeline */
+.timeline-list ul {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-list ul li {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.mid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.mid .left,
+.mid .right {
+  flex-grow: 1;
+  border: 1px dashed black;
+}
+
+.timeline-list ul li:first-child .mid .left {
+  border: none;
+}
+.timeline-list ul li:first-child .mid .right {
+  border: 1px dashed black;
+}
+
+.timeline-list ul li:last-child .mid .left {
+  border: 1px dashed black;
+}
+.timeline-list ul li:last-child .mid .right {
+  border: none;
+}
+
+.mid .between {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.upper,
+.lower {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .upper {
+  background-color: blue;
+} */
+/* .lower {
+  background-color: yellow;
+} */
+
+.lower h4 {
+  max-width: 200px;
+}

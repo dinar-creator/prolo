@@ -38,7 +38,7 @@ export default function CommercialSectorServices({ hovered, setHovered, title, s
       {/* img */}
       <div className="relative z-3 flex h-[463px] w-full items-end justify-center opacity-100 transition-opacity duration-300 group-hover:z-2 group-hover:opacity-0">
         <Image
-          src="/images/enterprise-services.png"
+          src="/images/enterprise-services.webp"
           alt="Arab male delivery boy is delivering parcel to an arab woman in hijab or burqa"
           width={346}
           height={463}

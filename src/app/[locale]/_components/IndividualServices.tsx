@@ -43,8 +43,8 @@ export default function IndividualServices({ hovered, setHovered, title, service
         <Image
           src={
             hovered === "right"
-              ? "/images/indvidual-services-close.png"
-              : "/images/indvidual-services-open.png"
+              ? "/images/indvidual-services-close.webp"
+              : "/images/indvidual-services-open.webp"
           }
           alt="Arab male delivery boy is delivering parcel to an arab woman in hijab or burqa"
           width={346}

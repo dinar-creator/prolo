@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { TestimonialSlider } from "../components";
-
+import TestimonialLazySlider from "../optimized/TestimonialLazySlider";
 export default async function Testimonials() {
   const testimonialsText = await getTranslations("homepage.testimonials");
 
@@ -15,7 +14,7 @@ export default async function Testimonials() {
 
       {/* Lower Slider */}
       <div className="prolo-container">
-        <TestimonialSlider />
+        <TestimonialLazySlider />
       </div>
     </section>
   );

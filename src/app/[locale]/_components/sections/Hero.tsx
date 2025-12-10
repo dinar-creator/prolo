@@ -1,17 +1,9 @@
 "use client";
 import { useLocale, useTranslations } from "next-intl";
 import { Button, TrackingInput } from "../components";
-
-import dynamic from "next/dynamic";
-
-const HeroSlider = dynamic(() => import("../HeroSlider"), {
-  ssr: false,
-  loading: () => <div className="h-full w-full bg-black" />, // fallback
-});
-
-const HeroLogos = dynamic(() => import("../HeroLogos"), {
-  ssr: false,
-});
+import HeroLazyLogos from "../optimized/HeroLazyLogos";
+import HeroLazySlider from "../optimized/HeroLazySlider";
+// import HeroStatic from "../optimized/HeroStatic";
 
 export default function Hero() {
   const t = useTranslations("homepage");
@@ -25,8 +17,7 @@ export default function Hero() {
     >
       {/* Overlay */}
       <div className="absolute inset-0 h-full w-full">
-        <HeroSlider />
-        <div className="bg-theme-blue/40 absolute inset-0"></div>
+        <HeroLazySlider />
       </div>
 
       {/* Content */}
@@ -71,11 +62,7 @@ export default function Hero() {
         {/* bottom - description + logos */}
         <div className="prolo-container flex w-full items-center justify-center md:justify-between">
           {/* Hero Logos */}
-          <HeroLogos
-            trustedBy={t("hero.trustedBy")}
-            hundredPlus={t("hero.100Plus")}
-            businesses={t("hero.businesses")}
-          />
+          <HeroLazyLogos />
         </div>
       </div>
     </section>

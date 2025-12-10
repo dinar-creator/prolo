@@ -1,14 +1,13 @@
+import { satoshi, tajawal } from "../fonts/fonts";
 import "../globals.css";
-
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { satoshi, tajawal } from "../fonts/fonts";
-import { Header, Footer, Popup } from "./_components/components";
-import RouteLoader from "./_components/RouteLoader";
+import { Header, Footer } from "./_components/components"; // excl: Popup
 import HeaderContainer from "./_components/HeaderContainer";
-import TypebotWidget from "./_components/TypebotWidget";
+import TypebotWidgetLazy from "./_components/optimized/TypebotLazy";
 
+import PopupLazy from "./_components/optimized/PopupLazy";
 import ResposiveHeader from "./_components/Header/ResponsiveHeader";
 
 import arSEO from "@/seo/ar.json";
@@ -67,15 +66,14 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} dir={isArabic ? "rtl" : "ltr"} className={fontClass}>
       <body>
         <NextIntlClientProvider>
-          <RouteLoader />
-          <Popup />
           <HeaderContainer>
             <Header />
             <ResposiveHeader />
           </HeaderContainer>
           <main>{children}</main>
-          <TypebotWidget />
           <Footer />
+          <PopupLazy />
+          <TypebotWidgetLazy />
         </NextIntlClientProvider>
       </body>
     </html>

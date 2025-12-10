@@ -2,7 +2,7 @@
 import { useLocale, useMessages } from "next-intl";
 import Button from "./Button";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { usePathname } from "next/navigation";
 
@@ -10,39 +10,29 @@ type PopupText = {
   title: string;
   description: string;
   image: string;
-  link: {
-    text: string;
-    link: string;
-  };
+  link: { text: string; link: string };
 };
-export default function Popup() {
-  const [closePopup, setClosePopup] = useState<boolean>(true);
+
+export default function PopupContent() {
+  const [isClosed, setIsClosed] = useState(false);
   const popupText = useMessages().popup as PopupText;
   const locale = useLocale();
   const pathname = usePathname();
 
-  useEffect(() => {
-    if (pathname.includes("get-a-qoute")) {
-      setClosePopup(true);
-    }
-  }, [pathname, closePopup]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setClosePopup(false);
-    }, 3000);
-  }, []);
+  // Do not show on specific routes
+  if (pathname.includes("get-a-qoute")) return null;
+  if (isClosed) return null;
 
   return (
     <div
-      className={`fixed top-0 left-0 z-55 ${closePopup ? "hidden" : "flex"} h-full w-full items-center justify-center bg-black/70 p-4`}
+      className={`fixed top-0 left-0 z-55 flex h-full w-full items-center justify-center bg-black/70 p-4`}
     >
       <div className="relative grid h-[450px] w-full max-w-[500px] grid-cols-1 items-center overflow-hidden rounded-2xl bg-white sm:h-[350px] sm:grid-cols-2">
         {/* Close Button */}
         <button
           aria-label="Close"
           className="bg-theme-blue hover:bg-blue-hover absolute top-4 right-4 flex size-7 cursor-pointer items-center justify-center rounded-full p-1 text-white"
-          onClick={() => setClosePopup(true)}
+          onClick={() => setIsClosed(true)}
         >
           <Icon icon="hugeicons:cancel-01" className="size-6" />
         </button>
@@ -66,6 +56,7 @@ export default function Popup() {
             className="h-full w-full object-cover"
             width={250}
             height={350}
+            loading="lazy"
           />
         </div>
       </div>

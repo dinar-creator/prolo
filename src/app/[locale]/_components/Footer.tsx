@@ -6,7 +6,6 @@ import {
   AppDownload,
 } from "./components";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
-import { satoshi } from "../../fonts/fonts";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -100,14 +99,6 @@ export default async function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Big Nane */}
-      <p
-        dir="ltr"
-        className={`hidden py-0 text-center text-[10vw] font-black text-white/20 lg:hidden ${satoshi.className}`}
-      >
-        PROLO LOGISTICS
-      </p>
 
       {/* Copyright Line */}
       <p className="flex w-full flex-col flex-wrap items-center justify-center gap-2 border-t border-gray-400/40 py-2 text-center text-sm">

@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { satoshi } from "@/app/fonts/fonts";
 type LinkItem = {
   icon?: string;
   text: string;
@@ -43,7 +42,7 @@ export default async function FooterContactLinkSegment({
             <span className="inline-block size-6">
               {links[2].icon && <Icon icon={links[2].icon || ""} className="size-6" />}
             </span>
-            <span className={satoshi.className}>{links[2].text}</span>
+            <span>{links[2].text}</span>
           </Link>
         </li>
       </ul>

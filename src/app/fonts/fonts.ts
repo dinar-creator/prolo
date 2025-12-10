@@ -1,12 +1,12 @@
 import localFont from "next/font/local";
 
-const satoshi = localFont({
+export const satoshi = localFont({
   src: "./satoshi_variable.woff2",
   variable: "--font-satoshi",
   display: "swap",
 });
 
-const tajawal = localFont({
+export const tajawal = localFont({
   src: [
     {
       path: "./tajawal/regular.ttf",
@@ -33,10 +33,10 @@ const tajawal = localFont({
   display: "swap",
 });
 
-const NNA = localFont({
-  src: "./NotoNaskhArabic-SemiBold.ttf",
-  variable: "--font-nna",
-  display: "swap",
-});
+// const NNA = localFont({
+//   src: "./NotoNaskhArabic-SemiBold.ttf",
+//   variable: "--font-nna",
+//   display: "swap",
+// });
 
-export { satoshi, tajawal, NNA };
+// export { satoshi, tajawal, NNA };

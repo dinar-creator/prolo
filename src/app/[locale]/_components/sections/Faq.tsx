@@ -13,8 +13,8 @@ export default async function Faq() {
   const faqText = await getTranslations("homepage.faqs.pageTitle");
 
   return (
-    <section className="section-spacing" id="faqs">
-      <div className="prolo-container">
+    <section className="section-spacing">
+      <div className="prolo-container pt-20" id="faqs">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-4">
           {/* Left */}
           <div className="mb-6 flex flex-col items-center justify-center">

@@ -1533,7 +1533,7 @@
         "slug": "b2b-shipping",
         "uniqueSlug": "b2b-shipping",
         "pageTitle": {
-          "heading": "الشحن - (B2B)",
+          "heading": "خدمة شحن البضائع ( قطاع الأعمال)",
           "description": "خدمة شحن تجارية موثوقة بجدولة تسليم تناسب جميع أحجام الأعمال داخل المملكة.",
           "image": "/images/services/commercial-sector-services/b2b-shipping/hero-bg.png"
         },
@@ -1701,7 +1701,7 @@
         "slug": "fulfillment-service",
         "uniqueSlug": "fulfillment-service",
         "pageTitle": {
-          "heading": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية ( الفلفيلمنت)",
+          "heading": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية (الفولفيلمنت)",
           "description": "حل متكامل لتخزين المنتجات وإدارة المخزون والطلبات والتعبئة والشحن لمتاجر التجارة الإلكترونية داخل المملكة.",
           "image": "/images/services/commercial-sector-services/fulfillment-service/hero-bg.png"
         },
@@ -2082,7 +2082,7 @@
         "title": "خدمات الأفراد",
         "cards": [
           {
-            "name": "الشحن فائق السرعة (Bullet Delivery)",
+            "name": "الشحن فائق السرعة",
             "description": "خدمة شحن سريع بتتبع مباشر",
             "link": "/services/individual-services/bullet-delivery",
             "slug": "individual-bullet-delivery"
@@ -2111,13 +2111,13 @@
             "slug": "last-mile"
           },
           {
-            "name": "توصيل فائق السرعة (Bullet Delivery)",
+            "name": "توصيل فائق السرعة",
             "description": "طلبات فورية فائقة السرعة",
             "link": "/services/commercial-sector-services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
-            "name": "خدمة شحن البضائع ( قطاع الأعمال B2B)",
+            "name": "خدمة شحن البضائع ( قطاع الأعمال)",
             "description": "شحن البضائع داخل المملكة",
             "link": "/services/commercial-sector-services/b2b-shipping",
             "slug": "b2b-shipping"
@@ -2141,7 +2141,7 @@
             "slug": "commercial-refrigerated-shipping"
           },
           {
-            "name": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية ( الفلفيلمنت)",
+            "name": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية (الفولفيلمنت)",
             "description": "إدارة المخزون والطلبات للمتاجر الالكترونية",
             "link": "/services/commercial-sector-services/fulfillment-service",
             "slug": "fulfillment-service"
@@ -2317,7 +2317,7 @@
         "title": "خدمات الأفراد",
         "links": [
           {
-            "text": "الشحن فائق السرعة (Bullet Delivery)",
+            "text": "الشحن فائق السرعة",
             "link": "/services/individual-services/bullet-delivery",
             "slug": "individual-bullet-delivery"
           },
@@ -2342,12 +2342,12 @@
             "slug": "last-mile"
           },
           {
-            "text": "توصيل فائق السرعة (Bullet Delivery)",
+            "text": "توصيل فائق السرعة",
             "link": "/services/commercial-sector-services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
-            "text": "خدمة شحن البضائع ( قطاع الأعمال B2B)",
+            "text": "خدمة شحن البضائع (قطاع الأعمال)",
             "link": "/services/commercial-sector-services/b2b-shipping",
             "slug": "b2b-shipping"
           },
@@ -2357,7 +2357,7 @@
             "slug": "storage-for-others"
           },
           {
-            "text": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية ( الفلفيلمنت)",
+            "text": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية",
             "link": "/services/commercial-sector-services/fulfillment-service",
             "slug": "fulfillment-service"
           },

@@ -42,15 +42,15 @@ export default async function TrackingPage({ params }: PageProps) {
   );
   const statusText = isAr ? data.arStatus : data.enStatus;
 
-  const receiverCity = isAr
-    ? data.destinationAddress?.arabicCityName || data.destinationAddress?.city
-    : data.destinationAddress?.city || data.destinationAddress?.arabicCityName;
+  // const receiverCity = isAr
+  //   ? data.destinationAddress?.arabicCityName || data.destinationAddress?.city
+  //   : data.destinationAddress?.city || data.destinationAddress?.arabicCityName;
 
-  const receiverVillage = isAr
-    ? data.destinationAddress?.arabicVillageName || data.destinationAddress?.village
-    : data.destinationAddress?.village || data.destinationAddress?.arabicVillageName;
+  // const receiverVillage = isAr
+  //   ? data.destinationAddress?.arabicVillageName || data.destinationAddress?.village
+  //   : data.destinationAddress?.village || data.destinationAddress?.arabicVillageName;
 
-  const receiverLocation = [receiverCity, receiverVillage].filter(Boolean).join(", ");
+  // const receiverLocation = [receiverCity, receiverVillage].filter(Boolean).join(", ");
 
   const timelineBorders = isAr
     ? "border-t-0 border-r border-dashed md:border-t md:border-r-0"
@@ -79,7 +79,7 @@ export default async function TrackingPage({ params }: PageProps) {
           </div>
 
           {/* Sender & Receiver */}
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {/* <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="bg-base1 rounded-2xl p-6">
               <h3 className="text-lg font-medium">{t("sender")}</h3>
               <p className="mt-4">{data?.senderFirstName}</p>
@@ -91,10 +91,10 @@ export default async function TrackingPage({ params }: PageProps) {
               <p className="text-sm">📍 {receiverLocation}</p>
               <p className="text-sm"> 📞 {data?.receiverPhone}</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Cash On Delivery */}
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {/* <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="bg-base1 rounded-2xl p-6">
               <h3 className="text-lg font-medium">{t("cod")}</h3>
               <h4 className="mt-4 text-3xl font-bold">{data?.cod} SAR</h4>
@@ -103,7 +103,7 @@ export default async function TrackingPage({ params }: PageProps) {
                 <p className="text-base/tight">{data.description}</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Note */}
           {data?.notes && (

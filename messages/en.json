@@ -1558,7 +1558,7 @@
         "slug": "b2b-shipping",
         "uniqueSlug": "b2b-shipping",
         "pageTitle": {
-          "heading": "B2B Shipping",
+          "heading": "Cargo Shipping Service",
           "description": "Reliable commercial shipping with scheduled delivery suited for all business sizes across the Kingdom.",
           "image": "/images/services/commercial-sector-services/b2b-shipping/hero-bg.png"
         },
@@ -1566,7 +1566,7 @@
         "overview": {
           "title": "Sector Overview",
           "heading": "Commercial Shipping for All Businesses",
-          "description": "The B2B shipping service allows scheduling the shipment of goods of all types and sizes to any destination within the Kingdom with efficiency and reliability.",
+          "description": "The Cargo Shipping Service service allows scheduling the shipment of goods of all types and sizes to any destination within the Kingdom with efficiency and reliability.",
           "features": {
             "title": "Features",
             "features": [
@@ -1728,7 +1728,7 @@
         "uniqueSlug": "fulfillment-service",
 
         "pageTitle": {
-          "heading": "Complete inventory management service for e-commerce stores (fulfillment)",
+          "heading": "Complete Inventory Management Service for E-commerce Stores",
           "description": "A complete solution for storing products, managing inventory and orders, packaging, and shipping for e-commerce stores inside the Kingdom.",
           "image": "/images/services/commercial-sector-services/fulfillment-service/hero-bg.png"
         },
@@ -2094,7 +2094,7 @@
             "slug": "commercial-bullet-delivery"
           },
           {
-            "name": "B2B Shipping",
+            "name": "Cargo Shipping Service",
             "description": "Schedule goods shipment nationwide",
             "link": "/services/commercial-sector-services/b2b-shipping",
             "slug": "b2b-shipping"
@@ -2118,7 +2118,7 @@
             "slug": "commercial-refrigerated-shipping"
           },
           {
-            "name": "Complete inventory management service for e-commerce stores (fulfillment)",
+            "name": "Complete Inventory Management Service for E-commerce Stores",
             "description": "Store, track, and manage orders",
             "link": "/services/commercial-sector-services/fulfillment-service",
             "slug": "fulfillment-service"
@@ -2325,7 +2325,7 @@
             "slug": "commercial-bullet-delivery"
           },
           {
-            "text": "B2B Shipping",
+            "text": "Cargo Shipping Service",
             "link": "/services/commercial-sector-services/b2b-shipping",
             "slug": "b2b-shipping"
           },
@@ -2335,7 +2335,7 @@
             "slug": "storage-for-others"
           },
           {
-            "text": "Complete inventory management service for e-commerce stores (Fulfillment)",
+            "text": "Complete Inventory Management Service for E-commerce Stores",
             "link": "/services/commercial-sector-services/fulfillment-service",
             "slug": "fulfillment-service"
           },

@@ -22,7 +22,6 @@ export default async function TrackingPage({ params }: PageProps) {
     );
   }
 
-  console.log("Order Status: ", data.status);
   const isCancelled = data.status === "CANCELLED";
   const isDelivered = data.status === "DELIVERED_TO_RECIPIENT";
   const isPicked = data.status === "PICKED";
@@ -67,11 +66,9 @@ export default async function TrackingPage({ params }: PageProps) {
         <div className="prolo-container">
           {/* Package Status */}
           <div
-            className={`${isCancelled ? "bg-red-400" : "bg-base1"} relative w-full rounded-2xl p-6`}
+            className={`${isCancelled ? "bg-red-400" : "bg-base1"} relative flex min-h-[170px] w-full flex-col items-center justify-center rounded-2xl p-6`}
           >
-            <h3 className="absolute top-3 left-3 text-sm font-medium sm:top-6 sm:left-6 sm:text-lg">
-              {t("orderStatus")}
-            </h3>
+            <h3 className="text-sm font-medium sm:text-lg">{t("orderStatus")}</h3>
             <div className="mt-4 w-full">
               <h4
                 className={`${!isCancelled && "text-green-600"} text-center text-3xl font-bold sm:text-5xl`}

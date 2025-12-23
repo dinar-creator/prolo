@@ -14,6 +14,7 @@ import arSEO from "@/seo/ar.json";
 import enSEO from "@/seo/en.json";
 import { SITE_URL } from "@/lib/constants";
 import { getSeoImages } from "@/lib/seo";
+import Script from "next/script";
 
 // SEO
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -64,7 +65,32 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} dir={isArabic ? "rtl" : "ltr"} className={fontClass + " scroll-smooth"}>
+      <head>
+        {/* Google Tag Manager */}
+        <Script id="gtm-script" strategy="beforeInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WR5XFFMN');
+          `}
+        </Script>
+      </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WR5XFFMN"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <NextIntlClientProvider>
           <HeaderContainer>
             <Header />

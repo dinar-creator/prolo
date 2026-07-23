@@ -13,257 +13,325 @@
     "subscribing": "جارٍ الاشتراك...",
     "sending": "جارٍ الإرسال...",
     "checkout": "إتمام الشراء",
-    "sar": "ريال سعودي"
+    "sar": "ريال سعودي",
+    "submit": "إرسال"
   },
   "forms": {
-    "placeholders": {
-      "tracking": "أدخل رقم التتبع",
-      "email": "أدخل بريدك الإلكتروني"
-    },
-    "legends": {
-      "senderInformation": "بيانات المرسل",
-      "receiverInformation": "بيانات المستلم",
-      "originAddress": "عنوان الاستلام",
-      "destinationAddress": "عنوان التسليم"
-    },
-
-    "fields": {
-      "name": {
-        "label": "الاسم",
-        "placeholder": "أدخل اسمك",
-        "error": "الاسم مطلوب"
+     "storageRequest": {
+      "messages": {
+        "storageRequest": "طلب تخزين"
       },
-      "email": {
-        "label": "البريد الإلكتروني",
-        "placeholder": "أدخل بريدك الإلكتروني",
-        "error": "البريد الإلكتروني مطلوب"
-      },
-      "phone": {
-        "label": "رقم الهاتف",
-        "placeholder": "+966XXXXXXXXX",
-        "error": "رقم الهاتف مطلوب"
-      },
-      "crnumber": {
-        "label": "رقم السجل التجاري",
-        "placeholder": "أدخل رقم السجل التجاري",
-        "error": "رقم السجل التجاري مطلوب"
-      },
-      "expectedOrders": {
-        "label": "الطلبات الشهرية المتوقعة",
-        "placeholder": "اختر حجم الطلبات المتوقع",
-        "error": "يرجى اختيار عدد الطلبات الشهرية المتوقعة",
-        "options": [
-          "حتى 25 طلبًا في الشهر",
-          "من 26 إلى 100 طلب في الشهر",
-          "من 101 إلى 300 طلب في الشهر",
-          "من 301 إلى 750 طلبًا في الشهر",
-          "أكثر من 750 طلبًا في الشهر"
-        ]
-      },
-      "service": {
-        "label": "الخدمة",
-        "placeholder": "اختر الخدمة",
-        "error": "يرجى اختيار الخدمة",
-        "quoteOptions": [
-          {
-            "text": "توصيل فائق السرعة",
-            "icon": "hugeicons:delivery-truck-01"
-          },
-          {
-            "text": "شحن البضائع",
-            "icon": "hugeicons:cargo-ship"
-          },
-          {
-            "text": "التخزين",
-            "icon": "hugeicons:warehouse"
-          },
-          {
-            "text": "الفولفيلمنت",
-            "icon": "hugeicons:store-management-02"
-          },
-          {
-            "text": "التأجير التشغيلي",
-            "icon": "hugeicons:new-releases"
-          },
-          {
-            "text": "الشحن المبرد",
-            "icon": "hugeicons:thermometer-cold"
-          }
-        ]
-      },
-      "address": {
-        "label": "العنوان",
-        "placeholder": "أدخل عنوانك الكامل",
-        "error": "العنوان مطلوب"
-      },
-      "details": {
-        "label": "تفاصيل إضافية",
-        "placeholder": "أخبرنا المزيد عن احتياجات الشحن، الجدول الزمني، أو أي متطلبات خاصة"
-      },
-      "company": {
-        "label": "الشركة",
-        "placeholder": "أدخل اسم شركتك",
-        "error": "اسم الشركة مطلوب"
-      },
-      "city": {
-        "label": "المدينة",
-        "placeholder": "أدخل اسم مدينتك",
-        "error": "اسم المدينة مطلوب"
-      },
-      "message": {
-        "label": "الرسالة",
-        "placeholder": "أدخل رسالتك",
-        "error": "الرسالة مطلوبة"
-      },
-      "senderName": {
-        "label": "اسم المرسل",
-        "placeholder": "أدخل الاسم الكامل للمرسل",
-        "error": "اسم المرسل مطلوب"
-      },
-      "senderEmail": {
-        "label": "البريد الإلكتروني للمرسل",
-        "placeholder": "أدخل بريدك الإلكتروني",
-        "error": "البريد الإلكتروني للمرسل مطلوب"
-      },
-      "businessSenderName": {
-        "label": "اسم الشركة (اختياري)",
-        "placeholder": "أدخل اسم الشركة (إن وجد)",
-        "error": ""
-      },
-      "senderPhone": {
-        "label": "رقم المرسل",
-        "placeholder": "أدخل رقم الجوال",
-        "error": "يرجى إدخال رقم هاتف صالح"
-      },
-      "originRegionId": {
-        "label": "المنطقة",
-        "placeholder": "اختر المنطقة",
-        "error": "المنطقة مطلوبة"
-      },
-      "originCityId": {
-        "label": "المدينة",
-        "placeholder": "اختر المدينة",
-        "search": "بحث",
-        "noResult": "لا توجد نتائج",
-        "error": "المدينة مطلوبة"
-      },
-      "originVillageId": {
-        "label": "الحي",
-        "placeholder": "اختر الحي",
-        "search": "بحث",
-        "noResult": "لا توجد نتائج",
-        "error": "الحي مطلوبة"
-      },
-      "originAddressLine1": {
-        "label": "العنوان",
-        "placeholder": "أدخل العنوان الكامل",
-        "error": "العنوان مطلوب"
-      },
-
-      "receiverName": {
-        "label": "اسم المستلم",
-        "placeholder": "أدخل الاسم الكامل للمستلم",
-        "error": "اسم المستلم مطلوب"
-      },
-      "receiverEmail": {
-        "label": "البريد الإلكتروني للمستلم",
-        "placeholder": "أدخل البريد الإلكتروني للمستلم",
-        "error": "البريد الإلكتروني للمستلم مطلوب"
-      },
-      "receiverPhone": {
-        "label": "رقم المستلم",
-        "placeholder": "أدخل رقم الجوال",
-        "error": "يرجى إدخال رقم هاتف صالح"
-      },
-      "destinationRegionId": {
-        "label": "المنطقة",
-        "placeholder": "اختر المنطقة",
-        "error": "المنطقة مطلوبة"
-      },
-      "destinationCityId": {
-        "label": "المدينة",
-        "placeholder": "اختر المدينة",
-        "search": "بحث",
-        "noResult": "لا توجد نتائج",
-        "error": "المدينة مطلوبة"
-      },
-      "destinationVillageId": {
-        "label": "الحي",
-        "placeholder": "اختر الحي",
-        "search": "بحث",
-        "noResult": "لا توجد نتائج",
-        "error": "الحي مطلوبة"
-      },
-      "destinationAddressLine1": {
-        "label": "العنوان",
-        "placeholder": "أدخل العنوان الكامل",
-        "error": "العنوان مطلوب"
-      },
-
-      "cod": {
-        "label": "مبلغ الدفع عند الاستلام",
-        "placeholder": "أدخل مبلغ الـ COD",
-        "error": "مبلغ الـ COD مطلوب"
-      },
-      "notes": {
-        "label": "ملاحظات (اختياري)",
-        "placeholder": "أضف أي ملاحظات إضافية",
-        "error": ""
-      },
-      "shipmentType": {
-        "label": "نوع الشحنة",
-        "placeholder": "اختر نوع الشحنة",
-        "error": "نوع الشحنة مطلوب",
-        "options": ["طرد", "مستند"]
-      },
-      "quantity": {
-        "label": "الكمية",
-        "placeholder": "أدخل الكمية",
-        "error": "الكمية مطلوبة"
-      },
-      "description": {
-        "label": "وصف المحتوى (اختياري)",
-        "placeholder": "صف ما يوجد داخل الشحنة",
-        "error": "الوصف مطلوب"
-      },
-
-      "tracking": {
-        "label": "تتبع شحنتك",
-        "placeholder": "أدخل رقم التتبع الخاص بك"
-      },
-
-      "parcelTypeId": {
-        "label": "نوع الطرد",
-        "placeholder": "اختر نوع الطرد",
-        "error": "نوع الطرد مطلوب"
-      },
-      "originNationalAddress": {
-        "label": "العنوان الوطني (اختياري)",
-        "placeholder": "أدخل العنوان الوطني",
-        "error": "العنوان الوطني مطلوب"
-      },
-      "destinationNationalAddress": {
-        "label": "العنوان الوطني (اختياري)",
-        "placeholder": "أدخل العنوان الوطني",
-        "error": "العنوان الوطني مطلوب"
-      },
-      "weight": {
-        "label": "الوزن",
-        "placeholder": "أدخل وزن الطرد",
-        "error": "الوزن مطلوب"
-      },
-      "policy": {
-        "label": "بالنقر هنا أوافق على سياسة الشكاوى والتعويضات",
-        "error": "يجب قبول سياسة الشكاوى والتعويضات"
+      "fields": {
+        "name": { "label": "الاسم الكامل", "placeholder": "أدخل اسمك", "error": "الاسم مطلوب" },
+"phone": { "label": "رقم الهاتف", "placeholder": "+966XXXXXXXXX", "error": "رقم الهاتف مطلوب" },
+"email": { "label": "البريد الإلكتروني", "placeholder": "أدخل بريدك الإلكتروني", "error": "البريد الإلكتروني مطلوب" },
+"vehicleType": {
+  "label": "نوع المركبة",
+  "placeholder": "اختر المركبة",
+  "error": "يرجى اختيار نوع المركبة",
+  "options": ["هايس", "ديانا", "3 طن", "5 طن"],
+  "ftlOptions": ["2 طن (هايس)", "5 طن (داينا)"]
+},
+"boxCount": { "label": "عدد الصناديق", "placeholder": "مثال: 10", "error": "يرجى إدخال عدد الصناديق" },
+"palletCount": { "label": "عدد الباليتات", "placeholder": "مثال: 5", "error": "يرجى إدخال عدد الباليتات" },
+     "storageType": {
+  "label": "نوع التخزين",
+  "placeholder": "اختر النوع",
+  "error": "يرجى اختيار نوع التخزين",
+  "options": ["مجمد", "مبرد", "جاف", "مكيف"]
+},
+        "storageCity": {
+          "label": "المدينة",
+          "placeholder": "مثال: الرياض",
+          "error": "يرجى إدخال المدينة"
+        },
+        "storageDuration": {
+          "label": "المدة",
+          "placeholder": "اختر المدة",
+          "error": "يرجى اختيار المدة",
+          "options": ["شهري", "ربع سنوي", "نصف سنوي", "سنوي"]
+        }
       }
     },
+   "shippingRequest": {
+  "messages": { "shippingRequest": "طلب شحن" },
+  "fields": {
+    "name": { "label": "الاسم الكامل", "placeholder": "أدخل اسمك", "error": "الاسم مطلوب" },
+    "phone": { "label": "رقم الهاتف", "placeholder": "+966XXXXXXXXX", "error": "رقم الهاتف مطلوب" },
+    "email": { "label": "البريد الإلكتروني", "placeholder": "أدخل بريدك الإلكتروني", "error": "البريد الإلكتروني مطلوب" },
+   "loadType": {
+  "label": "نوع الحمولة",
+  "placeholder": "اختر نوع الحمولة",
+  "error": "يرجى اختيار نوع الحمولة",
+  "options": [
+    { "value": "Box", "name": "صندوق" },
+    { "value": "Pallet", "name": "باليت (Pallet)" },
+    { "value": "FTL", "name": "شاحنة كاملة (FTL)" }
+  ]
+},
+"vehicleType": {
+  "label": "نوع المركبة",
+  "placeholder": "اختر المركبة",
+  "error": "يرجى اختيار نوع المركبة",
+  "ftlOptions": [
+    { "value": "2Ton", "name": "2 طن (هايس)" },
+    { "value": "5Ton", "name": "5 طن (داينا)" }
+  ]
+},
+"boxCount": { "label": "عدد الصناديق", "placeholder": "مثال: 10", "error": "يرجى إدخال عدد الصناديق" },
+"palletCount": { "label": "عدد البالينات", "placeholder": "مثال: 5", "error": "يرجى إدخال عدد الباليتات" },
+    "pickupCity": { "label": "مدينة الاستلام", "placeholder": "مثال: جدة", "error": "يرجى إدخال مدينة الاستلام" },
+    "dropoffCity": { "label": "مدينة التسليم", "placeholder": "مثال: الدمام", "error": "يرجى إدخال مدينة التسليم" }
+  }
+}
+  ,
+  "placeholders": {
+    "tracking": "أدخل رقم التتبع",
+    "email": "أدخل بريدك الإلكتروني"
+  },
+  "legends": {
+    "senderInformation": "بيانات المرسل",
+    "receiverInformation": "بيانات المستلم",
+    "originAddress": "عنوان الاستلام",
+    "destinationAddress": "عنوان التسليم"
+  },
 
-    "messages": {
-      "subscription": "شكرًا لاشتراكك!",
-      "contact": "شكرًا لتواصلك معنا. سنرد عليك قريبًا.",
-      "getAQuote": "لقد استلمنا طلبك وسنجيبك قريبًا."
+  "fields": {
+    "name": {
+      "label": "الاسم",
+      "placeholder": "أدخل اسمك",
+      "error": "الاسم مطلوب"
+    },
+    "email": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "error": "البريد الإلكتروني مطلوب"
+    },
+    "phone": {
+      "label": "رقم الهاتف",
+      "placeholder": "+966XXXXXXXXX",
+      "error": "رقم الهاتف مطلوب"
+    },
+    "crnumber": {
+      "label": "رقم السجل التجاري",
+      "placeholder": "أدخل رقم السجل التجاري",
+      "error": "رقم السجل التجاري مطلوب"
+    },
+    "expectedOrders": {
+      "label": "الطلبات الشهرية المتوقعة",
+      "placeholder": "اختر حجم الطلبات المتوقع",
+      "error": "يرجى اختيار عدد الطلبات الشهرية المتوقعة",
+      "options": [
+        "حتى 25 طلبًا في الشهر",
+        "من 26 إلى 100 طلب في الشهر",
+        "من 101 إلى 300 طلب في الشهر",
+        "من 301 إلى 750 طلبًا في الشهر",
+        "أكثر من 750 طلبًا في الشهر"
+      ]
+    },
+    "service": {
+      "label": "الخدمة",
+      "placeholder": "اختر الخدمة",
+      "error": "يرجى اختيار الخدمة",
+      "quoteOptions": [
+        {
+          "text": "توصيل فائق السرعة",
+          "icon": "hugeicons:delivery-truck-01"
+        },
+        {
+          "text": "شحن البضائع",
+          "icon": "hugeicons:cargo-ship"
+        },
+        {
+          "text": "التخزين",
+          "icon": "hugeicons:warehouse"
+        },
+        {
+          "text": "الفولفيلمنت",
+          "icon": "hugeicons:store-management-02"
+        },
+        {
+          "text": "التأجير التشغيلي",
+          "icon": "hugeicons:new-releases"
+        },
+        {
+          "text": "الشحن المبرد",
+          "icon": "hugeicons:thermometer-cold"
+        }
+      ]
+    },
+    "address": {
+      "label": "العنوان",
+      "placeholder": "أدخل عنوانك الكامل",
+      "error": "العنوان مطلوب"
+    },
+    "details": {
+      "label": "تفاصيل إضافية",
+      "placeholder": "أخبرنا المزيد عن احتياجات الشحن، الجدول الزمني، أو أي متطلبات خاصة"
+    },
+    "company": {
+      "label": "الشركة",
+      "placeholder": "أدخل اسم شركتك",
+      "error": "اسم الشركة مطلوب"
+    },
+    "city": {
+      "label": "المدينة",
+      "placeholder": "أدخل اسم مدينتك",
+      "error": "اسم المدينة مطلوب"
+    },
+    "message": {
+      "label": "الرسالة",
+      "placeholder": "أدخل رسالتك",
+      "error": "الرسالة مطلوبة"
+    },
+    "senderName": {
+      "label": "اسم المرسل",
+      "placeholder": "أدخل الاسم الكامل للمرسل",
+      "error": "اسم المرسل مطلوب"
+    },
+    "senderEmail": {
+      "label": "البريد الإلكتروني للمرسل",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "error": "البريد الإلكتروني للمرسل مطلوب"
+    },
+    "businessSenderName": {
+      "label": "اسم الشركة (اختياري)",
+      "placeholder": "أدخل اسم الشركة (إن وجد)",
+      "error": ""
+    },
+    "senderPhone": {
+      "label": "رقم المرسل",
+      "placeholder": "أدخل رقم الجوال",
+      "error": "يرجى إدخال رقم هاتف صالح"
+    },
+    "originRegionId": {
+      "label": "المنطقة",
+      "placeholder": "اختر المنطقة",
+      "error": "المنطقة مطلوبة"
+    },
+    "originCityId": {
+      "label": "المدينة",
+      "placeholder": "اختر المدينة",
+      "search": "بحث",
+      "noResult": "لا توجد نتائج",
+      "error": "المدينة مطلوبة"
+    },
+    "originVillageId": {
+      "label": "الحي",
+      "placeholder": "اختر الحي",
+      "search": "بحث",
+      "noResult": "لا توجد نتائج",
+      "error": "الحي مطلوبة"
+    },
+    "originAddressLine1": {
+      "label": "العنوان",
+      "placeholder": "أدخل العنوان الكامل",
+      "error": "العنوان مطلوب"
+    },
+
+    "receiverName": {
+      "label": "اسم المستلم",
+      "placeholder": "أدخل الاسم الكامل للمستلم",
+      "error": "اسم المستلم مطلوب"
+    },
+    "receiverEmail": {
+      "label": "البريد الإلكتروني للمستلم",
+      "placeholder": "أدخل البريد الإلكتروني للمستلم",
+      "error": "البريد الإلكتروني للمستلم مطلوب"
+    },
+    "receiverPhone": {
+      "label": "رقم المستلم",
+      "placeholder": "أدخل رقم الجوال",
+      "error": "يرجى إدخال رقم هاتف صالح"
+    },
+    "destinationRegionId": {
+      "label": "المنطقة",
+      "placeholder": "اختر المنطقة",
+      "error": "المنطقة مطلوبة"
+    },
+    "destinationCityId": {
+      "label": "المدينة",
+      "placeholder": "اختر المدينة",
+      "search": "بحث",
+      "noResult": "لا توجد نتائج",
+      "error": "المدينة مطلوبة"
+    },
+    "destinationVillageId": {
+      "label": "الحي",
+      "placeholder": "اختر الحي",
+      "search": "بحث",
+      "noResult": "لا توجد نتائج",
+      "error": "الحي مطلوبة"
+    },
+    "destinationAddressLine1": {
+      "label": "العنوان",
+      "placeholder": "أدخل العنوان الكامل",
+      "error": "العنوان مطلوب"
+    },
+
+    "cod": {
+      "label": "مبلغ الدفع عند الاستلام",
+      "placeholder": "أدخل مبلغ الـ COD",
+      "error": "مبلغ الـ COD مطلوب"
+    },
+    "notes": {
+      "label": "ملاحظات (اختياري)",
+      "placeholder": "أضف أي ملاحظات إضافية",
+      "error": ""
+    },
+    "shipmentType": {
+      "label": "نوع الشحنة",
+      "placeholder": "اختر نوع الشحنة",
+      "error": "نوع الشحنة مطلوب",
+      "options": ["طرد", "مستند"]
+    },
+    "quantity": {
+      "label": "الكمية",
+      "placeholder": "أدخل الكمية",
+      "error": "الكمية مطلوبة"
+    },
+    "description": {
+      "label": "وصف المحتوى (اختياري)",
+      "placeholder": "صف ما يوجد داخل الشحنة",
+      "error": "الوصف مطلوب"
+    },
+
+    "tracking": {
+      "label": "تتبع شحنتك",
+      "placeholder": "أدخل رقم التتبع الخاص بك"
+    },
+
+    "parcelTypeId": {
+      "label": "نوع الطرد",
+      "placeholder": "اختر نوع الطرد",
+      "error": "نوع الطرد مطلوب"
+    },
+    "originNationalAddress": {
+      "label": "العنوان الوطني (اختياري)",
+      "placeholder": "أدخل العنوان الوطني",
+      "error": "العنوان الوطني مطلوب"
+    },
+    "destinationNationalAddress": {
+      "label": "العنوان الوطني (اختياري)",
+      "placeholder": "أدخل العنوان الوطني",
+      "error": "العنوان الوطني مطلوب"
+    },
+    "weight": {
+      "label": "الوزن",
+      "placeholder": "أدخل وزن الطرد",
+      "error": "الوزن مطلوب"
+    },
+    "policy": {
+      "label": "بالنقر هنا أوافق على سياسة الشكاوى والتعويضات",
+      "error": "يجب قبول سياسة الشكاوى والتعويضات"
     }
   },
+
+  "messages": {
+    "subscription": "شكرًا لاشتراكك!",
+    "contact": "شكرًا لتواصلك معنا. سنرد عليك قريبًا.",
+    "getAQuote": "لقد استلمنا طلبك وسنجيبك قريبًا."
+  }},
   "popup": {
     "title": "جاهز لتطوير أعمالك؟",
     "description": "احصل على عرض سعر مخصص لخدمات النقل واللوجستيات بسرعة وموثوقية، مصمم ليلبي احتياجاتك داخل المملكة.",
@@ -273,12 +341,19 @@
       "link": "/get-a-quote"
     }
   },
+
   "homepage": {
     "hero": {
       "title": {
         "first": "حلول",
         "mid": "احترافية متكاملة",
         "last": "في الخدمات اللوجستية"
+      },
+      "marketplace": {
+        "badge": "جديد",
+        "title": "سوق برولو",
+        "description": "استكشف مستودعات وخدمات لوجستية موثقة. قارن وتواصل ونمِّ أعمالك.",
+        "cta": "استكشف السوق"
       },
       "trustedBy": "موثوق من قبل",
       "100Plus": "+١٠٠",
@@ -369,6 +444,28 @@
         "title": "عندك سؤال؟",
         "heading": "هل لديك سؤال ؟"
       }
+    }
+  },
+  "marketplace": {
+    "hero": {
+      "badge": "شبكة الخدمات اللوجستية في السعودية",
+      "title": "سوق برولو",
+      "subtitle": "اعثر على شريك الخدمات اللوجستية المناسب في دقائق",
+      "description": "تبحث عن دعم لوجستي موثوق؟ شارك تفاصيلك، وسيقوم فريقنا بتزويدك بعرض سعر مخصص يناسب احتياجاتك. سريع، شفاف، وبلا تعقيد."
+    },
+    "value": {
+      "title": "القيمة المضافة لعملك",
+      "description": "يساعد سوق برولو للشركاء الشركات على تقليل الوقت والتكلفة وتعقيد البحث عن شركاء لوجستيين موثوقين. من خلال جمع عدة مزودين في سوق واحد، يمكن للشركات اتخاذ قرارات أسرع وأكثر استنارة، وتحسين المرونة التشغيلية، والتوسع في أسواق جديدة دون دورات شراء طويلة."
+    },
+    "needs": {
+      "title": "ما الذي تحتاجه؟",
+      "description": "يساعد سوق برولو للشركاء الشركات على تقليل الوقت والتكلفة وتعقيد البحث عن شركاء لوجستيين موثوقين. من خلال جمع عدة مزودين في سوق واحد، يمكن للشركات اتخاذ قرارات أسرع وأكثر استنارة، وتحسين المرونة التشغيلية، والتوسع في أسواق جديدة دون دورات شراء طويلة.",
+      "storage": "تخزين",
+      "shipping": "شحن"
+    },
+    "form": {
+      "storageTitle": "طلب تخزين",
+      "shippingTitle": "طلب شحن"
     }
   },
   "getAQuotePage": {

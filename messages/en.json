@@ -19,9 +19,62 @@
     "subscribing": "Subscribing...",
     "sending": "Sending...",
     "checkout": "Checkout",
-    "sar": "SAR"
+    "sar": "SAR",
+     "submit": "Submit"
   },
   "forms": {
+         "storageRequest": {
+    "messages": { "storageRequest": "Storage Request" },
+    "fields": {
+      "name": { "label": "Full Name", "placeholder": "Enter your name", "error": "Name is required" },
+"phone": { "label": "Phone", "placeholder": "+966XXXXXXXXX", "error": "Phone number is required" },
+"email": { "label": "Email", "placeholder": "Enter your email", "error": "Email is required" },
+"vehicleType": {
+  "label": "Type of Vehicle",
+  "placeholder": "Select vehicle",
+  "error": "Please select a vehicle",
+  "options": ["Hiace", "Diana", "3 Ton", "5 Ton"],
+  "ftlOptions": ["2 Ton (Hiace)", "5 Ton (Dyna)"]
+},
+"boxCount": { "label": "Number of Boxes", "placeholder": "e.g. 10", "error": "Please enter number of boxes" },
+"palletCount": { "label": "Number of Pallets", "placeholder": "e.g. 5", "error": "Please enter number of pallets" },
+      "storageType": { "label": "Storage Type", "placeholder": "Select type", "error": "Please select a storage type", "options": ["Frozen", "Chiller", "Dry", "Ambient"] },
+      "storageCity": { "label": "City", "placeholder": "e.g. Riyadh", "error": "Please enter a city" },
+      "storageDuration": { "label": "Duration", "placeholder": "Select duration", "error": "Please select a duration", "options": ["Monthly", "Quarterly", "Six Month", "Annual"] }
+    }
+  },
+  
+ "shippingRequest": {
+  "messages": { "shippingRequest": "Shipping Request" },
+  "fields": {
+    "name": { "label": "Full Name", "placeholder": "Enter your name", "error": "Name is required" },
+    "phone": { "label": "Phone", "placeholder": "+966XXXXXXXXX", "error": "Phone number is required" },
+    "email": { "label": "Email", "placeholder": "Enter your email", "error": "Email is required" },
+  "loadType": {
+  "label": "Type of Load",
+  "placeholder": "Select load type",
+  "error": "Please select a load type",
+  "options": [
+    { "value": "Box", "name": "Box" },
+    { "value": "Pallet", "name": "Pallet" },
+    { "value": "FTL", "name": "FTL" }
+  ]
+},
+"vehicleType": {
+  "label": "Type of Vehicle",
+  "placeholder": "Select vehicle",
+  "error": "Please select a vehicle",
+  "ftlOptions": [
+    { "value": "2Ton", "name": "2 Ton (Hiace)" },
+    { "value": "5Ton", "name": "5 Ton (Dyna)" }
+  ]
+},
+"boxCount": { "label": "Number of Boxes", "placeholder": "e.g. 10", "error": "Please enter number of boxes" },
+"palletCount": { "label": "Number of Pallets", "placeholder": "e.g. 5", "error": "Please enter number of pallets" },
+    "pickupCity": { "label": "Pickup City", "placeholder": "e.g. Jeddah", "error": "Please enter a pickup city" },
+    "dropoffCity": { "label": "Dropoff City", "placeholder": "e.g. Dammam", "error": "Please enter a dropoff city" }
+  }
+},
     "placeholders": {
       "tracking": "Enter Tracking ID",
       "email": "Enter Your Email",
@@ -281,6 +334,12 @@
         "mid": "Integrated",
         "last": "Logistics Solutions"
       },
+       "marketplace": {
+        "badge": "New",
+        "title": "Prolo Marketplace",
+        "description": "Explore verified warehouses and logistics services. Compare, connect and grow your business.",
+        "cta": "Explore Marketplace"
+      },
       "trustedBy": "Trusted by",
       "100Plus": "+100",
       "businesses": "Businesses"
@@ -370,6 +429,28 @@
         "title": "Have a Question?",
         "heading": "Do You Have a Question?"
       }
+    }
+  },
+"marketplace": {
+    "hero": {
+      "badge": "Saudi Arabia Logistics Network",
+      "title": "Prolo Marketplace",
+      "subtitle": "Find the Right Logistics in Minutes",
+      "description": "Looking for reliable logistics support? Share your details, and our team will provide you with a tailored quote that fits your needs. Fast, transparent, and hassle-free."
+    },
+    "value": {
+      "title": "Value to Your Business",
+      "description": "Prolo Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles."
+    },
+    "needs": {
+      "title": "What do you need?",
+      "description": "Prolo Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles.",
+      "storage": "Storage",
+      "shipping": "Shipping"
+    },
+    "form": {
+      "storageTitle": "Storage Request",
+      "shippingTitle": "Shipping Request"
     }
   },
   "getAQuotePage": {

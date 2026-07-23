@@ -28,7 +28,6 @@ type ContactFormFields = {
     label: string;
     placeholder: string;
     error: string;
-    contactPageError: string;
   };
   company: {
     label: string;
@@ -143,7 +142,7 @@ export default function ContactForm() {
         id="phone"
         type="tel"
         placeholder={fields.phone.placeholder}
-        error={errors.phone && errors.phone.message}
+        error={errors.phone && fields.phone.error}
         icon="hugeicons:call-02"
         registerProps={{
           ...register("phone", {

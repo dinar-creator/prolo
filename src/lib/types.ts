@@ -83,8 +83,10 @@ export type ShipmentRequest = {
     receiverPhone: string; // required
     receiverPhone2?: string;
     serviceType: "STANDARD"; // required
+    parcelTypeId?: string | number | null | undefined;
     shipmentType: "COD" | "REGULAR" | "SWAP" | "BRING"; // required
     quantity?: number | string;
+    weight: number;
     description?: string;
   };
   destinationAddress: {
@@ -93,6 +95,7 @@ export type ShipmentRequest = {
     cityId: number | string; // required
     villageId: number | string; // required
     regionId: number | string; // required
+    nationalAddress?: string;
   };
   originAddress: {
     addressLine1: string; // required
@@ -100,6 +103,7 @@ export type ShipmentRequest = {
     cityId: number | string; // required
     regionId: number | string; // required
     villageId: number | string; // required
+    nationalAddress?: string;
   };
 };
 
@@ -108,6 +112,7 @@ export type Address = {
   cityId: number;
   villageId: number;
   regionId: number;
+  nationalAddress?: string;
 };
 
 export type CreateShipmentFormInputs = {
@@ -120,6 +125,7 @@ export type CreateShipmentFormInputs = {
   originCityId: string;
   originVillageId: string;
   originAddressLine1: string;
+  originNationalAddress?: string;
 
   // Step 2 Receiver
   receiverName: string;
@@ -129,6 +135,7 @@ export type CreateShipmentFormInputs = {
   destinationCityId: string;
   destinationVillageId: string;
   destinationAddressLine1: string;
+  destinationNationalAddress?: string;
 
   // Step 3 Shipment Description
   cod: string;
@@ -136,6 +143,11 @@ export type CreateShipmentFormInputs = {
   shipmentType: string;
   quantity: string;
   description: string;
+  parcelTypeId?: string | number | null | undefined;
+  weight: string | number;
+
+  // Step 4 Policy Accepted
+  policyAccepted: boolean;
 };
 
 export type ShipmentResponse = {
@@ -148,6 +160,9 @@ export type ShipmentResponse = {
   expectedDeliveryDate: string;
   senderPhone: string;
   receiverPhone: string;
+  parcelTypeId?: string | number | null | undefined;
+  quantity: null | number | string;
+  weight: null | number | string;
 
   origin: {
     city: string | null;
@@ -185,16 +200,21 @@ export type GetAQuoteFormData = {
   phone: string;
   address: string;
   service: string;
-  details: string;
+  crnumber: string;
+  company: string;
+  expectedOrders: string;
+  details?: string;
 };
 
 export type CreateShipmentFormData = {
   // Sender
   senderName: string;
   senderEmail: string;
+  senderPhone: string;
   senderBusinessName: string;
   originAddressArabic: string;
   originAddressEnglish: string;
+  originNationalAddress?: string;
 
   // Receiver
   receiverName: string;
@@ -202,22 +222,25 @@ export type CreateShipmentFormData = {
   receiverPhone: string;
   destinationAddressArabic: string;
   destinationAddressEnglish: string;
+  destinationNationalAddress?: string;
 
   // originAddress: string;
   // destinationAddress: string;
 
   // Shipment
-  referenceNumber: string;
+  referenceNumber?: string;
   shipmentId: string | number;
   trackingId: string | number;
   barcodeImageUrl: string;
   cod: string | number;
-  senderPhone: string;
+  parcelTypeId?: string | number | null | undefined;
   shipmentType: "COD" | "REGULAR";
   quantity: number | string;
+  weight: number | string;
   notes: string;
   description: string;
   expectedDeliveryDate: string;
+  amount: string | number;
 };
 
 export type Addresses = {
@@ -226,12 +249,14 @@ export type Addresses = {
     cityId: string;
     villageId: string;
     regionId: string;
+    nationalAddress?: string;
   };
   originAddress: {
     addressLine1: string;
     cityId: string;
     regionId: string;
     villageId: string;
+    nationalAddress?: string;
   };
 };
 

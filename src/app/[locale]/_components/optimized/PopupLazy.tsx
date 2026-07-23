@@ -9,11 +9,17 @@ const LazyPopup = dynamic(() => import("../PopupContent"), {
 export default function PopupLazy() {
   const [show, setShow] = useState(false);
 
+  function closePopup() {
+    setTimeout(() => {
+      setShow(false);
+    }, 5000);
+  }
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      console.log("💡 Popup loaded after 5-second delay");
       setShow(true);
-    }, 8000); // Wait 5 seconds
+      closePopup();
+    }, 8000); // Wait 8 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer on unmount
   }, []);

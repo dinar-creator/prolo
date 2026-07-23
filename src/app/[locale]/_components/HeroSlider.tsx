@@ -23,28 +23,82 @@ export default function HeroSlider() {
         pagination={{ el: ".hero-custom-pagination", clickable: true }}
       >
         <SwiperSlide className="relative">
-          <Image
-            src={"/images/hero/hero1.webp"}
-            alt={`Prolo Professional Logistics Van is moving form desert in Saudia Arabia`}
-            className="relative z-[-1] h-full w-full object-cover"
-            width={1898}
-            height={1067}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1898px"
-            loading="eager"
-          />
-          <div className="absolute inset-0 z-2 bg-black/30"></div>
+          <div className="relative h-full w-full">
+            <Image
+              src={"/images/hero/hero-one.png"}
+              alt={`Prolo Professional Logistics Van is moving form desert in Saudia Arabia`}
+              className="relative z-[-1] h-full w-full object-cover"
+              fill
+              loading="lazy"
+              priority={false}
+              fetchPriority="low"
+              decoding="async"
+              unoptimized
+            />
+
+            {/* <div className="absolute top-15 right-4 w-25 md:top-18 md:w-30">
+              <Image
+                src={"/logo-white.svg"}
+                alt=""
+                width={160}
+                height={80}
+                className="h-auto w-full"
+              />
+            </div> */}
+            <div className="absolute inset-0 z-2 bg-black/10"></div>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="relative">
-          <Image
-            src={"/images/hero/hero2.webp"}
-            alt={`Prolo Professional Logistics Van is moving form city in Saudia Arabia`}
-            className="relative z-[-1] h-full w-full object-cover"
-            width={1898}
-            height={1067}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1898px"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 z-2 bg-black/30"></div>
+          <div className="relative h-full w-full">
+            <Image
+              src={"/images/hero/hero-two.png"}
+              alt={`Prolo Professional Logistics Van is moving form desert in Saudia Arabia`}
+              className="relative z-[-1] h-full w-full object-cover"
+              fill
+              loading="lazy"
+              priority={false}
+              fetchPriority="low"
+              decoding="async"
+            />
+
+            {/* <div className="absolute bottom-10 left-4 w-25 md:w-30">
+              <Image
+                src={"/logo-white.svg"}
+                alt=""
+                width={160}
+                height={80}
+                className="h-auto w-full"
+                unoptimized
+              />
+            </div> */}
+            <div className="absolute inset-0 z-2 bg-black/10"></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="relative">
+          <div className="relative h-full w-full">
+            <Image
+              src={"/images/hero/hero-three.png"}
+              alt={`Prolo Professional Logistics Van is moving form desert in Saudia Arabia`}
+              className="relative z-[-1] h-full w-full object-cover"
+              fill
+              loading="lazy"
+              priority={false}
+              fetchPriority="low"
+              decoding="async"
+              unoptimized
+            />
+
+            {/* <div className="absolute bottom-10 left-4 w-25 md:w-30">
+              <Image
+                src={"/logo-white.svg"}
+                alt=""
+                width={160}
+                height={80}
+                className="h-auto w-full"
+              />
+            </div> */}
+            <div className="absolute inset-0 z-2 bg-black/10"></div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

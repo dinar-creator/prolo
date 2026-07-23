@@ -40,14 +40,56 @@
       },
       "phone": {
         "label": "رقم الهاتف",
-        "placeholder": "966XXXXXXXXX+",
-        "error": "أدخل رقم هاتف سعودي صالح (+966XXXXXXXXX)",
-        "contactPageError": "أدخل رقم هاتف صالح"
+        "placeholder": "+966XXXXXXXXX",
+        "error": "رقم الهاتف مطلوب"
+      },
+      "crnumber": {
+        "label": "رقم السجل التجاري",
+        "placeholder": "أدخل رقم السجل التجاري",
+        "error": "رقم السجل التجاري مطلوب"
+      },
+      "expectedOrders": {
+        "label": "الطلبات الشهرية المتوقعة",
+        "placeholder": "اختر حجم الطلبات المتوقع",
+        "error": "يرجى اختيار عدد الطلبات الشهرية المتوقعة",
+        "options": [
+          "حتى 25 طلبًا في الشهر",
+          "من 26 إلى 100 طلب في الشهر",
+          "من 101 إلى 300 طلب في الشهر",
+          "من 301 إلى 750 طلبًا في الشهر",
+          "أكثر من 750 طلبًا في الشهر"
+        ]
       },
       "service": {
         "label": "الخدمة",
         "placeholder": "اختر الخدمة",
-        "error": "يرجى اختيار الخدمة"
+        "error": "يرجى اختيار الخدمة",
+        "quoteOptions": [
+          {
+            "text": "توصيل فائق السرعة",
+            "icon": "hugeicons:delivery-truck-01"
+          },
+          {
+            "text": "شحن البضائع",
+            "icon": "hugeicons:cargo-ship"
+          },
+          {
+            "text": "التخزين",
+            "icon": "hugeicons:warehouse"
+          },
+          {
+            "text": "الفولفيلمنت",
+            "icon": "hugeicons:store-management-02"
+          },
+          {
+            "text": "التأجير التشغيلي",
+            "icon": "hugeicons:new-releases"
+          },
+          {
+            "text": "الشحن المبرد",
+            "icon": "hugeicons:thermometer-cold"
+          }
+        ]
       },
       "address": {
         "label": "العنوان",
@@ -101,11 +143,15 @@
       "originCityId": {
         "label": "المدينة",
         "placeholder": "اختر المدينة",
+        "search": "بحث",
+        "noResult": "لا توجد نتائج",
         "error": "المدينة مطلوبة"
       },
       "originVillageId": {
         "label": "الحي",
         "placeholder": "اختر الحي",
+        "search": "بحث",
+        "noResult": "لا توجد نتائج",
         "error": "الحي مطلوبة"
       },
       "originAddressLine1": {
@@ -137,11 +183,15 @@
       "destinationCityId": {
         "label": "المدينة",
         "placeholder": "اختر المدينة",
+        "search": "بحث",
+        "noResult": "لا توجد نتائج",
         "error": "المدينة مطلوبة"
       },
       "destinationVillageId": {
         "label": "الحي",
         "placeholder": "اختر الحي",
+        "search": "بحث",
+        "noResult": "لا توجد نتائج",
         "error": "الحي مطلوبة"
       },
       "destinationAddressLine1": {
@@ -156,7 +206,7 @@
         "error": "مبلغ الـ COD مطلوب"
       },
       "notes": {
-        "label": "ملاحظات",
+        "label": "ملاحظات (اختياري)",
         "placeholder": "أضف أي ملاحظات إضافية",
         "error": ""
       },
@@ -172,7 +222,7 @@
         "error": "الكمية مطلوبة"
       },
       "description": {
-        "label": "وصف المحتوى",
+        "label": "وصف المحتوى (اختياري)",
         "placeholder": "صف ما يوجد داخل الشحنة",
         "error": "الوصف مطلوب"
       },
@@ -180,6 +230,31 @@
       "tracking": {
         "label": "تتبع شحنتك",
         "placeholder": "أدخل رقم التتبع الخاص بك"
+      },
+
+      "parcelTypeId": {
+        "label": "نوع الطرد",
+        "placeholder": "اختر نوع الطرد",
+        "error": "نوع الطرد مطلوب"
+      },
+      "originNationalAddress": {
+        "label": "العنوان الوطني (اختياري)",
+        "placeholder": "أدخل العنوان الوطني",
+        "error": "العنوان الوطني مطلوب"
+      },
+      "destinationNationalAddress": {
+        "label": "العنوان الوطني (اختياري)",
+        "placeholder": "أدخل العنوان الوطني",
+        "error": "العنوان الوطني مطلوب"
+      },
+      "weight": {
+        "label": "الوزن",
+        "placeholder": "أدخل وزن الطرد",
+        "error": "الوزن مطلوب"
+      },
+      "policy": {
+        "label": "بالنقر هنا أوافق على سياسة الشكاوى والتعويضات",
+        "error": "يجب قبول سياسة الشكاوى والتعويضات"
       }
     },
 
@@ -323,7 +398,7 @@
       "ourSupport": "فريق الدعم",
       "last": "للحصول على مساعدة سريعة."
     },
-    "formSteps": ["بيانات المرسل", "بيانات المستلم", "بيانات الشحنة", "إتمام الشراء"],
+    "formSteps": ["بيانات المرسل", "بيانات المستلم", "بيانات الشحنة"],
     "success": {
       "title": "تم إنشاء الشحنة بنجاح 🎉",
       "bookmarkNotice": "☆ احفظ هذا الرابط",
@@ -346,6 +421,7 @@
       }
     },
     "loadingText": "جارٍ إنشاء رابط الدفع",
+    "shipmentLoadingText": "جارٍ إنشاء شحنتك 📦",
 
     "paymentLink": {
       "linkGenerated": "✅ تم إنشاء رابط الدفع الخاص بك.",
@@ -1979,7 +2055,7 @@
       "title": "روابط سريعة",
       "links": [
         { "text": "تتبع الشحنة", "link": "/tracking" },
-        { "text": "إنشاء شحنة", "link": "/create-shipment" },
+        { "text": "احصل على عرض سعر", "link": "/get-a-quote" },
         { "text": "مدونات", "link": "/blogs" },
         { "text": "اتصل بنا", "link": "/contact" }
       ]
@@ -2136,45 +2212,39 @@
         "title": "خدمات القطاع التجاري",
         "cards": [
           {
-            "name": "الميل الأخير",
-            "description": "توصيل طلبات المتاجر باحترافية عالية",
-            "link": "/services/commercial-sector-services/last-mile",
-            "slug": "last-mile"
-          },
-          {
             "name": "توصيل فائق السرعة",
             "description": "طلبات فورية فائقة السرعة",
-            "link": "/services/commercial-sector-services/bullet-delivery",
+            "link": "/services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
             "name": "خدمة شحن البضائع ( قطاع الأعمال)",
             "description": "شحن البضائع داخل المملكة",
-            "link": "/services/commercial-sector-services/b2b-shipping",
+            "link": "/services/b2b-shipping",
             "slug": "b2b-shipping"
           },
           {
             "name": "التخزين للغير",
             "description": "مساحات تخزينية مرنة وآمنة",
-            "link": "/services/commercial-sector-services/storage-for-others",
+            "link": "/services/storage-for-others",
             "slug": "storage-for-others"
           },
           {
             "name": "التأجير التشغيلي",
             "description": "توفير المركبات مع السائقين، وإدارة التشغيل، وخدمات تأجير المركبات",
-            "link": "/services/commercial-sector-services/operational-leasing",
+            "link": "/services/operational-leasing",
             "slug": "operational-leasing"
           },
           {
             "name": "الشحن المبرد",
             "description": "شحن مبرد للمتاجر الإلكترونية والقطاعات المختلفة",
-            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "link": "/services/refrigerated-shipping",
             "slug": "commercial-refrigerated-shipping"
           },
           {
             "name": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية (الفولفيلمنت)",
             "description": "إدارة المخزون والطلبات للمتاجر الالكترونية",
-            "link": "/services/commercial-sector-services/fulfillment-service",
+            "link": "/services/fulfillment-service",
             "slug": "fulfillment-service"
           }
         ]
@@ -2338,6 +2408,10 @@
         "link": "/create-shipment"
       }
     },
+    "getAQuote": {
+      "text": "احصل على عرض سعر",
+      "link": "/get-a-quote"
+    },
     "blogs": {
       "link": "/blogs",
       "text": "مدونات"
@@ -2368,38 +2442,33 @@
         "title": "خدمات القطاع التجاري",
         "links": [
           {
-            "text": "الميل الأخير",
-            "link": "/services/commercial-sector-services/last-mile",
-            "slug": "last-mile"
-          },
-          {
             "text": "توصيل فائق السرعة",
-            "link": "/services/commercial-sector-services/bullet-delivery",
+            "link": "/services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
             "text": "خدمة شحن البضائع (قطاع الأعمال)",
-            "link": "/services/commercial-sector-services/b2b-shipping",
+            "link": "/services/b2b-shipping",
             "slug": "b2b-shipping"
           },
           {
             "text": "التخزين للغير",
-            "link": "/services/commercial-sector-services/storage-for-others",
+            "link": "/services/storage-for-others",
             "slug": "storage-for-others"
           },
           {
             "text": "خدمة إدارة المخزون الكاملة للمتاجر الإلكترونية",
-            "link": "/services/commercial-sector-services/fulfillment-service",
+            "link": "/services/fulfillment-service",
             "slug": "fulfillment-service"
           },
           {
             "text": "التأجير التشغيلي",
-            "link": "/services/commercial-sector-services/operational-leasing",
+            "link": "/services/operational-leasing",
             "slug": "operational-leasing"
           },
           {
             "text": "الشحن المبرد",
-            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "link": "/services/refrigerated-shipping",
             "slug": "commercial-refrigerated-shipping"
           }
         ]

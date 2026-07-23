@@ -14,10 +14,10 @@ function TrackingInput() {
   const locale = useLocale();
 
   return (
-    <div className="glass flex w-full items-center justify-between rounded-full p-2">
+    <div className="glass relative flex w-full items-center justify-between rounded-full p-1 md:p-2">
       {/* Icon */}
-      <div className="mx-4 size-6">
-        <Icon icon="si:barcode-fill" className="size-6" />
+      <div className="mx-2 size-4">
+        <Icon icon="si:barcode-fill" className="size-4" />
       </div>
       {/* Input */}
       <input
@@ -25,14 +25,15 @@ function TrackingInput() {
         value={trackingNumber}
         onChange={e => setTrackingNumber(e.target.value)}
         placeholder={formsUi("placeholders.tracking")}
-        className="grow border-none text-[18px] font-medium outline-none"
+        className="grow border-none font-medium outline-none"
       />
       {/* BUTTON */}
       <Button
         text={ctas("trackShipment")}
         href={`/${locale}/tracking/${trackingNumber}`}
         className="bg-theme-blue hover:bg-blue-hover"
-        direction="forward"
+        // direction="forward"
+        size="sm"
       />
     </div>
   );

@@ -1,13 +1,13 @@
 import { getMessages } from "next-intl/server";
-import { ServicePageHeader, TargetUserCard, NotFound } from "../../../_components/components";
+import { ServicePageHeader, TargetUserCard, NotFound } from "../../_components/components";
 import { SectionTitle, TestimonialSlider } from "@/app/[locale]/_components/components";
-import { Overview, FeaturesGrid } from "../../../_components/sections/sections";
+import { Overview, FeaturesGrid } from "../../_components/sections/sections";
 import ProcessSlider from "@/app/[locale]/_components/ProcessSlider";
 
 type ServiceSeo = {
   title: string;
   description: string;
-  image: string; // /seo/[serviceType]/[service].png
+  image: string; // /seo/services/[service].png
 };
 
 type ServicesSeo = Record<string, ServiceSeo>;
@@ -21,15 +21,12 @@ import { getSeoImages } from "@/lib/seo";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; serviceType: string; service: string }>;
+  params: Promise<{ locale: string; service: string }>;
 }) {
-  const { locale, serviceType, service } = await params;
+  const { locale, service } = await params;
   const t = locale === "ar" ? arSEO : enSEO;
-  const url = `${SITE_URL}/${locale}/services/${serviceType}/${service}`;
-  const services: ServicesSeo =
-    serviceType === "individual-services"
-      ? t.services.individualServices
-      : t.services.commercialSectorServices;
+  const url = `${SITE_URL}/${locale}/services/${service}`;
+  const services: ServicesSeo = t.services.commercialSectorServices;
 
   function isServiceExists() {
     return Object.keys(services).includes(service);
@@ -47,8 +44,8 @@ export async function generateMetadata({
       alternates: {
         canonical: url,
         languages: {
-          en: `${SITE_URL}/en/services/${serviceType}/${service}`,
-          ar: `${SITE_URL}/ar/services/${serviceType}/${service}`,
+          en: `${SITE_URL}/en/services/${service}`,
+          ar: `${SITE_URL}/ar/services/${service}`,
         },
       },
 
@@ -77,8 +74,8 @@ export async function generateMetadata({
       alternates: {
         canonical: url,
         languages: {
-          en: `${SITE_URL}/en/services/${serviceType}/${service}`,
-          ar: `${SITE_URL}/ar/services/${serviceType}/${service}`,
+          en: `${SITE_URL}/en/services/${service}`,
+          ar: `${SITE_URL}/ar/services/${service}`,
         },
       },
 
@@ -112,7 +109,7 @@ type Overview = {
 
 type ServicePageProps = {
   params: Promise<{
-    serviceType: "individual-services" | "commercial-sector-services";
+    // serviceType: "individual-services" | "commercial-sector-services";
     service: string;
   }>;
 };
@@ -176,7 +173,7 @@ type ServicesMessages = {
   commercialSectorServices: ServicePage[];
 };
 export default async function ServicePage({ params }: ServicePageProps) {
-  const { serviceType, service } = await params;
+  const { service } = await params;
 
   const servicesMessages = (await getMessages()).services as ServicesMessages;
 
@@ -185,11 +182,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   const page: ServicePage | undefined =
-    serviceType === "individual-services"
-      ? getServicePage(servicesMessages.individualServices, service)
-      : serviceType === "commercial-sector-services"
-        ? getServicePage(servicesMessages.commercialSectorServices, service)
-        : undefined;
+    getServicePage(servicesMessages.commercialSectorServices, service) ?? undefined;
 
   if (page === undefined) {
     return <NotFound />;

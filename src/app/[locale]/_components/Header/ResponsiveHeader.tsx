@@ -145,10 +145,10 @@ export default function ResposiveHeader() {
 
               <li>
                 <Link
-                  href={`/${locale}${links.trackAndShip?.ship?.link}`}
+                  href={`/${locale}${links.getAQuote?.link}`}
                   className="bg- my-2 flex w-full items-center justify-between rounded-xl bg-[#121486] px-4 py-2 text-white"
                 >
-                  <span>{links.trackAndShip?.ship?.text}</span>
+                  <span>{links.getAQuote?.text}</span>
                   <Icon icon={"hugeicons:link-circle-02"} className="size-6" />
                 </Link>
               </li>

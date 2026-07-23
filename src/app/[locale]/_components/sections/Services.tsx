@@ -33,28 +33,31 @@ function Services() {
       </div>
 
       {/* Desktop Section */}
-      <div className="prolo-container hidden lg:block">
-        {/* Services Boxes */}
-        <div
-          className="relative z-4 flex w-full flex-wrap justify-between"
-          onMouseLeave={() => setHovered("none")}
-        >
-          {/* Individual Services */}
-          <IndividualServices
-            hovered={hovered}
-            setHovered={setHovered}
-            title={servicesText("servicesCategoryNames.individualServices")}
-            services={individualServices}
-          />
-          {/* Commercial Sector Services */}
-          <CommercialSectorServices
-            hovered={hovered}
-            setHovered={setHovered}
-            title={servicesText("servicesCategoryNames.commercialSectorServices")}
-            services={commercialSectorServices}
-          />
+      {/* HIDDEN */}
+      {false && (
+        <div className="prolo-container hidden lg:block">
+          {/* Services Boxes */}
+          <div
+            className="relative z-4 flex w-full flex-wrap justify-between"
+            onMouseLeave={() => setHovered("none")}
+          >
+            {/* Individual Services */}
+            <IndividualServices
+              hovered={hovered}
+              setHovered={setHovered}
+              title={servicesText("servicesCategoryNames.individualServices")}
+              services={individualServices}
+            />
+            {/* Commercial Sector Services */}
+            <CommercialSectorServices
+              hovered={hovered}
+              setHovered={setHovered}
+              title={servicesText("servicesCategoryNames.commercialSectorServices")}
+              services={commercialSectorServices}
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Mobile Services Section */}
       <ResponsiveServices

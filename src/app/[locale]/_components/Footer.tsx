@@ -8,6 +8,7 @@ import {
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
+import PolicyPopup from "./PolicyPopup";
 
 type Link = {
   icon?: string;
@@ -96,6 +97,9 @@ export default async function Footer() {
           </div>
           <div className="mt-4">
             <FooterLinkSegment title={support.title} links={support.links} />
+          </div>
+          <div className="w-full">
+            <PolicyPopup />
           </div>
         </div>
       </div>

@@ -17,7 +17,8 @@ export default function ServiceCard({ title, description, link, slug, num }: Pro
   const locale = useLocale();
 
   return (
-    <div className="bg-base1 relative flex flex-col justify-between overflow-hidden rounded-xl p-4 lg:bg-white lg:p-2">
+    <div className="bg-base1 relative flex flex-col justify-between overflow-hidden rounded-xl p-4 lg:p-2">
+      {/* lg:bg-white class removed */}
       {num && (
         <span className="absolute top-0 left-0 z-1 block text-[100px]/[90px] font-black text-gray-400/10">
           {num}

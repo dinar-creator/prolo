@@ -146,6 +146,19 @@ export const buildShipmentEmails = ({
   locales: "en" | "ar";
   data: CreateShipmentFormData;
 }): ShipmentEmailBuilds => {
+  // Specify The Service Type based ON ID
+
+  console.log("Data in Emails.ts");
+
+  console.log(data);
+
+  const parcelType: string =
+    data?.parcelTypeId && Number(data?.parcelTypeId) === 342
+      ? "COLD"
+      : Number(data?.parcelTypeId) === 341
+        ? "DRY"
+        : "---";
+
   // Sender Email
   const senderEmailSubject =
     locales === "en"
@@ -157,8 +170,9 @@ export const buildShipmentEmails = ({
     footer: getEmailFooter(locales),
     body: buildSenderShipEmailBody(locales, {
       ...data,
+      parcelType,
       destinationAddress:
-        locales === "en" ? data.destinationAddressEnglish : data.destinationAddressArabic,
+        locales === "en" ? data?.destinationAddressEnglish : data?.destinationAddressArabic,
     }),
   });
 
@@ -173,17 +187,23 @@ export const buildShipmentEmails = ({
     body: buildReceiverShipEmailBody(locales, {
       ...data,
       destinationAddress:
-        locales === "en" ? data.destinationAddressEnglish : data.destinationAddressArabic,
+        locales === "en" ? data?.destinationAddressEnglish : data?.destinationAddressArabic,
     }),
   });
 
   // Company Email
   const companyEmailSubject = "إنشاء شحنة جديدة | New Shipment Created";
+
   const companyEmail = buildEmailBody({
     locale: "ar",
     header: getEmailHeader("ar"),
     footer: getEmailFooter("ar"),
-    body: buildCompanyShipEmailBody({ ...data }),
+    body: buildCompanyShipEmailBody({
+      ...data,
+      parcelType,
+      originNationalAddress: data?.originNationalAddress || "-",
+      destinationNationalAddress: data?.destinationNationalAddress || "-",
+    }),
   });
 
   return {

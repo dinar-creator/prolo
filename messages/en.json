@@ -23,7 +23,7 @@
   },
   "forms": {
     "placeholders": {
-      "tracking": "Enter tracking ID",
+      "tracking": "Enter Tracking ID",
       "email": "Enter Your Email",
       "error": "Email is required"
     },
@@ -47,13 +47,55 @@
       "phone": {
         "label": "Phone",
         "placeholder": "+966XXXXXXXXX",
-        "error": "Enter a valid Saudi Arabia phone number (+966XXXXXXXXX)",
-        "contactPageError": "Enter a valid phone number"
+        "error": "Phone Number Is Required"
+      },
+      "crnumber": {
+        "label": "CR Number",
+        "placeholder": "Enter your CR Number",
+        "error": "CR Number is required"
+      },
+      "expectedOrders": {
+        "label": "Expected Monthly Orders",
+        "placeholder": "Select your estimated order volume",
+        "error": "Please select your expected monthly orders",
+        "options": [
+          "Up to 25 orders per month",
+          "26–100 orders per month",
+          "101–300 orders per month",
+          "301–750 orders per month",
+          "More than 750 orders per month"
+        ]
       },
       "service": {
         "label": "Service",
         "placeholder": "Select Service",
-        "error": "Please select Service"
+        "error": "Please select Service",
+        "quoteOptions": [
+          {
+            "text": "Bullet Delivery",
+            "icon": "hugeicons:delivery-truck-01"
+          },
+          {
+            "text": "Cargo Shipping",
+            "icon": "hugeicons:cargo-ship"
+          },
+          {
+            "text": "Storage",
+            "icon": "hugeicons:warehouse"
+          },
+          {
+            "text": "Inventory Management",
+            "icon": "hugeicons:store-management-02"
+          },
+          {
+            "text": "Operational Leasing",
+            "icon": "hugeicons:new-releases"
+          },
+          {
+            "text": "Refrigerated Shipping",
+            "icon": "hugeicons:thermometer-cold"
+          }
+        ]
       },
       "address": {
         "label": "Address",
@@ -107,11 +149,15 @@
       "originCityId": {
         "label": "City",
         "placeholder": "Select city",
+        "search": "Search",
+        "noResult": "No Result",
         "error": "City is required"
       },
       "originVillageId": {
         "label": "District / Area",
         "placeholder": "Select District/Area",
+        "search": "Search",
+        "noResult": "No Result",
         "error": "District/Area is required"
       },
       "originAddressLine1": {
@@ -119,7 +165,6 @@
         "placeholder": "Enter complete address",
         "error": "Address is required"
       },
-
       "receiverName": {
         "label": "Receiver Name",
         "placeholder": "Enter receiver's full name",
@@ -143,11 +188,15 @@
       "destinationCityId": {
         "label": "City",
         "placeholder": "Select city",
+        "search": "Search",
+        "noResult": "No Result",
         "error": "City is required"
       },
       "destinationVillageId": {
         "label": "District / Area",
         "placeholder": "Select District/Area",
+        "search": "Search",
+        "noResult": "No Result",
         "error": "District/Area is required"
       },
       "destinationAddressLine1": {
@@ -155,14 +204,13 @@
         "placeholder": "Enter complete address",
         "error": "Address is required"
       },
-
       "cod": {
         "label": "COD Amount",
         "placeholder": "Enter COD amount",
         "error": "COD amount is required"
       },
       "notes": {
-        "label": "Notes",
+        "label": "Notes (Optional)",
         "placeholder": "Add any additional notes",
         "error": ""
       },
@@ -178,14 +226,37 @@
         "error": "Quantity is required"
       },
       "description": {
-        "label": "Package Description",
+        "label": "Package Description (Optional)",
         "placeholder": "Describe what's inside the package",
         "error": "Description is required"
       },
-
       "tracking": {
         "label": "Track Your Shipment",
         "placeholder": "Enter your tracking number"
+      },
+      "parcelTypeId": {
+        "label": "Parcel Type",
+        "placeholder": "Select Parcel Type",
+        "error": "Parcel type is required"
+      },
+      "originNationalAddress": {
+        "label": "National Address (Optional)",
+        "placeholder": "Enter national address",
+        "error": "National address is required"
+      },
+      "destinationNationalAddress": {
+        "label": "National Address (Optional)",
+        "placeholder": "Enter national address",
+        "error": "National address is required"
+      },
+      "weight": {
+        "label": "Weight",
+        "placeholder": "Enter package weight",
+        "error": "Weight is required"
+      },
+      "policy": {
+        "label": "By clicking this I agree to Complaints & Compensation Policy",
+        "error": "Complaints & Compensation Policy Must be accepted"
       }
     },
     "messages": {
@@ -328,7 +399,7 @@
       "ourSupport": "our support",
       "last": "team for quick help."
     },
-    "formSteps": ["Sender Details", "Receiver Details", "Shipment Details", "Checkout"],
+    "formSteps": ["Sender Details", "Receiver Details", "Shipment Details"],
     "success": {
       "title": "Your shipment has been successfully created 🎉",
       "bookmarkNotice": "☆ Bookmark This Link",
@@ -351,6 +422,7 @@
       }
     },
     "loadingText": "Generating Payment Link",
+    "shipmentLoadingText": "Creating Your Shipment 📦",
     "paymentLink": {
       "linkGenerated": "✅ Your payment link has been generated.",
       "amountToPay": "SAR to pay",
@@ -2002,7 +2074,7 @@
       "title": "Quick Links",
       "links": [
         { "text": "Track Shipment", "link": "/tracking" },
-        { "text": "Create Shipment", "link": "/create-shipment" },
+        { "text": "Get A Quote", "link": "/get-a-quote" },
         { "text": "Blog & Insights", "link": "/blogs" },
         { "text": "Contact Us", "link": "/contact" }
       ]
@@ -2112,45 +2184,39 @@
         "title": "Enterprise Services",
         "cards": [
           {
-            "name": "Last Mile",
-            "description": "Deliver store orders efficiently",
-            "link": "/services/commercial-sector-services/last-mile",
-            "slug": "last-mile"
-          },
-          {
             "name": "Bullet Delivery",
             "description": "Ultra-fast instant order processing",
-            "link": "/services/commercial-sector-services/bullet-delivery",
+            "link": "/services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
             "name": "Cargo Shipping Service",
             "description": "Schedule goods shipment nationwide",
-            "link": "/services/commercial-sector-services/b2b-shipping",
+            "link": "/services/b2b-shipping",
             "slug": "b2b-shipping"
           },
           {
             "name": "Storage for others",
             "description": "Flexible and secure warehouse storage",
-            "link": "/services/commercial-sector-services/storage-for-others",
+            "link": "/services/storage-for-others",
             "slug": "storage-for-others"
           },
           {
             "name": "Operational Leasing",
             "description": "Providing vehicles with drivers, operational management, and vehicle rental services",
-            "link": "/services/commercial-sector-services/operational-leasing",
+            "link": "/services/operational-leasing",
             "slug": "operational-leasing"
           },
           {
             "name": "Refrigerated shipping",
             "description": "Refrigerated shipping for online stores and various sectors",
-            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "link": "/services/refrigerated-shipping",
             "slug": "commercial-refrigerated-shipping"
           },
           {
             "name": "Complete Inventory Management Service for E-commerce Stores",
             "description": "Store, track, and manage orders",
-            "link": "/services/commercial-sector-services/fulfillment-service",
+            "link": "/services/fulfillment-service",
             "slug": "fulfillment-service"
           }
         ]
@@ -2315,6 +2381,10 @@
         "link": "/create-shipment"
       }
     },
+    "getAQuote": {
+      "text": "Get A Quote",
+      "link": "/get-a-quote"
+    },
     "blogs": {
       "text": "Blogs",
       "link": "/blogs"
@@ -2345,38 +2415,33 @@
         "title": "Enterprise Services",
         "links": [
           {
-            "text": "Last Mile",
-            "link": "/services/commercial-sector-services/last-mile",
-            "slug": "last-mile"
-          },
-          {
             "text": "Bullet Delivery",
-            "link": "/services/commercial-sector-services/bullet-delivery",
+            "link": "/services/bullet-delivery",
             "slug": "commercial-bullet-delivery"
           },
           {
             "text": "Cargo Shipping Service",
-            "link": "/services/commercial-sector-services/b2b-shipping",
+            "link": "/services/b2b-shipping",
             "slug": "b2b-shipping"
           },
           {
             "text": "Storage for others",
-            "link": "/services/commercial-sector-services/storage-for-others",
+            "link": "/services/storage-for-others",
             "slug": "storage-for-others"
           },
           {
             "text": "Complete Inventory Management Service for E-commerce Stores",
-            "link": "/services/commercial-sector-services/fulfillment-service",
+            "link": "/services/fulfillment-service",
             "slug": "fulfillment-service"
           },
           {
             "text": "Operational Leasing",
-            "link": "/services/commercial-sector-services/operational-leasing",
+            "link": "/services/operational-leasing",
             "slug": "operational-leasing"
           },
           {
             "text": "Refrigerated Shipping",
-            "link": "/services/commercial-sector-services/refrigerated-shipping",
+            "link": "/services/refrigerated-shipping",
             "slug": "commercial-refrigerated-shipping"
           }
         ]

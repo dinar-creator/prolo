@@ -446,6 +446,9 @@ export const buildCompanyQuoteEmailBody = ({
   name,
   email,
   phone,
+  company,
+  expectedOrders,
+  crnumber,
   address,
   details,
 }: {
@@ -454,7 +457,10 @@ export const buildCompanyQuoteEmailBody = ({
   email: string;
   address: string;
   phone: string;
-  details: string;
+  company: string;
+  expectedOrders: string;
+  crnumber: string;
+  details?: string;
 }) => {
   return `<main>
   <section>
@@ -499,6 +505,15 @@ export const buildCompanyQuoteEmailBody = ({
         </tr>
 
         <tr>
+          <td>الشركة (Company)</td>
+          <td>${company}</td>
+        </tr>
+        
+        <tr>
+          <td>رقم السجل التجاري (CR Number)</td>
+          <td class="blue">${crnumber}</td>
+        </tr>
+        <tr>
           <td>العنوان (Address)</td>
           <td>${address}</td>
         </tr>
@@ -506,7 +521,10 @@ export const buildCompanyQuoteEmailBody = ({
           <td>خدمة (Service)</td>
           <td class="blue">${service}</td>
         </tr>
-
+        <tr>
+          <td>الطلبات الشهرية المتوقعة (Expected Monthly Orders)</td>
+          <td class="blue">${expectedOrders}</td>
+        </tr>
         <tr>
           <td>تفاصيل إضافية (Additional Details)</td>
           <td>${details}</td>
@@ -573,6 +591,10 @@ export const buildSenderShipEmailBody = (
     expectedDeliveryDate,
     shipmentType,
     cod,
+    parcelType,
+    quantity,
+    weight,
+    amount,
   }: {
     senderName: string;
     shipmentId: string | number;
@@ -583,6 +605,10 @@ export const buildSenderShipEmailBody = (
     expectedDeliveryDate: string;
     shipmentType: "COD" | "REGULAR";
     cod: string | number;
+    quantity: string | number;
+    weight: string | number;
+    parcelType: string;
+    amount: string | number;
   }
 ) => {
   if (locale === "ar") {
@@ -604,6 +630,15 @@ export const buildSenderShipEmailBody = (
     <h3>📦 الباركود:</h3>
     <img class="barcode" src="${barcodeImageUrl}" alt="صورة باركود الشحنة" />
   </div>
+
+  <div>
+  <h3>رسوم الشحن:</h3>
+    <ul>
+      <li>رسوم الشحن: <code>${amount} ريال سعودي</code></li>
+    </ul>
+  </div>
+
+
 
   <div>
     <h3>ما التالي؟</h3>
@@ -643,6 +678,9 @@ export const buildSenderShipEmailBody = (
   <div class="section">
     <h3>معلومات إضافية</h3>
     <ul>
+      <li>نوع الخدمة : <code>${parcelType}</code></li>
+      <li>الكمية : <code>${quantity}</code></li>
+      <li>الوزن : <code>${weight}</code></li>
       <li>نوع الشحنة: <code>${shipmentType}</code></li>
       <li>مبلغ الدفع عند الاستلام: <code>${cod} ريال سعودي</code></li>
     </ul>
@@ -680,6 +718,13 @@ export const buildSenderShipEmailBody = (
       </div>
 
       <div>
+        <h3> Shipment Charges:</h3>
+        <ul>
+        <li>Shipment Charges: <code>${amount} sar</code></li>
+      </ul>
+      </div>
+
+      <div>
         <h3>What’s Next?</h3>
 
         <ul>
@@ -711,6 +756,9 @@ export const buildSenderShipEmailBody = (
       <div class="section">
         <h3>Additional Information</h3>
         <ul>
+          <li>Service Type : <code>${parcelType}</code></li>
+          <li>Quantity : <code>${quantity}</code></li>
+          <li>Weight : <code>${weight}</code></li>
           <li>Shipment Type : <code>${shipmentType}</code></li>
           <li>COD Amount : <code>${cod} SAR</code></li>
         </ul>
@@ -903,24 +951,29 @@ export const buildCompanyShipEmailBody = ({
   senderPhone,
   originAddressArabic,
   originAddressEnglish,
+  originNationalAddress,
 
   // Receiver
   receiverName,
-  destinationAddressArabic,
-  destinationAddressEnglish,
   receiverEmail,
   receiverPhone,
+  destinationAddressArabic,
+  destinationAddressEnglish,
+  destinationNationalAddress,
 
   // Shipment Details
-  referenceNumber,
+  // referenceNumber,
   shipmentId,
   trackingId,
   barcodeImageUrl,
+  parcelType,
   shipmentType,
   cod,
   description,
   notes,
   quantity,
+  weight,
+  amount,
 }: {
   //Sender Details
   senderName: string;
@@ -928,6 +981,7 @@ export const buildCompanyShipEmailBody = ({
   senderPhone: string;
   originAddressArabic: string;
   originAddressEnglish: string;
+  originNationalAddress: string | null | undefined;
 
   // Receiver Details
   receiverName: string;
@@ -935,9 +989,10 @@ export const buildCompanyShipEmailBody = ({
   receiverPhone: string;
   destinationAddressArabic: string;
   destinationAddressEnglish: string;
+  destinationNationalAddress?: string | null | undefined;
 
   // Shipment Details
-  referenceNumber: string;
+  // referenceNumber: string;
   shipmentType: "COD" | "REGULAR";
   cod: string | number;
   shipmentId: string | number;
@@ -946,6 +1001,9 @@ export const buildCompanyShipEmailBody = ({
   description: string;
   notes: string;
   quantity: string | number;
+  weight: string | number;
+  parcelType: string;
+  amount: string | number;
 }) => {
   return `<main>
   <section>
@@ -961,6 +1019,12 @@ export const buildCompanyShipEmailBody = ({
       <span class="translation">(Shipment Details)</span>:
     </h3>
     <ul>
+
+      <li>
+        رسوم الشحن
+        <span class="translation">(Shipment Charges)</span>:
+        <code>${amount}  ريال سعودي</code>
+      </li>
       <li>
         معرّف الشحنة
         <span class="translation">(Shipment ID)</span>:
@@ -972,12 +1036,6 @@ export const buildCompanyShipEmailBody = ({
         <code>${trackingId}</code>
       </li>
 
-      <li>
-       رقم المرجع
-        <span class="translation">(Reference Number)</span>:
-        <code>${referenceNumber}</code>
-      </li>
-      
       <li>
         وصف محتوى الشحنة
         <span class="translation">(Package Description)</span>:
@@ -1052,6 +1110,14 @@ export const buildCompanyShipEmailBody = ({
             <span class="translation"> ${originAddressEnglish} </span>
           </td>
         </tr>
+
+        <tr>
+        <td>
+         عنوان وطني - المصدر
+          <span class="translation">(Origin National Address)</span>
+        </td>
+        <td>${originNationalAddress}</td>
+      </tr>
       </tbody>
     </table>
   </section>
@@ -1103,6 +1169,13 @@ export const buildCompanyShipEmailBody = ({
             <span class="translation"> (${destinationAddressEnglish}) </span>
           </td>
         </tr>
+        <tr>
+          <td>
+           عنوان وطني - الوجهة
+            <span class="translation">(Destination National Address)</span>
+          </td>
+          <td>${destinationNationalAddress}</td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -1125,6 +1198,13 @@ export const buildCompanyShipEmailBody = ({
         </tr>
         <tr>
           <td>
+           نوع الخدمة
+            <span class="translation">(Service Type)</span>
+          </td>
+          <td>${parcelType}</td>
+        </tr>
+        <tr>
+          <td>
             مبلغ الدفع عند الاستلام
             <span class="translation">(COD Amount)</span>
           </td>
@@ -1136,6 +1216,13 @@ export const buildCompanyShipEmailBody = ({
             <span class="translation">(Quantity)</span>
           </td>
           <td>${quantity}</td>
+        </tr>
+        <tr>
+          <td>
+           الوزن
+            <span class="translation">(Weight)</span>
+          </td>
+          <td>${weight}</td>
         </tr>
         <tr>
           <td>
@@ -1165,7 +1252,7 @@ export const buildCompanyShipEmailBody = ({
 export const buildCustomerPaymentLinkEmailBody = ({
   locale,
   senderName,
-  referenceNumber,
+  // referenceNumber,
   amount,
   paymentLink,
 }: PaymentLinkEmailProps) => {
@@ -1173,7 +1260,6 @@ export const buildCustomerPaymentLinkEmailBody = ({
     return `<main>
       <p>عزيزي <b>${senderName}!</b></p>
       <h2 class="green">تم إنشاء رابط الدفع الخاص بك</h2>
-      <p>رقم المرجع: <code>${referenceNumber}</code></p>
       <p>المبلغ المطلوب دفعه</p>
       <h2>${amount} ريال سعودي</h2>
 
@@ -1204,7 +1290,6 @@ export const buildCustomerPaymentLinkEmailBody = ({
   return `<main>
       <p>Dear <b>${senderName}!</b></p>
       <h2 class="green">Your payment link has been generated</h2>
-      <p>Reference Number: <code>${referenceNumber}</code></p>
       <p>Amount To Pay</p>
       <h2>${amount} SAR</h2>
 
@@ -1236,7 +1321,7 @@ export const buildCustomerPaymentLinkEmailBody = ({
 export const buildCustomerPaymentEmailBody = ({
   locale,
   senderName,
-  referenceNumber,
+  // referenceNumber,
   amount,
   transactionId,
 }: PaymentCustomerEmailProps) => {
@@ -1244,7 +1329,6 @@ export const buildCustomerPaymentEmailBody = ({
     return `<main>
       <p>عزيزي <b>${senderName}!</b></p>
       <h2 class="green">✅ تم الدفع بنجاح</h2>
-      <p>رقم المرجع: <code>${referenceNumber}</code></p>
       <p>المبلغ المدفوع</p>
       <h2>${amount} ريال سعودي</h2>
 
@@ -1277,7 +1361,6 @@ export const buildCustomerPaymentEmailBody = ({
   return `<main>
       <p>Dear <b>${senderName}!</b></p>
       <h2 class="green">✅ Payment Successful</h2>
-      <p>Reference Number: <code>${referenceNumber}</code></p>
       <p>Amount Paid</p>
       <h2>${amount} SAR</h2>
 
@@ -1311,7 +1394,6 @@ export const buildCompanyPaymentEmailBody = ({
   customerName,
   customerEmail,
   transactionId,
-  referenceNumber,
   amount,
   timestamp,
 }: PaymentCompanyEmailProps) => {
@@ -1353,12 +1435,6 @@ export const buildCompanyPaymentEmailBody = ({
             <tr>
               <td>معرّف العملية (Transaction ID)</td>
               <td>${transactionId}</td>
-            </tr>
-
-            <!-- Reference Number -->
-            <tr>
-              <td>رقم المرجع (Reference Number)</td>
-              <td>${referenceNumber}</td>
             </tr>
 
             <!-- Amount -->

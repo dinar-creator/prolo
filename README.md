@@ -1,266 +1,198 @@
-# PROLO.sa - Professional Logistics Platform Technical Documentation
+# Prolo Logistics - Modern Logistics Solutions
 
-## 1. Project Overview
+A comprehensive logistics company website built with cutting-edge technologies to provide seamless international shipping services.
 
-**PROLO.sa** is a modern, bilingual logistics and shipping platform designed for the Saudi Arabian market. The platform addresses the growing demand for efficient shipment management, tracking, and logistics services in the region.
+![Project Screenshot](public/screenshot.png)
 
-### Key Problem Solved:
+## Features
 
-- **Streamlined Shipment Process**: Simplifies package creation, tracking, and management for businesses and individuals
-- **Multi-language Support**: Arabic (Najdi + Modern Standard Arabic) and English support for broad market reach
-- **Digital Transformation**: Modern web interface replacing traditional logistics paperwork and manual processes
-- **Regional Optimization**: Specifically designed for Saudi Arabian logistics requirements and user expectations
+- **Multi-language Support**: Full RTL/LTR support for English and Arabic
+- **Internationalization**: Dynamic content translation with next-intl
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **SEO Optimized**: Dynamic metadata generation and structured data
+- **Shipment Management**:
+  - Create shipments with automated reference numbers
+  - Real-time tracking system
+  - Label printing functionality
+  - Payment integration
+- **Customer Engagement**:
+  - Contact forms with email notifications
+  - Quote request system
+  - Newsletter subscription
+- **Content Management**:
+  - Blog section with dynamic routing
+  - Service pages with detailed information
+  - Industry-specific solutions showcase
+- **Interactive Components**:
+  - Testimonials slider
+  - FAQ accordion
+  - Process diagrams
+  - Tracking interface
 
-## 2. Tech Stack
+## Key Sections
 
-### Core Framework & Libraries:
+### Homepage
 
-- **Next.js 15.5.7** with App Router
-- **React 19.1.0** with Server Components
-- **TypeScript 5** for type safety
-- **Tailwind CSS 4** for styling
+- Hero banner with call-to-action
+- Company overview and value proposition
+- Services showcase with visual icons
+- Feature highlights and benefits
+- Industry solutions presentation
+- Customer testimonials
+- Frequently asked questions
+- Company statistics counter
 
-### Internationalization:
+### Services
 
-- **next-intl 4.3.12** for bilingual support
+Detailed pages for each logistics service including:
 
-### Animation & UI Libraries:
+- Air freight
+- Sea freight
+- Land transportation
+- Warehousing
+- Customs brokerage
+- Insurance services
 
-- **@react-spring/web 10.0.3** for smooth animations
-- **Swiper 12.0.2** for carousels and sliders
-- **react-intersection-observer 9.16.0** for scroll-based animations
+### Tracking System
 
-### Form Handling & API:
+- Barcode-based shipment tracking
+- Real-time status updates
+- Detailed shipment history
+- Delivery timeline visualization
 
-- **react-hook-form 7.66.0** for form validation
-- **Axios 1.13.2** for API calls
-- **date-fns 4.1.0** for date manipulation
+### Get a Quote
 
-### Development Tools:
+Interactive form for instant shipping quotes with:
 
-- **ESLint 9** for code quality
-- **Prettier 3.6.2** with Tailwind plugin for formatting
+- Origin and destination selection
+- Package dimensions and weight
+- Service type preferences
+- Automated quote calculation
 
-## 3. Folder & File Structure
+### Contact & Support
+
+- Multiple contact options
+- Branch locations directory
+- Business inquiry forms
+- Customer support portal
+
+## Technologies Used
+
+### Frontend
+
+- **Next.js 14** (App Router) - React framework for production
+- **TypeScript** - Strongly typed programming language
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Icons** - Icon library for React applications
+- **Swiper** - Modern touch slider library
+- **Headless UI** - Unstyled, accessible UI components
+
+### Backend & Services
+
+- **Firebase**:
+  - Firestore for database storage
+  - Authentication for admin access
+  - Cloud Functions for server-side logic
+- **React Email** - Email component library
+- **Sharp** - High performance image processing
+
+### Internationalization
+
+- **next-intl** - Internationalization library for Next.js
+- Complete RTL support for Arabic language
+
+### Development Tools
+
+- **ESLint** - Code quality enforcement
+- **Prettier** - Code formatting standardization
+- **PostCSS** - CSS processing tool
+
+## Project Structure
 
 ```
+
 src/
-├── app/
-│   ├── [locale]/                 # Dynamic locale routing
-│   │   ├── layout.tsx           # Root layout with i18n
-│   │   ├── page.tsx             # Homepage
-│   │   ├── _components/         # App-specific components
-│   │   │   ├── components/      # Layout components
-│   │   │   ├── FormComponents/  # Reusable form elements
-│   │   │   ├── Header/          # Navigation components
-│   │   │   ├── optimized/       # Lazy-loaded components
-│   │   │   └── sections/        # Page sections
-│   │   └── [routes]/            # Dynamic pages (services, industries, etc.)
-│   └── api/                     # API routes
-│       ├── contact/route.ts
-│       ├── create-shipment/route.ts
-│       ├── get-a-quote/route.ts
-│       └── ...
-├── i18n/                        # Internationalization config
-│   ├── routing.ts
-│   ├── request.ts
-│   └── navigation.ts
-├── lib/                         # Business logic & utilities
-│   ├── api.ts                  # Axios configuration
-│   ├── types.ts                # TypeScript definitions
-│   ├── constants.ts            # Application constants
-│   ├── createShipment.ts       # Shipment creation logic
-│   ├── getTracking.ts          # Package tracking
-│   └── submit*Form.ts         # Form submission handlers
-├── seo/                        # SEO metadata
-│   ├── en.json
-│   └── ar.json
-└── addresses/                  # Address data
-    ├── english.json
-    └── arabic.json
+├── app/ # Next.js app router pages
+│ ├── [locale]/ # Localized pages
+│ │ ├── \_components/ # Reusable UI components
+│ │ ├── blogs/ # Blog section
+│ │ ├── contact/ # Contact page and forms
+│ │ ├── get-a-quote/ # Quote request system
+│ │ ├── industries/ # Industry solutions
+│ │ ├── services/ # Service detail pages
+│ │ └── tracking/ # Shipment tracking system
+├── i18n/ # Internationalization configuration
+├── lib/ # Business logic and utilities
+│ ├── api.ts # External API integrations
+│ ├── createShipment.ts # Shipment creation logic
+│ ├── getTracking.ts # Tracking data retrieval
+│ ├── printLabel.ts # Label printing functionality
+│ ├── processPayment.ts # Payment processing
+│ ├── emails/ # Email templates and sending
+│ └── firebase/ # Firebase configuration and helpers
+└── seo/ # SEO metadata files
+
 ```
 
-## 4. Routing System
+## Getting Started
 
-### App Router Architecture:
-
-- **Locale-based Routing**: Dynamic `[locale]` parameter supporting `/en` and `/ar`
-- **Dynamic Routes**:
-  - `/services/[serviceType]/[service]` - Service-specific pages
-  - `/industries/[industry]` - Industry verticals
-  - `/blogs/[slug]` - Blog posts
-  - `/tracking/[barcode]` - Package tracking results
-
-### Route Groups:
-
-- Layout-specific groups for different page types (tracking, get-a-quote, create-shipment)
-- Parallel routes for optimized component loading
-
-### API Routes:
-
-- RESTful endpoints under `/api/*` for form submissions and data operations
-- Server-side processing with error handling
-
-## 5. Core Features & Business Logic
-
-### Shipment Management:
-
-- **Create Shipment**: Multi-step form with address validation and service selection
-- **Track Packages**: Real-time tracking with barcode lookup
-- **Print Labels**: Generate shipping labels for packages
-
-### Form Processing:
-
-- **Contact Form**: Customer inquiries and support requests
-- **Quote Request**: Custom pricing estimates based on shipment details
-- **Subscription**: Newsletter and updates signup
-
-### Business Logic Flow:
-
-1. **Form Validation** → react-hook-form with custom validation rules
-2. **Request Building** → Transform form data to API-compatible format
-3. **API Integration** → External logistics service integration
-4. **Response Handling** → Success/failure states with user feedback
-
-## 6. API Routes Explanation
-
-### Key Endpoints:
-
-**POST `/api/create-shipment`**
-
-- Processes shipment creation requests
-- Validates environment variables (COMPANY_ID)
-- Builds shipment request payload
-- Integrates with external logistics API
-- Returns tracking information or error responses
-
-**GET `/api/tracking`** (via `getTracking.ts`)
-
-- Fetches package status by barcode
-- Company ID validation
-- Error handling for invalid or missing packages
-
-**POST `/api/get-a-quote`**
-
-- Processes pricing estimation requests
-- Validates shipment parameters
-- Returns quote details
-
-### Error Handling:
-
-- Standardized error responses with status codes
-- Console logging for debugging
-- User-friendly error messages
-
-## 7. Authentication & Authorization
-
-**Current Status**: No authentication system implemented
-
-- Public-facing platform with no user accounts
-- API calls use company-level authentication (COMPANY_ID env var)
-- All features accessible without login
-
-## 8. State Management Approach
-
-### Server-First Architecture:
-
-- **React Server Components**: Majority of state handled on server
-- **Form State**: react-hook-form for client-side form management
-- **URL State**: Route parameters for navigation state
-- **Minimal Client State**: Only necessary UI state on client
-
-### State Management Pattern:
-
-- **Props Drilling**: Appropriate for current component hierarchy
-- **Context Usage**: Limited to i18n provided by next-intl
-- **No External Stores**: No Redux/Zustand due to server-focused architecture
-
-## 9. Environment Variables Usage
-
-### Required Environment Variables:
-
-```env
-BASE_URL=                    # API Base URL
-COMPANY_ID=                  # For API authentication
-EMAIL=                       # For Create Shipment API authentication
-PASSWORD=                    # For Create Shipment API authentication
-SUBSCRIPTION_FORM_URL=       # Formbold.com service URL for form data storage
-CONTACT_FORM_URL=           # Formbold.com service URL for form data storage
-GET_A_QUOTE_FORM_URL=       # Formbold.com service URL for form data storage
-CREATE_SHIPMENT_FORM_URL=   # Formbold.com service URL for form data storage
-```
-
-### Security Practices:
-
-- Server-side only environment variable access
-- No sensitive data exposed to client
-- Validation checks for missing environment variables
-- External form data storage via Formbold.com service for secure data handling
-
-## 10. Performance & SEO Considerations
-
-### Performance Optimizations:
-
-- **Lazy Loading**: Dynamic imports for heavy components (Typebot, Popups)
-- **Image Optimization**: Next.js Image component with proper sizing
-- **Code Splitting**: Automatic by Next.js App Router
-- **Font Optimization**: Local font loading with proper subsets
-
-### SEO Implementation:
-
-- **Multi-language SEO**: Separate metadata for English and Arabic
-- **Structured Data**: Open Graph and Twitter Card metadata
-- **Canonical URLs**: Proper locale-specific canonical tags
-- **Social Media Optimization**: Shareable content with proper images
-
-### Performance Metrics:
-
-- Lighthouse optimized build process
-- Tailwind CSS purging for minimal CSS bundle
-- Tree-shaking for unused JavaScript
-
-## 11. Security Considerations
-
-### Current Security Measures:
-
-- **Type Safety**: TypeScript preventing type-related vulnerabilities
-- **API Validation**: Server-side validation of all inputs
-- **Environment Security**: Sensitive data kept server-side
-- **CORS**: Configured through Next.js API routes
-- **Secure API Integration**: Proper authentication with external logistics services
-- **Form Data Security**: External form handling via Formbold.com service
-
-## 12. Deployment Instructions
-
-### Netlify Deployment (Current):
+First, install the dependencies:
 
 ```bash
-# Install dependencies
 npm install
-
-# Build for production
-npm run build
-
-# Deploy to Netlify
-# Connect repository to Netlify for automatic deployments
+# or
+yarn install
+# or
+pnpm install
 ```
 
-### Netlify Configuration:
+Then, run the development server:
 
-- **Build Command**: `npm run build`
-- **Publish Directory**: `.next`
-- **Environment Variables**: Set all required variables in Netlify dashboard
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-### Environment Setup:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. Set environment variables in Netlify dashboard:
-   - `BASE_URL`, `COMPANY_ID`, `EMAIL`, `PASSWORD`
-   - Formbold.com URLs: `SUBSCRIPTION_FORM_URL`, `CONTACT_FORM_URL`, `GET_A_QUOTE_FORM_URL`, `CREATE_SHIPMENT_FORM_URL`
-2. Configure custom domain (prolo.sa)
-3. Set up redirects for locale handling
+## Environment Variables
 
-### Build Process:
+Create a `.env.local` file with the following variables:
 
-- TypeScript compilation
-- ESLint validation
-- Next.js optimization (image, font, code splitting)
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+
+EMAIL_USER=your_email_user
+EMAIL_PASS=your_email_password
+```
+
+## Deployment
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For support, email support@prologistics.com or open an issue on GitHub.

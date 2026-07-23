@@ -18,6 +18,8 @@ export const buildShipmentRequest = (form: CreateShipmentFormInputs): ShipmentRe
       shipmentType: form.shipmentType as ShipmentRequest["pkg"]["shipmentType"],
       quantity: Number(form.quantity) || 1,
       description: form.description || "",
+      weight: Number(form.weight),
+      parcelTypeId: Number(form.parcelTypeId),
     },
 
     originAddress: {
@@ -25,6 +27,7 @@ export const buildShipmentRequest = (form: CreateShipmentFormInputs): ShipmentRe
       cityId: form.originCityId,
       regionId: form.originRegionId,
       villageId: form.originVillageId,
+      nationalAddress: form.originNationalAddress || "",
     },
 
     destinationAddress: {
@@ -32,6 +35,7 @@ export const buildShipmentRequest = (form: CreateShipmentFormInputs): ShipmentRe
       cityId: form.destinationCityId,
       regionId: form.destinationRegionId,
       villageId: form.destinationVillageId,
+      nationalAddress: form.destinationNationalAddress || "",
     },
   };
 };

@@ -1,7 +1,7 @@
+"use client";
 import { Icon } from "@iconify/react";
 import { UseFormRegisterReturn } from "react-hook-form";
 
-// Services Options
 type SelectProps = {
   className?: string;
   type?: string;
@@ -12,6 +12,8 @@ type SelectProps = {
   registerProps: UseFormRegisterReturn; // from react-hook-form
   options: { value: string | number; name: string }[];
   icon: string;
+  disabled?: boolean;
+  value?: string | number;
 };
 
 export default function Select({
@@ -23,15 +25,17 @@ export default function Select({
   registerProps,
   options,
   icon,
+  disabled = false,
 }: SelectProps) {
   return (
-    <div className="w-full">
+    <div>
       <label htmlFor={id} className="mb-1 w-full text-base font-medium">
         {label}
       </label>
       <div className="bg-base1 focus-within:border-theme-blue flex items-center gap-2 rounded-xl border-2 border-transparent px-3 py-1">
         <Icon icon={icon} className="size-6" />
         <select
+          disabled={disabled}
           id={id}
           {...registerProps}
           className={`w-full grow border-none p-1 text-base text-black capitalize outline-none ${className}`}

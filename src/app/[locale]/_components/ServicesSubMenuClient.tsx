@@ -21,18 +21,21 @@ function ServicesSubMenuClient({ individualServices, commercialSectorServices }:
   const locale = useLocale();
   return (
     <div className="flex w-full flex-col flex-wrap justify-between gap-4 text-white sm:flex-row">
-      <div className="flex basis-1 flex-col gap-1 sm:basis-[45%]">
-        <span className="mb text-lg font-medium">{individualServices.title}</span>
-        {individualServices.links.map(link => (
-          <Link
-            key={link.link}
-            href={"/" + locale + link.link}
-            className="hover:text-white-hover text-base font-normal transition duration-300 hover:underline"
-          >
-            {link.text}
-          </Link>
-        ))}
-      </div>
+      {/* Hidden Commercial Sector Services */}
+      {false && (
+        <div className="flex basis-1 flex-col gap-1 sm:basis-[45%]">
+          <span className="mb text-lg font-medium">{individualServices.title}</span>
+          {individualServices.links.map(link => (
+            <Link
+              key={link.link}
+              href={"/" + locale + link.link}
+              className="hover:text-white-hover text-base font-normal transition duration-300 hover:underline"
+            >
+              {link.text}
+            </Link>
+          ))}
+        </div>
+      )}
       <div className="flex basis-1 flex-col gap-1 sm:basis-[45%]">
         <span className="text-lg font-medium">{commercialSectorServices.title}</span>
         {commercialSectorServices.links.map(link => (

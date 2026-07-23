@@ -40,12 +40,21 @@ export default async function Navbar() {
           </Link>
         </li>
         {/* Ship */}
-        <li>
+        {/* <li>
           <Link
             href={`/${locale}${links.trackAndShip?.ship?.link}`}
             className="text-theme-white hover:text-white-hover static cursor-pointer text-base transition duration-300"
           >
             {links.trackAndShip?.ship?.text}
+          </Link>
+        </li> */}
+        {/* Get A Quote */}
+        <li>
+          <Link
+            href={`/${locale}${links?.getAQuote?.link}`}
+            className="text-theme-white hover:text-white-hover static cursor-pointer text-base transition duration-300"
+          >
+            {links?.getAQuote?.text}
           </Link>
         </li>
         {/* Services */}

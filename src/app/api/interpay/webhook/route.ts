@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   // TODO: Remove This
 
   if (developerEmail) {
-    sendEmail({
+    await sendEmail({
       to: developerEmail,
       subject: "Webhook Request Body",
       html: `<h2>Header</h2><pre><code>${JSON.stringify(req.headers, null, 2)} -- X-API-KEY: ${req.headers.get("X-API-KEY")}</code></pre><h2>Body</h2><pre><code>${JSON.stringify(data, null, 2)}</code></pre>`,
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
   if (apiKey !== process.env.X_API_KEY) {
     // Eamil to developer about unauthorized access attempt
     if (developerEmail) {
-      sendEmail({
+      await sendEmail({
         to: developerEmail,
         subject: "Unauthorized Webhook Access Attempt",
         html: `<p>An unauthorized access attempt was made to the Interpay webhook endpoint.</p></br> X-API-KEY Provided: ${apiKey} </br> Time: ${new Date().toISOString()}</p> </br> Details: <code><pre>${JSON.stringify(data, null, 2)}</pre></code>`,
@@ -48,7 +48,7 @@ export async function POST(req: Request) {
       //  1. PROCESS PAYMENT
       // - Save Payment Data
       // - Send Confirmational Emails
-      processPayment(data);
+      await processPayment(data);
 
       try {
         // 2. Create Shipment & Send Emails
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
 
         if (formData && formData.length === 0) {
           // Send Email To Developer About Missing Form Data
-          sendEmail({
+          await sendEmail({
             to: "nuqtamenu@gmail.com",
             subject: "Missing Shipment Form Data",
             html: `<p>Dear Developer! </br>Shipment Form Data is missing for Reference Number: ${data.referenceNumber}</p></br> Time: ${new Date().toISOString()}</p> </br> Details: <code><pre>${JSON.stringify(data, null, 2)}</pre></code>`,
@@ -73,7 +73,7 @@ export async function POST(req: Request) {
           if ("error" in shipmentResponse) {
             // Send Email To Developer About Shipment Creation Error
             if (developerEmail) {
-              sendEmail({
+              await sendEmail({
                 to: developerEmail,
                 subject: "Shipment Creation Error",
                 html: `<p>Dear Developer! </br>Shipment Creation failed for Reference Number: ${data.referenceNumber}</p></br> Time: ${new Date().toISOString()}</p> </br> Details: <code><pre>${JSON.stringify(data, null, 2)}</pre></code>`,
@@ -91,7 +91,7 @@ export async function POST(req: Request) {
           }
 
           // ii) Send Confirmation Emails Sender & Receiver & Company
-          sendShipmentEmails({
+          await sendShipmentEmails({
             locales: formData[0].locale,
             data: {
               ...(shipmentResponse as ShipmentResponse),
@@ -102,11 +102,13 @@ export async function POST(req: Request) {
               expectedDeliveryDate: (shipmentResponse as ShipmentResponse).expectedDeliveryDate,
               senderBusinessName: formData[0].businessSenderName,
               shipmentType: formData[0].shipmentType as "COD" | "REGULAR",
+              // TODO: Set Right Amount Here
+              amount: 0,
             },
           });
 
           // iii) Save Shipment In Firestore
-          saveShipment({
+          await saveShipment({
             ...(shipmentResponse as ShipmentResponse),
             ...formData[0],
             shipmentId: (shipmentResponse as ShipmentResponse).id,
@@ -115,6 +117,8 @@ export async function POST(req: Request) {
             expectedDeliveryDate: (shipmentResponse as ShipmentResponse).expectedDeliveryDate,
             senderBusinessName: formData[0].businessSenderName,
             shipmentType: formData[0].shipmentType as "COD" | "REGULAR",
+            // TODO: Set Right Amount Here
+            amount: 0,
           });
         } else {
           throw new Error("Error Getting Form Data From Firebase");
@@ -122,7 +126,7 @@ export async function POST(req: Request) {
       } catch (error) {
         console.log("Error Creating Shipment :: ", error);
         if (developerEmail) {
-          sendEmail({
+          await sendEmail({
             to: developerEmail,
             subject: "Prolo Error :: Error Creating Shipment",
             html: `<pre><code>${JSON.stringify(error, null, 2)}</code></pre>`,
@@ -140,7 +144,7 @@ export async function POST(req: Request) {
     }
   } catch (error) {
     console.error("Error handling webhook:", error);
-    sendEmail({
+    await sendEmail({
       to: process.env.DEVELOPER_EMAIL || "nuqtamenu@gmail.com",
       subject: "Error In PROLO Payment Webhook",
       html: `<pre><code>${JSON.stringify(error, null, 2)}</code></pre>`,

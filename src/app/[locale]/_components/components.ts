@@ -58,6 +58,7 @@ import FooterContactLinkSegment from "./FooterContactLinkSegment";
 import Input from "./FormComponents/Input";
 import SelectServices from "./FormComponents/SelectServices";
 import Textarea from "./FormComponents/Textarea";
+import SearchSelect from "./FormComponents/SearchSelect";
 
 import PageHeader from "./PageHeader";
 
@@ -158,4 +159,5 @@ export {
   FlowDiagram,
   Timeline,
   NotFound,
+  SearchSelect,
 };

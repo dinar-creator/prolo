@@ -9,7 +9,7 @@ import { trustLogos } from "../logos/logos";
 
 export default function HeroLogos({ trustedBy, hundredPlus, businesses }: Props) {
   return (
-    <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+    <div className="flex items-center justify-between gap-4">
       <p className="mr-0 lg:mr-[30px]">{trustedBy}</p>
 
       <div className="flex gap-4">

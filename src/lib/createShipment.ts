@@ -23,7 +23,6 @@ export async function createShipment(
       },
     });
 
-    // 4. Return API response
     return response.data as ShipmentResponse;
   } catch (err: unknown) {
     console.log("Error in API :: ", err);

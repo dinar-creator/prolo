@@ -26,6 +26,7 @@ export async function sendEmail(data: { to: string; subject: string; html: strin
     return true;
   } catch (error) {
     console.error("Email Error :: ", error);
+    console.log("Email Payload", { to, subject, html });
     return false;
   }
 }

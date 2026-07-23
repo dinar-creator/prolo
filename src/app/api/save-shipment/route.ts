@@ -16,12 +16,11 @@ export async function POST(req: Request) {
     try {
       await submitCreateShipmentForm(data);
     } catch (error) {
-      console.error("Error saving shipment data:", error);
       return NextResponse.json(
         {
           success: false,
           message: "Failed to save shipment data to formbold service",
-          error: "Failed to save shipment data",
+          error,
         },
         { status: 500 }
       );
@@ -39,14 +38,14 @@ export async function POST(req: Request) {
     } = buildShipmentEmails({ locales, data });
 
     // Send Email To Sender
-    sendEmail({
+    await sendEmail({
       to: data.senderEmail,
       subject: senderEmailSubject,
       html: senderEmail,
     });
 
     // Send Email To Receiver
-    sendEmail({
+    await sendEmail({
       to: data.receiverEmail,
       subject: receiverEmailSubject,
       html: receiverEmail,
@@ -54,7 +53,7 @@ export async function POST(req: Request) {
 
     // Send Email To Company
     if (companyEmailAddress) {
-      sendEmail({
+      await sendEmail({
         to: companyEmailAddress,
         subject: companyEmailSubject,
         html: companyEmail,
@@ -68,6 +67,7 @@ export async function POST(req: Request) {
       { status: 200 }
     );
   } catch (err) {
+    console.log("Error in saving shpment at api/save-shipment :: ", err);
     return NextResponse.json(
       {
         error: "Internal Server Error",

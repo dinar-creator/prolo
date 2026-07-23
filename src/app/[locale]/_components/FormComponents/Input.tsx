@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { UseFormRegisterReturn } from "react-hook-form";
 import { useLocale } from "next-intl";
@@ -14,8 +14,11 @@ type InputProps = {
   max?: string;
   disabled?: boolean;
   error?: string;
+  readonly?: boolean;
+  value?: string | number;
   registerProps?: UseFormRegisterReturn; // from react-hook-form
   icon: string;
+  wrapperClassName?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -30,19 +33,25 @@ const Input: React.FC<InputProps> = ({
   disabled = false,
   error,
   registerProps,
+  readonly = false,
+  value = "",
+  wrapperClassName = "",
   onChange,
   icon,
 }) => {
   const locale = useLocale();
   const dir = locale === "ar" ? "rtl" : "ltr";
+  const [inputValue, setInputValue] = useState(value);
   return (
-    <div className="w-full">
+    <div className={`w-full`}>
       {label && (
-        <label htmlFor={id} className="mb-1 w-full text-base font-medium">
+        <label htmlFor={id} className="mb-2 w-full text-base font-medium">
           {label}
         </label>
       )}
-      <div className="bg-base1 focus-within:border-theme-blue flex items-center gap-2 rounded-xl border-2 border-transparent px-3 py-1">
+      <div
+        className={`bg-base1 focus-within:border-theme-blue flex items-center gap-2 rounded-xl border-2 border-transparent px-3 py-1 ${wrapperClassName}`}
+      >
         <Icon icon={icon} className="size-6 text-black" />
         <input
           dir={dir}
@@ -53,9 +62,12 @@ const Input: React.FC<InputProps> = ({
           type={type}
           placeholder={placeholder}
           {...registerProps}
+          readOnly={readonly}
+          value={inputValue}
           onChange={e => {
-            registerProps?.onChange?.(e); // react-hook-form tracking
-            onChange?.(e); // your custom logic
+            registerProps?.onChange?.(e);
+            onChange?.(e);
+            setInputValue(e.target.value);
           }}
           className={`disabled:bg-base1/50 w-full grow border-none p-1 text-base text-black outline-none disabled:text-gray-400 ${className}`}
         />

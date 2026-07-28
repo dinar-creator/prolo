@@ -72,7 +72,17 @@
 "boxCount": { "label": "Number of Boxes", "placeholder": "e.g. 10", "error": "Please enter number of boxes" },
 "palletCount": { "label": "Number of Pallets", "placeholder": "e.g. 5", "error": "Please enter number of pallets" },
     "pickupCity": { "label": "Pickup City", "placeholder": "e.g. Jeddah", "error": "Please enter a pickup city" },
-    "dropoffCity": { "label": "Dropoff City", "placeholder": "e.g. Dammam", "error": "Please enter a dropoff city" }
+    "dropoffCity": { "label": "Dropoff City", "placeholder": "e.g. Dammam", "error": "Please enter a dropoff city" },
+    "pickupDate": {
+  "label": "Pickup Date",
+  "placeholder": "Select pickup date",
+  "error": "Please select a pickup date"
+},
+"dropoffDate": {
+  "label": "Dropoff Date",
+  "placeholder": "Select dropoff date",
+  "error": "Please select a valid dropoff date"
+}
   }
 },
     "placeholders": {
@@ -336,9 +346,9 @@
       },
        "marketplace": {
         "badge": "New",
-        "title": "Prolo Marketplace",
+        "title": " Marketplace",
         "description": "Explore verified warehouses and logistics services. Compare, connect and grow your business.",
-        "cta": "Explore Marketplace"
+        "cta": "Explore Space Marketplace"
       },
       "trustedBy": "Trusted by",
       "100Plus": "+100",
@@ -434,23 +444,24 @@
 "marketplace": {
     "hero": {
       "badge": "Saudi Arabia Logistics Network",
-      "title": "Prolo Marketplace",
+      "title": " Marketplace",
       "subtitle": "Find the Right Logistics in Minutes",
       "description": "Looking for reliable logistics support? Share your details, and our team will provide you with a tailored quote that fits your needs. Fast, transparent, and hassle-free."
     },
     "value": {
       "title": "Value to Your Business",
-      "description": "Prolo Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles."
+      "description": "Space Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles."
     },
     "needs": {
       "title": "What do you need?",
-      "description": "Prolo Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles.",
+      "description": "Space Marketplace helps businesses reduce the time, cost, and complexity of finding reliable logistics partners. By bringing multiple providers together in one marketplace, businesses can make faster, more informed decisions, improve operational flexibility, and scale into new markets without lengthy procurement cycles.",
       "storage": "Storage",
       "shipping": "Shipping"
     },
     "form": {
       "storageTitle": "Storage Request",
-      "shippingTitle": "Shipping Request"
+      "shippingTitle": "Shipping Request",
+      "successMessage": "We've received your request and will respond soon."
     }
   },
   "getAQuotePage": {

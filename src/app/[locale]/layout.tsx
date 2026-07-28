@@ -15,6 +15,7 @@ import enSEO from "@/seo/en.json";
 import { SITE_URL } from "@/lib/constants";
 import { getSeoImages } from "@/lib/seo";
 import Script from "next/script";
+import FooterContainer from "./_components/FooterContainer";
 
 // SEO
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -129,7 +130,10 @@ export default async function RootLayout({ children, params }: Props) {
             <ResposiveHeader />
           </HeaderContainer>
           <main>{children}</main>
-          <Footer />
+          <FooterContainer
+            defaultFooter={<Footer />}
+            marketplaceFooter={<Footer logoSrc="/images/space-logo-new.svg" />}
+          />{" "}
           <PopupLazy />
           <TypebotWidgetLazy />
         </NextIntlClientProvider>

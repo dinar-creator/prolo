@@ -17,17 +17,26 @@ export default function Marketplace() {
         <div className="flex items-start justify-between gap-6">
           <div>
             <p className="text-sm font-bold text-white">{t("hero.badge")}</p>
-            <h1 className="font-heading mt-3 text-3xl font-black leading-tight sm:text-4xl">
-              {t("hero.title")}
-            </h1>
-            <p className="font-heading mt-2 text-base font-bold text-white sm:text-md">
+
+            <div className="mt-3 flex items-center gap-2">
+              <Image
+                src={"/images/space-logo-new.svg"}
+                alt="Space"
+                width={70}
+                height={28}
+                className="h-7 w-auto shrink-0 object-contain sm:h-8"
+              />
+              <h1 className="font-heading text-3xl leading-tight font-black sm:text-4xl">
+                {t("hero.title")}
+              </h1>
+            </div>
+
+            <p className="font-heading sm:text-md mt-2 text-base font-bold text-white">
               {t("hero.subtitle")}
             </p>
-            <p className="mt-4 text-base leading-relaxed text-white/80">
-              {t("hero.description")}
-            </p>
+            <p className="mt-4 text-base leading-relaxed text-white/80">{t("hero.description")}</p>
           </div>
-         <div className="hidden shrink-0 sm:block">
+          <div className="hidden shrink-0 sm:block">
             <Image
               src={"/images/market-header.png"}
               alt="Marketplace"

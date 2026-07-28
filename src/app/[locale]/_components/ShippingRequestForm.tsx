@@ -15,6 +15,8 @@ type Inputs = {
   quantity?: string;
   pickupCity: string;
   dropoffCity: string;
+  pickupDate: string;
+  dropoffDate: string;
 };
 
 type Option = { value: string; name: string };
@@ -37,6 +39,8 @@ type ShippingFormFields = {
   palletCount: FieldSchema;
   pickupCity: FieldSchema;
   dropoffCity: FieldSchema;
+  pickupDate: FieldSchema;
+  dropoffDate: FieldSchema;
 };
 
 type ShippingFormMessages = {
@@ -54,8 +58,8 @@ export default function ShippingRequestForm() {
 
   const formMessages = messages.forms?.shippingRequest as ShippingFormMessages | undefined;
 
-  const successText =
-    messages.messages?.getAQuote ?? "We've received your request and will respond soon.";
+ const successText =
+  messages.marketplace?.form?.successMessage ?? "We've received your request and will respond soon.";
 
   const fields: ShippingFormFields = {
     name: formMessages?.fields?.name ?? EMPTY_FIELD,
@@ -67,6 +71,8 @@ export default function ShippingRequestForm() {
     palletCount: formMessages?.fields?.palletCount ?? EMPTY_FIELD,
     pickupCity: formMessages?.fields?.pickupCity ?? EMPTY_FIELD,
     dropoffCity: formMessages?.fields?.dropoffCity ?? EMPTY_FIELD,
+    pickupDate: formMessages?.fields?.pickupDate ?? EMPTY_FIELD,
+    dropoffDate: formMessages?.fields?.dropoffDate ?? EMPTY_FIELD,
   };
 
   const {
@@ -81,6 +87,7 @@ export default function ShippingRequestForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const loadType = watch("loadType");
+  const pickupDate = watch("pickupDate");
 
   useEffect(() => {
     if (loadType !== "FTL") unregister("vehicleType");
@@ -115,10 +122,9 @@ export default function ShippingRequestForm() {
 
   return (
     <div className="w-full rounded-2xl bg-gray-50 p-8 shadow-md">
-      <h2 className="font-heading text-theme-blue mb-6 text-2xl font-black">
-        {formMessages?.messages.shippingRequest ?? "Shipping Request"}
-      </h2>
-
+    <h2 className="font-heading text-theme-blue mb-6 text-2xl font-black">
+  {messages.marketplace?.form?.shippingTitle ?? "Shipping Request"}
+</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="grid w-full grid-cols-1 gap-4 md:grid-cols-2"
@@ -197,7 +203,15 @@ export default function ShippingRequestForm() {
           registerProps={register("pickupCity", { required: true })}
           error={errors.pickupCity && fields.pickupCity.error}
         />
-
+        <Input
+          label={fields.pickupDate.label}
+          icon="solar:calendar-linear"
+          id="pickupDate"
+          type="date"
+          placeholder={fields.pickupDate.placeholder}
+          registerProps={register("pickupDate", { required: true })}
+          error={errors.pickupDate && fields.pickupDate.error}
+        />
         <Input
           label={fields.dropoffCity.label}
           icon="iconamoon:location-light"
@@ -205,6 +219,23 @@ export default function ShippingRequestForm() {
           placeholder={fields.dropoffCity.placeholder}
           registerProps={register("dropoffCity", { required: true })}
           error={errors.dropoffCity && fields.dropoffCity.error}
+        />
+
+        <Input
+          label={fields.dropoffDate.label}
+          icon="solar:calendar-linear"
+          id="dropoffDate"
+          type="date"
+          placeholder={fields.dropoffDate.placeholder}
+          registerProps={register("dropoffDate", {
+            required: true,
+            validate: value =>
+              !pickupDate ||
+              value >= pickupDate ||
+              fields.dropoffDate.error ||
+              "Dropoff date must be after pickup date",
+          })}
+          error={errors.dropoffDate && fields.dropoffDate.error}
         />
 
         <div className="mt-4 flex w-full items-center justify-end md:col-span-2">

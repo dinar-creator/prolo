@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const { locales, data } = await req.json();
-    const { name, phone, email, loadType, vehicleType, quantity, pickupCity, dropoffCity } = data;
+    const { name, phone, email, loadType, vehicleType, quantity, pickupCity, dropoffCity, pickupDate, dropoffDate } = data;
 
     const formboldRes = await fetch(process.env.SHIPPING_REQUEST_FORM_URL!, {
       method: "POST",
@@ -17,6 +17,8 @@ export async function POST(req: NextRequest) {
         quantity: quantity ?? null,
         pickupCity,
         dropoffCity,
+        pickupDate,
+    dropoffDate,
         locale: locales,
       }),
     });

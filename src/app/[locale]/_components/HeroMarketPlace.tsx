@@ -5,15 +5,15 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import styles from "./HeroMarketPlace.module.css";
 import Image from "next/image";
-import { marketPlace } from "../../images/images";
+import { marketPlace, spaceLogo } from "../../images/images"; 
 
 export default function HeroMarketPlace() {
   const t = useTranslations("homepage");
   const locale = useLocale();
 
   return (
-<div className="absolute start-4 top-24 z-10 w-[360px] max-w-[90vw] sm:start-8">
-        <span className={`${styles.arrowWrap} inline-block`}>
+    <div className="absolute start-4 top-24 z-10 w-[360px] max-w-[90vw] sm:start-8">
+      <span className={`${styles.arrowWrap} inline-block`}>
         <Image
           src={"/images/Arrow.png"}
           alt=""
@@ -32,9 +32,19 @@ export default function HeroMarketPlace() {
 
           <div className="mt-3 flex items-center justify-between gap-3">
             <div className="min-w-0 flex-1">
-              <h3 className="line-clamp-1 text-xl font-bold text-white">
-                {t("hero.marketplace.title")}
-              </h3>
+              <div className="flex items-center gap-2">
+                <Image
+                  src={spaceLogo}
+                  alt="Space"
+                  width={70}
+                  height={28}
+                  className="h-6 w-auto shrink-0 object-contain sm:h-7"
+                />
+                <h3 className="line-clamp-1 text-xl font-bold text-white">
+                  {t("hero.marketplace.title")}
+                </h3>
+              </div>
+
               <p className="mt-2 line-clamp-4 text-sm leading-tight text-white/70">
                 {t("hero.marketplace.description")}
               </p>

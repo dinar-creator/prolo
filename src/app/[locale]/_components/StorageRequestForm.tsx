@@ -48,8 +48,8 @@ export default function StorageRequestForm() {
 
   const formMessages = messages.forms?.storageRequest as StorageFormMessages | undefined;
 
-  const successText =
-    messages.messages?.getAQuote ?? "We've received your request and will respond soon.";
+const successText =
+  messages.marketplace?.form?.successMessage ?? "We've received your request and will respond soon.";
 
   const fields: StorageFormFields = {
     name: formMessages?.fields?.name ?? EMPTY_FIELD,
@@ -96,9 +96,9 @@ export default function StorageRequestForm() {
 
   return (
     <div className="w-full rounded-2xl bg-gray-50 p-8 shadow-md">
-      <h2 className="font-heading text-theme-blue mb-6 text-2xl font-black">
-        {formMessages?.messages.storageRequest ?? "Storage Request"}
-      </h2>
+     <h2 className="font-heading text-theme-blue mb-6 text-2xl font-black">
+  {messages.marketplace?.form?.storageTitle ?? "Storage Request"}
+</h2>
 
       <form
         onSubmit={handleSubmit(onSubmit)}

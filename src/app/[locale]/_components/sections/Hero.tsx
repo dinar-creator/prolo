@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { TrackingInput } from "../components";
 import HeroLazyLogos from "../optimized/HeroLazyLogos";
 import HeroLazySlider from "../optimized/HeroLazySlider";
-// import HeroStatic from "../optimized/HeroStatic";
+import HeroMarketPlace from "../HeroMarketPlace";
 
 export default function Hero() {
   const t = useTranslations("homepage");
@@ -27,7 +27,9 @@ export default function Hero() {
             {t("hero.title.last")}
           </h2>
         </div>
-
+        <div >
+          <HeroMarketPlace />
+        </div>
         {/* Logos & Input Bar */}
         <div className="flex w-full flex-col-reverse items-center justify-center gap-4 md:flex-row md:justify-between">
           {/* Hero Logos */}

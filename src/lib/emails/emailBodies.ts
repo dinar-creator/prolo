@@ -101,7 +101,7 @@ export const buildCustomerSubEmailBody = (locale: Locale): string => {
       <p>إذا كان لديك أي استفسارات، لا تتردد في التواصل معنا في أي وقت.</p>
       <p>مع أطيب التحيات،</p>
       <p class="prolo">
-        <b>فريق بروبلو للخدمات اللوجستية</b>
+        <b>فريق برولو للخدمات اللوجستية</b>
       </p>
     </main>`;
   }
@@ -209,7 +209,7 @@ export const buildCustomerContactEmailBody = (
     <main>
       <p><b>عزيزي ${name}!</b></p>
       <p>لقد استلمنا طلبك للحصول على عرض سعر للشحن بخصوص الخدمة التالية:</p>
-      <h2>شكرًا لتواصلك مع <span class="blue">بروبلو لوجستيك</span></h2>
+      <h2>شكرًا لتواصلك مع <span class="blue">برولو لوجستيك</span></h2>
       <p>
         لقد استلمنا رسالتك بنجاح. سيقوم فريق اللوجستيات لدينا بمراجعة طلبك
         والتواصل معك قريبًا عبر هذا البريد الإلكتروني (<span class="underline"
@@ -232,11 +232,11 @@ export const buildCustomerContactEmailBody = (
 
       <p>
         نحن نقدر اهتمامك
-        <span class="blue">بروبلو لوجستيك</span>.
+        <span class="blue">برولو لوجستيك</span>.
       </p>
       <p>مع أطيب التحيات،</p>
       <p class="prolo">
-        <b>فريق بروبلو لوجستيك</b>
+        <b>فريق برولو لوجستيك</b>
       </p>
     </main>`;
   }
@@ -383,7 +383,7 @@ export const buildCustomerQuoteEmailBody = (
   <p><b>الخدمة</b></p>
   <h2>${service}</h2>
   <p>
-    شكرًا لاختيارك بروبلو . سيقوم فريق اللوجستيات لدينا بمراجعة طلبك والتواصل
+    شكرًا لاختيارك برولو . سيقوم فريق اللوجستيات لدينا بمراجعة طلبك والتواصل
     معك قريبًا عبر هذا البريد الإلكتروني (<span class="underline">${email}</span
     >) أو رقم الاتصال الذي قدمته (<span class="underline">${phone}</span>) مع
     عرض سعر مخصص.
@@ -401,7 +401,7 @@ export const buildCustomerQuoteEmailBody = (
   <p>إذا كان لديك أي أسئلة، لا تتردد في التواصل معنا في أي وقت.</p>
   <p>مع أطيب التحيات،</p>
   <p class="prolo">
-    <b>فريق بروبلو اللوجستي</b>
+    <b>فريق برولو اللوجستي</b>
   </p>
 </main>
 `;

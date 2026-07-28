@@ -426,5 +426,5 @@ export const arabicFooter = `<div class="footer-content">
         </li>
       </ul>
       <br />
-      <footer>© بروبلو للخدمات اللوجستية. جميع الحقوق محفوظة.</footer>
+      <footer>© برولو للخدمات اللوجستية. جميع الحقوق محفوظة.</footer>
     </div>`;

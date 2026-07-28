@@ -21,6 +21,10 @@ type LinkSegment = {
   links: Link[];
 };
 
+type FooterProps = {
+  logoSrc?: string;
+};
+
 type FooterData = {
   cr: string;
   cta: { title: string };
@@ -30,7 +34,8 @@ type FooterData = {
   socialMedia: LinkSegment;
   contact: LinkSegment;
 };
-export default async function Footer() {
+
+export default async function Footer({ logoSrc = "/logo-white.svg" }: FooterProps) {
   const locale = await getLocale();
   const footer = await getTranslations("footer");
   const messages = await getMessages();
@@ -52,7 +57,7 @@ export default async function Footer() {
           {/* Logo */}
           <div className="mb-4">
             <Link href={`/${locale}`}>
-              <Image src={"/logo-white.svg"} alt="Prolo Logo" width={150} height={150} />
+              <Image src={logoSrc} alt="Prolo Logo" width={150} height={150} />
             </Link>
           </div>
 
